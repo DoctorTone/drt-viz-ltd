@@ -4,15 +4,24 @@ import Typography from "@mui/material/Typography";
 
 const Hero = () => {
   return (
-    <>
-      <Container sx={{ mt: 15 }}>
-        <Grid container spacing={2}>
-          <Grid size={6}>
-            <Typography variant="h2">Complex data made simple.</Typography>
-          </Grid>
+    <Container sx={{ mt: 20 }} maxWidth="xl">
+      <Grid
+        container
+        spacing={6}
+        sx={{ display: "flex", alignItems: "center" }}
+      >
+        <Grid size={6}>
+          <Typography variant="h3">
+            Complex data made <span style={{ color: "orange" }}>simple</span>.
+          </Typography>
         </Grid>
-      </Container>
-    </>
+        <Grid size={6}>
+          <video muted loop preload="auto" autoPlay className="w-100">
+            <source src="./videos/PointCloud.mp4" type="video/mp4" />
+          </video>
+        </Grid>
+      </Grid>
+    </Container>
   );
 };
 
