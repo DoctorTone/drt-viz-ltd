@@ -8,3 +8,11 @@ body {
 .w-100 {
   width: 100%;
 }
+.bordered {
+  position: relative;
+  border: 10px solid orange;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0.75rem #505050;
+  padding: 10px;
+  overflow: hidden;
+}
