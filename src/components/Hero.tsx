@@ -6,7 +6,7 @@ import BoltIcon from "@mui/icons-material/Bolt";
 
 const Hero = () => {
   return (
-    <Container sx={{ mt: 20 }} maxWidth="xl">
+    <Container sx={{ mt: 12 }}>
       <Chip
         icon={<BoltIcon />}
         label="Home"
@@ -15,7 +15,7 @@ const Hero = () => {
       />
       <Grid container spacing={6} sx={{ display: "flex" }}>
         <Grid size={6}>
-          <Typography variant="h3">
+          <Typography variant="h2">
             Complex data made <span style={{ color: "orange" }}>simple</span>.
           </Typography>
           <Typography variant="h6">
