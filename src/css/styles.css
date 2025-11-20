@@ -16,3 +16,10 @@ body {
   padding: 10px;
   overflow: hidden;
 }
+.borderedLight {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0.5rem #505050;
+  padding: 10px;
+  overflow: hidden;
+}
