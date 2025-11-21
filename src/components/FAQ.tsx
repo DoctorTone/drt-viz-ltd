@@ -31,7 +31,7 @@ const FAQ = () => {
             sx={{
               background: "#0a0401",
               color: "white",
-              border: "1px solid grey",
+              border: "1px solid rgba(255, 255, 255, 0.3)",
               borderRadius: "15px",
             }}
           >
