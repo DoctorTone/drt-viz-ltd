@@ -82,6 +82,28 @@ const NavBar = () => {
             >
               Portfolio
             </Typography>
+            <Typography
+              variant="h6"
+              className="section"
+              sx={{
+                textDecoration: "none",
+                color: "#a8a8a8",
+                cursor: "pointer",
+              }}
+            >
+              Services
+            </Typography>
+            <Typography
+              variant="h6"
+              className="section"
+              sx={{
+                textDecoration: "none",
+                color: "#a8a8a8",
+                cursor: "pointer",
+              }}
+            >
+              FAQ
+            </Typography>
           </Box>
         </Box>
       </Toolbar>
