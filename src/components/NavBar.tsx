@@ -1,5 +1,4 @@
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
 import AppBar from "@mui/material/AppBar";
 import Typography from "@mui/material/Typography";
@@ -69,7 +68,7 @@ const NavBar = () => {
                 cursor: "pointer",
               }}
             >
-              Solution
+              Solutions
             </Typography>
             <Typography
               variant="h6"
@@ -103,6 +102,28 @@ const NavBar = () => {
               }}
             >
               FAQ
+            </Typography>
+            <Typography
+              variant="h6"
+              className="section"
+              sx={{
+                textDecoration: "none",
+                color: "#a8a8a8",
+                cursor: "pointer",
+              }}
+            >
+              About
+            </Typography>
+            <Typography
+              variant="h6"
+              className="section"
+              sx={{
+                textDecoration: "none",
+                color: "#a8a8a8",
+                cursor: "pointer",
+              }}
+            >
+              Contact
             </Typography>
           </Box>
         </Box>

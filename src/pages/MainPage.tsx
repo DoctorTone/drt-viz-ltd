@@ -5,6 +5,7 @@ import Portfolio from "../components/Portfolio";
 import Services from "../components/Services";
 import FAQ from "../components/FAQ";
 import Testimonials from "../components/Testimonials";
+import About from "../components/About";
 
 const MainPage = () => {
   return (
@@ -15,6 +16,7 @@ const MainPage = () => {
       <Portfolio />
       <Services />
       <FAQ />
+      <About />
       <Testimonials />
     </>
   );

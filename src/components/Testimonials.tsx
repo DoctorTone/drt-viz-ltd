@@ -10,12 +10,6 @@ import StarIcon from "@mui/icons-material/Star";
 const Testimonials = () => {
   return (
     <Container sx={{ mb: 6 }}>
-      <Chip
-        icon={<BoltIcon />}
-        label="Testimonial"
-        variant="outlined"
-        color="warning"
-      />
       <Grid container spacing={2}>
         <Grid size={6}>
           <Typography variant="h3" sx={{ mb: 5 }}>
