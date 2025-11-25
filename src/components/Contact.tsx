@@ -33,6 +33,20 @@ const Contact = () => {
 
   return (
     <Container sx={{ mb: 10 }}>
+      <Chip
+        icon={<BoltIcon />}
+        label="Contact"
+        variant="outlined"
+        color="warning"
+        sx={{ mb: 2 }}
+      />
+      <Grid container>
+        <Grid size={6}>
+          <Typography variant="h3" sx={{ mb: 5 }}>
+            Let's give your project an extra dimension.
+          </Typography>
+        </Grid>
+      </Grid>
       <Grid container>
         <Grid size={3}></Grid>
         <Grid size={6}>
@@ -46,16 +60,10 @@ const Contact = () => {
               padding: "2.5%",
             }}
           >
-            <Chip
-              icon={<BoltIcon />}
-              label="Contact"
-              variant="outlined"
-              color="warning"
-              sx={{ mb: 2 }}
-            />
             <CardContent>
-              <Typography variant="h4" sx={{ mb: 2 }}>
-                Please get in touch.
+              <Typography variant="h4">Please enter your details.</Typography>
+              <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+                We aim to respond within one working day.
               </Typography>
               <Box component="form">
                 <FormControl className="w-100">
@@ -110,9 +118,12 @@ const Contact = () => {
                   />
                 </FormControl>
               </Box>
-              <Button variant="contained" color="warning">
+              <Button variant="contained" color="warning" sx={{ mb: 2 }}>
                 Submit
               </Button>
+              <Typography variant="h6" sx={{ color: "grey" }}>
+                All information is 100% private.
+              </Typography>
             </CardContent>
           </Card>
         </Grid>
