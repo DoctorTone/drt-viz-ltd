@@ -5,11 +5,10 @@ import BoltIcon from "@mui/icons-material/Bolt";
 import Chip from "@mui/material/Chip";
 import { styled } from "@mui/material/styles";
 
+const IMG_WIDTH = 1.5;
 const Partners = () => {
   const Logo = styled("img")({
-    border: "1px solid white",
-    borderRadius: "5px",
-    padding: "5%",
+    padding: "25%",
   });
 
   return (
@@ -30,30 +29,30 @@ const Partners = () => {
       <Grid
         container
         spacing={3}
-        sx={{ display: "flex", alignItems: "center", padding: "5%" }}
+        sx={{ display: "flex", alignItems: "center", padding: "0%" }}
       >
-        <Grid size={3}>
+        <Grid size={IMG_WIDTH}>
           <img src="./images/logo_uon_dark.png" className="w-100" />
         </Grid>
-        <Grid size={3}>
+        <Grid size={IMG_WIDTH}>
           <img src="./images/NHS_Logo_bigger.png" className="w-100" />
         </Grid>
-        <Grid size={3}>
+        <Grid size={IMG_WIDTH}>
           <img src="./images/logo_nihr.png" className="w-100" />
         </Grid>
-        <Grid size={3}>
+        <Grid size={IMG_WIDTH}>
           <img src="./images/logo_imh2.png" className="w-100" />
         </Grid>
-        <Grid size={3}>
+        <Grid size={IMG_WIDTH}>
           <img src="./images/ThrillLab.jpg" className="w-100" />
         </Grid>
-        <Grid size={3}>
-          <img src="./images/ArtXR_Logo_white.png" className="w-100" />
+        <Grid size={IMG_WIDTH}>
+          <img src="./images/artxr_full.png" className="w-100" />
         </Grid>
-        <Grid size={3}>
+        <Grid size={IMG_WIDTH}>
           <img src="./images/iosh.png" className="w-100" />
         </Grid>
-        <Grid size={3}>
+        <Grid size={IMG_WIDTH}>
           <img
             src="./images/loughborough_logo_black_white.png"
             className="w-100"
