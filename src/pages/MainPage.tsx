@@ -7,6 +7,7 @@ import FAQ from "../components/FAQ";
 import Testimonials from "../components/Testimonials";
 import About from "../components/About";
 import Contact from "../components/Contact";
+import Partners from "../components/Partners";
 
 const MainPage = () => {
   return (
@@ -19,6 +20,7 @@ const MainPage = () => {
       <FAQ />
       <About />
       <Testimonials />
+      <Partners />
       <Contact />
     </>
   );
