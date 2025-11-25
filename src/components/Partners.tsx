@@ -3,8 +3,15 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import BoltIcon from "@mui/icons-material/Bolt";
 import Chip from "@mui/material/Chip";
+import { styled } from "@mui/material/styles";
 
 const Partners = () => {
+  const Logo = styled("img")({
+    border: "1px solid white",
+    borderRadius: "5px",
+    padding: "5%",
+  });
+
   return (
     <Container>
       <Chip
@@ -20,19 +27,19 @@ const Partners = () => {
         </Grid>
         <Grid size={5}></Grid>
       </Grid>
-      <Grid container spacing={2}>
+      <Grid container spacing={3}>
         <Grid size={2}></Grid>
         <Grid size={2}>
-          <img src="./images/logo_uon.png" className="w-100" />
+          <Logo src="./images/logo_uon.png" className="w-100" />
         </Grid>
         <Grid size={2}>
-          <img src="./images/NHS_Logo.png" className="w-100" />
+          <Logo src="./images/NHS_Logo.png" className="w-100" />
         </Grid>
         <Grid size={2}>
-          <img src="./images/logo_nihr.png" className="w-100" />
+          <Logo src="./images/logo_nihr.png" className="w-100" />
         </Grid>
         <Grid size={2}>
-          <img src="./images/logo_imh2.png" className="w-100" />
+          <Logo src="./images/logo_imh2.png" className="w-100" />
         </Grid>
         <Grid size={2}></Grid>
       </Grid>
