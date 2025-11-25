@@ -13,7 +13,7 @@ const Partners = () => {
   });
 
   return (
-    <Container>
+    <Container sx={{ mb: 6 }}>
       <Chip
         icon={<BoltIcon />}
         label="Partners"
@@ -27,21 +27,38 @@ const Partners = () => {
         </Grid>
         <Grid size={5}></Grid>
       </Grid>
-      <Grid container spacing={3}>
-        <Grid size={2}></Grid>
-        <Grid size={2}>
-          <Logo src="./images/logo_uon.png" className="w-100" />
+      <Grid
+        container
+        spacing={3}
+        sx={{ display: "flex", alignItems: "center", padding: "5%" }}
+      >
+        <Grid size={3}>
+          <img src="./images/logo_uon_dark.png" className="w-100" />
         </Grid>
-        <Grid size={2}>
-          <Logo src="./images/NHS_Logo.png" className="w-100" />
+        <Grid size={3}>
+          <img src="./images/NHS_Logo_bigger.png" className="w-100" />
         </Grid>
-        <Grid size={2}>
-          <Logo src="./images/logo_nihr.png" className="w-100" />
+        <Grid size={3}>
+          <img src="./images/logo_nihr.png" className="w-100" />
         </Grid>
-        <Grid size={2}>
-          <Logo src="./images/logo_imh2.png" className="w-100" />
+        <Grid size={3}>
+          <img src="./images/logo_imh2.png" className="w-100" />
         </Grid>
-        <Grid size={2}></Grid>
+        <Grid size={3}>
+          <img src="./images/ThrillLab.jpg" className="w-100" />
+        </Grid>
+        <Grid size={3}>
+          <img src="./images/ArtXR_Logo_white.png" className="w-100" />
+        </Grid>
+        <Grid size={3}>
+          <img src="./images/iosh.png" className="w-100" />
+        </Grid>
+        <Grid size={3}>
+          <img
+            src="./images/loughborough_logo_black_white.png"
+            className="w-100"
+          />
+        </Grid>
       </Grid>
     </Container>
   );
