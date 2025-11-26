@@ -8,6 +8,7 @@ import Testimonials from "../components/Testimonials";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Partners from "../components/Partners";
+import Footer from "../components/Footer";
 
 const MainPage = () => {
   return (
@@ -22,6 +23,7 @@ const MainPage = () => {
       <Testimonials />
       <Partners />
       <Contact />
+      <Footer />
     </>
   );
 };

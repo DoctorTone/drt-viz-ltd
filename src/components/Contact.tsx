@@ -113,7 +113,6 @@ const Contact = () => {
                     variant="outlined"
                     multiline
                     rows={4}
-                    maxRows={4}
                     sx={{ mb: 2 }}
                   />
                 </FormControl>
