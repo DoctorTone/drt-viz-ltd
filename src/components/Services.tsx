@@ -17,34 +17,35 @@ const Services = () => {
       />
       <Grid container spacing={0} sx={{ mt: 3 }}>
         <Grid size={6}>
+          <Typography variant="h2" sx={{ mb: 5 }}>
+            Our <span style={{ color: "orange" }}>expertise</span>.
+          </Typography>
+        </Grid>
+      </Grid>
+      <Grid container>
+        <Grid size={6}>
           <Typography variant="h4" sx={{ mb: 3 }}>
-            Improved decision making
+            3D Data Visualisation
           </Typography>
-          <Typography variant="h6" sx={{ mb: 3, color: "grey" }}>
-            Using 3D can reveal hidden insighst into your data.
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <LeaderboardIcon color="warning" /> We help organisations turn
+            complex, multi-dimensional data into interactive 3D experiences
+            people can explore and understand.
           </Typography>
-          <Box sx={{ mb: 3 }}>
-            <Typography variant="h6">
-              <LeaderboardIcon color="warning" /> Reveal new trends and
-              patterns.
-            </Typography>
-            <Typography variant="h6" color="grey">
-              Our advanced viz tools make complex data simple.
-            </Typography>
-          </Box>
-          <Box>
-            <Typography variant="h6">
-              <LeaderboardIcon color="warning" /> Reveal new trends and
-              patterns.
-            </Typography>
-            <Typography variant="h6" color="grey">
-              Our advanced viz tools make complex data simple.
-            </Typography>
-          </Box>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <LeaderboardIcon color="warning" /> Whether it's live real-world
+            data, scientific results, geospatial models, or historical trends,
+            we build visualisations that reveal patterns, support decisions, and
+            elevate communication.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 1 }}>
+            <LeaderboardIcon color="warning" /> Data does not have to be flat
+            anymore.
+          </Typography>
         </Grid>
         <Grid size={2}></Grid>
         <Grid size={4}>
-          <img src="./images/3dData.jpg" className="w-100" />
+          <img src="./images/3dData.jpg" className="borderedLight w-100" />
         </Grid>
       </Grid>
     </Container>
