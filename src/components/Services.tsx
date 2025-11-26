@@ -4,7 +4,8 @@ import BoltIcon from "@mui/icons-material/Bolt";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
-import Box from "@mui/material/Box";
+import HomeMaxIcon from "@mui/icons-material/HomeMax";
+import GroupsIcon from "@mui/icons-material/Groups";
 
 const Services = () => {
   return (
@@ -58,14 +59,14 @@ const Services = () => {
             Virtual Reality Development
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <LeaderboardIcon color="warning" /> We design and build immersive VR
+            <HomeMaxIcon color="warning" /> We design and build immersive VR
             applications that create memorable experiences. This can be
             extending data visualisations to enhance spatial relationships and
             hands-on interaction. Visualisations don't have to stop at the
             browser, you can truly step into your data.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <LeaderboardIcon color="warning" /> Broader experiences include
+            <HomeMaxIcon color="warning" /> Broader experiences include
             interactive training, product demos, architectural walkthroughs, and
             interactive educational content.
           </Typography>
@@ -77,12 +78,12 @@ const Services = () => {
             Consultancy
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <LeaderboardIcon color="warning" /> Stuck on direction, tools, or
+            <GroupsIcon color="warning" /> Stuck on direction, tools, or
             technical details? I provide independent guidance on architecture,
             tooling, and delivery for interactive 3D.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <LeaderboardIcon color="warning" /> We can help you make the right
+            <GroupsIcon color="warning" /> We can help you make the right
             choices across 3D data visualisation and general 3D/VR. We'll
             clarify goals, pick the right tech, and map a practical path to a
             working prototype or production app.
