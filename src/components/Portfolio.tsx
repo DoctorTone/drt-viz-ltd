@@ -13,8 +13,8 @@ const Portfolio = () => {
         variant="outlined"
         color="warning"
       />
-      <Typography variant="h2" sx={{ mb: 3, textAlign: "center" }}>
-        Visual Solutions
+      <Typography variant="h2" sx={{ mb: 3 }}>
+        Visual <span style={{ color: "orange" }}>Solutions</span>.
       </Typography>
       <Grid container spacing={6}>
         <Grid size={4} className="borderedLight">
