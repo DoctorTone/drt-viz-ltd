@@ -15,9 +15,13 @@ const Solutions = () => {
         label="Solutions"
         variant="outlined"
         color="warning"
+        sx={{ mb: 2 }}
       />
-      <Typography variant="h2" sx={{ mb: 3 }}>
+      <Typography variant="h2">
         Transform your <span style={{ color: "orange" }}>data</span>.
+      </Typography>
+      <Typography variant="h6" sx={{ color: "grey", mb: 4 }}>
+        See the advantages of visualising in three dimensions.
       </Typography>
       <Grid container spacing={2}>
         <Grid size={4}>

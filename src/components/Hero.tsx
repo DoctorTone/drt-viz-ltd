@@ -12,6 +12,7 @@ const Hero = () => {
         label="Home"
         variant="outlined"
         color="warning"
+        sx={{ mb: 2 }}
       />
       <Grid container spacing={6} sx={{ display: "flex" }}>
         <Grid size={6}>
@@ -19,10 +20,10 @@ const Hero = () => {
             Complex data made <span style={{ color: "orange" }}>simple</span>.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey" }}>
-            We can show your data in a whole new dimension.
+            See your data in a whole new dimension.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey" }}>
-            Using stunning 3D technology.
+            Interactive 3D visualisations that bring your data to life.
           </Typography>
         </Grid>
         <Grid size={6} className="bordered">
