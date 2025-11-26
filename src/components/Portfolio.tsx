@@ -3,6 +3,8 @@ import Chip from "@mui/material/Chip";
 import BoltIcon from "@mui/icons-material/Bolt";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
 
 const Portfolio = () => {
   return (
@@ -12,27 +14,84 @@ const Portfolio = () => {
         label="Portfolio"
         variant="outlined"
         color="warning"
+        sx={{ mb: 2 }}
       />
       <Typography variant="h2" sx={{ mb: 3 }}>
         Visual <span style={{ color: "orange" }}>Solutions</span>.
       </Typography>
       <Grid container spacing={6}>
-        <Grid size={4} className="borderedLight">
-          <video muted loop preload="auto" autoPlay className="w-100">
+        <Grid size={4} className="">
+          <video
+            muted
+            loop
+            preload="auto"
+            autoPlay
+            className="borderedLight w-100"
+          >
             <source src="./videos/PointCloud.mp4" type="video/mp4" />
           </video>
+          <Box sx={{ textAlign: "center" }}>
+            <Typography variant="h6" sx={{ mt: 1 }}>
+              Global lightning strikes
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "grey" }}>
+              Geospatial
+            </Typography>
+            <Button variant="contained" color="warning">
+              See Demo
+            </Button>
+          </Box>
         </Grid>
-        <Grid size={4} className="borderedLight">
-          <video muted loop preload="auto" autoPlay className="w-100">
+        <Grid size={4} className="">
+          <video
+            muted
+            loop
+            preload="auto"
+            autoPlay
+            className="borderedLight w-100"
+          >
             <source src="./videos/PointCloud.mp4" type="video/mp4" />
           </video>
+          <Box sx={{ textAlign: "center" }}>
+            <Typography variant="h6" sx={{ mt: 1 }}>
+              Sleep analysis
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "grey" }}>
+              Multi-dimensional
+            </Typography>
+            <Button variant="contained" color="warning">
+              See Demo
+            </Button>
+          </Box>
         </Grid>
-        <Grid size={4} className="borderedLight">
-          <video muted loop preload="auto" autoPlay className="w-100">
+        <Grid size={4} className="">
+          <video
+            muted
+            loop
+            preload="auto"
+            autoPlay
+            className="borderedLight w-100"
+          >
             <source src="./videos/PointCloud.mp4" type="video/mp4" />
           </video>
+          <Box sx={{ textAlign: "center" }}>
+            <Typography variant="h6" sx={{ mt: 1 }}>
+              City map
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "grey" }}>
+              Pointcloud
+            </Typography>
+            <Button variant="contained" color="warning">
+              See Demo
+            </Button>
+          </Box>
         </Grid>
       </Grid>
+      <Box sx={{ mt: 6, textAlign: "center" }}>
+        <Button variant="contained" color="warning">
+          See All Demos
+        </Button>
+      </Box>
     </Container>
   );
 };
