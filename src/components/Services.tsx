@@ -91,7 +91,7 @@ const Services = () => {
         </Grid>
         <Grid size={2}></Grid>
         <Grid size={4}>
-          <img src="./images/3dData.jpg" className="borderedLight w-100" />
+          <img src="./images/3D.png" className="borderedLight w-100" />
         </Grid>
       </Grid>
     </Container>
