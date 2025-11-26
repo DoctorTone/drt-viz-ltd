@@ -88,7 +88,7 @@ const Portfolio = () => {
         </Grid>
       </Grid>
       <Box sx={{ mt: 6, textAlign: "center" }}>
-        <Button variant="contained" color="warning">
+        <Button variant="outlined" color="warning">
           See Our Range of Demos
         </Button>
       </Box>
