@@ -13,19 +13,24 @@ const About = () => {
         label="About"
         variant="outlined"
         color="warning"
+        sx={{ mb: 2 }}
       />
-      <Grid container>
+      <Grid container sx={{ mb: 4 }}>
         <Grid size={6}>
           <Typography variant="h3" sx={{ mb: 3 }}>
-            Meet DRT.
+            Meet <span style={{ color: "orange" }}>DRT</span>.
           </Typography>
         </Grid>
         <Grid size={6}>
           <Typography variant="h6" color="grey">
             DRT Software was formed in 2015, with the aim of providing bespoke
-            3D data visualisations.
+            3D data visualisations. Since then we've worked with a host of
+            amazing people and companies in creating all sorts of visualisations
+            and virtual reality applications.
           </Typography>
         </Grid>
+      </Grid>
+      <Grid container>
         <Grid size={3}>
           <img src="./images/tony.jpg" className="w-100 profile" />
           <Typography variant="h6" sx={{ textAlign: "center" }}>
@@ -37,7 +42,14 @@ const About = () => {
         </Grid>
         <Grid size={1}></Grid>
         <Grid size={7}>
-          <Typography variant="h6">Hi, I'm Tony.</Typography>
+          <Typography variant="h6" sx={{ mt: 2 }}>
+            Hi, I'm Tony.<br></br> I'm a software developer with over 25 years
+            of experience building interactive 3D applications, specialising in
+            data visualisation and virtual reality. I help teams turn complex
+            datasets and ideas into immersive, engaging experiences. I've
+            partnered with industry, academia, startups, solopreneurs and
+            organisations to create stunning real-world applications.
+          </Typography>
         </Grid>
       </Grid>
     </Container>
