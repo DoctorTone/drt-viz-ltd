@@ -8,7 +8,7 @@ import Box from "@mui/material/Box";
 
 const Portfolio = () => {
   return (
-    <Container sx={{ mt: 10, mb: 10 }}>
+    <Container sx={{ mt: 10, mb: 6 }}>
       <Chip
         icon={<BoltIcon />}
         label="Portfolio"
@@ -89,7 +89,7 @@ const Portfolio = () => {
       </Grid>
       <Box sx={{ mt: 6, textAlign: "center" }}>
         <Button variant="contained" color="warning">
-          See All Demos
+          See Our Range of Demos
         </Button>
       </Box>
     </Container>

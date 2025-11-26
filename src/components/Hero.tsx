@@ -26,8 +26,8 @@ const Hero = () => {
             Interactive 3D visualisations that bring your data to life.
           </Typography>
         </Grid>
-        <Grid size={6} className="bordered">
-          <video muted loop preload="auto" autoPlay className="w-100">
+        <Grid size={6} className="">
+          <video muted loop preload="auto" autoPlay className=" bordered w-100">
             <source src="./videos/PointCloud.mp4" type="video/mp4" />
           </video>
         </Grid>
