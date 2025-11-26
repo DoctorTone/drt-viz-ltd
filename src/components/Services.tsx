@@ -22,7 +22,7 @@ const Services = () => {
           </Typography>
         </Grid>
       </Grid>
-      <Grid container>
+      <Grid container sx={{ mb: 4 }}>
         <Grid size={6}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             3D Data Visualisation
@@ -46,6 +46,29 @@ const Services = () => {
         <Grid size={2}></Grid>
         <Grid size={4}>
           <img src="./images/3dData.jpg" className="borderedLight w-100" />
+        </Grid>
+      </Grid>
+      <Grid container>
+        <Grid size={4}>
+          <img src="./images/VRDev.jpg" className="borderedLight w-100" />
+        </Grid>
+        <Grid size={2}></Grid>
+        <Grid size={6}>
+          <Typography variant="h4" sx={{ mb: 3 }}>
+            Virtual Reality Development
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <LeaderboardIcon color="warning" /> We design and build immersive VR
+            applications that create memorable experiences. This can be
+            extending data visualisations to enhance spatial relationships and
+            hands-on interaction. Visualisations don't have to stop at the
+            browser, you can truly step into your data.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <LeaderboardIcon color="warning" /> Broader experiences include
+            interactive training, product demos, architectural walkthroughs, and
+            interactive educational content.
+          </Typography>
         </Grid>
       </Grid>
     </Container>
