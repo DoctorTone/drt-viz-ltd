@@ -43,7 +43,8 @@ const Contact = () => {
       <Grid container>
         <Grid size={6}>
           <Typography variant="h3" sx={{ mb: 5 }}>
-            Let's give your project an extra dimension.
+            Let's give your project an extra{" "}
+            <span style={{ color: "orange" }}>dimension</span>.
           </Typography>
         </Grid>
       </Grid>

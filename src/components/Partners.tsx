@@ -22,7 +22,9 @@ const Partners = () => {
       />
       <Grid container spacing={0} sx={{ mb: 4 }}>
         <Grid size={7}>
-          <Typography variant="h3">Some of our collaborations.</Typography>
+          <Typography variant="h3">
+            Some of our <span style={{ color: "orange" }}>collaborations</span>.
+          </Typography>
         </Grid>
         <Grid size={5}></Grid>
       </Grid>
