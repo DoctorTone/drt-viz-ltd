@@ -21,15 +21,21 @@ const Portfolio = () => {
       </Typography>
       <Grid container spacing={6}>
         <Grid size={4} className="">
-          <video
-            muted
-            loop
-            preload="auto"
-            autoPlay
-            className="borderedLight w-100"
+          <a
+            href="https://drt-software.com/LightningViz/"
+            target="_blank"
+            rel="noreferrer noopener"
           >
-            <source src="./videos/Lightning.mp4" type="video/mp4" />
-          </video>
+            <video
+              muted
+              loop
+              preload="auto"
+              autoPlay
+              className="borderedLight w-100"
+            >
+              <source src="./videos/Lightning.mp4" type="video/mp4" />
+            </video>
+          </a>
           <Box sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ mt: 1 }}>
               Global lightning strikes
@@ -37,21 +43,33 @@ const Portfolio = () => {
             <Typography variant="subtitle1" sx={{ color: "grey" }}>
               Geospatial
             </Typography>
-            <Button variant="contained" color="warning">
+            <Button
+              variant="contained"
+              color="warning"
+              href="https://drt-software.com/LightningViz/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               See Demo
             </Button>
           </Box>
         </Grid>
         <Grid size={4} className="">
-          <video
-            muted
-            loop
-            preload="auto"
-            autoPlay
-            className="borderedLight w-100"
+          <a
+            href="https://www.drt-software.com/SleepViz/"
+            target="_blank"
+            rel="noreferrer noopener"
           >
-            <source src="./videos/Sleep.mp4" type="video/mp4" />
-          </video>
+            <video
+              muted
+              loop
+              preload="auto"
+              autoPlay
+              className="borderedLight w-100"
+            >
+              <source src="./videos/Sleep.mp4" type="video/mp4" />
+            </video>
+          </a>
           <Box sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ mt: 1 }}>
               Sleep analysis
@@ -59,21 +77,33 @@ const Portfolio = () => {
             <Typography variant="subtitle1" sx={{ color: "grey" }}>
               Multi-dimensional
             </Typography>
-            <Button variant="contained" color="warning">
+            <Button
+              variant="contained"
+              color="warning"
+              href="https://www.drt-software.com/SleepViz/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               See Demo
             </Button>
           </Box>
         </Grid>
         <Grid size={4} className="">
-          <video
-            muted
-            loop
-            preload="auto"
-            autoPlay
-            className="borderedLight w-100"
+          <a
+            href="https://drt-software.com/PointCloud/"
+            target="_blank"
+            rel="noreferrer noopener"
           >
-            <source src="./videos/PointCloud.mp4" type="video/mp4" />
-          </video>
+            <video
+              muted
+              loop
+              preload="auto"
+              autoPlay
+              className="borderedLight w-100"
+            >
+              <source src="./videos/PointCloud.mp4" type="video/mp4" />
+            </video>
+          </a>
           <Box sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ mt: 1 }}>
               City map
@@ -81,7 +111,13 @@ const Portfolio = () => {
             <Typography variant="subtitle1" sx={{ color: "grey" }}>
               Pointcloud
             </Typography>
-            <Button variant="contained" color="warning">
+            <Button
+              variant="contained"
+              color="warning"
+              href="https://drt-software.com/PointCloud/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               See Demo
             </Button>
           </Box>
