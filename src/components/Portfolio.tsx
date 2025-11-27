@@ -28,7 +28,7 @@ const Portfolio = () => {
             autoPlay
             className="borderedLight w-100"
           >
-            <source src="./videos/PointCloud.mp4" type="video/mp4" />
+            <source src="./videos/Lightning.mp4" type="video/mp4" />
           </video>
           <Box sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ mt: 1 }}>
@@ -50,7 +50,7 @@ const Portfolio = () => {
             autoPlay
             className="borderedLight w-100"
           >
-            <source src="./videos/PointCloud.mp4" type="video/mp4" />
+            <source src="./videos/Sleep.mp4" type="video/mp4" />
           </video>
           <Box sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ mt: 1 }}>
