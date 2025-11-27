@@ -6,6 +6,9 @@ import Grid from "@mui/material/Grid";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import HomeMaxIcon from "@mui/icons-material/HomeMax";
 import GroupsIcon from "@mui/icons-material/Groups";
+import EmailIcon from "@mui/icons-material/Email";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 
 const Services = () => {
   return (
@@ -45,13 +48,12 @@ const Services = () => {
             models, or historical trends, we build visualisations that reveal
             patterns, support decisions, and elevate communication.
           </Typography>
-          <Typography variant="h6" sx={{ color: "grey", mb: 1 }}>
-            <LeaderboardIcon
-              color="warning"
-              sx={{ verticalAlign: "sub", mr: 2 }}
-            />
-            Data does not have to be flat anymore.
-          </Typography>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <EmailIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <Button variant="contained" color="warning">
+              Contact Us
+            </Button>
+          </Box>
         </Grid>
         <Grid size={2}></Grid>
         <Grid size={4}>
@@ -69,16 +71,22 @@ const Services = () => {
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <HomeMaxIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-            We design and build immersive VR applications that create memorable
-            experiences. This can be extending data visualisations to enhance
-            spatial relationships and hands-on interaction. Visualisations don't
-            have to stop at the browser, you can truly step into your data.
+            We design and build immersive VR experiences. This can extend data
+            visualisations to enhance spatial relationships and hands-on
+            interaction. Visualisations aren't confined to the browser, you can
+            truly step into your data.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <HomeMaxIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             Broader experiences include interactive training, product demos,
             architectural walkthroughs, and interactive educational content.
           </Typography>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <EmailIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <Button variant="contained" color="warning">
+              Contact Us
+            </Button>
+          </Box>
         </Grid>
       </Grid>
       <Grid container sx={{ mb: 4 }}>
@@ -98,6 +106,12 @@ const Services = () => {
             and general 3D/VR. We'll clarify goals, pick the right tech, and map
             a practical path to a working prototype or production app.
           </Typography>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <EmailIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <Button variant="contained" color="warning">
+              Contact Us
+            </Button>
+          </Box>
         </Grid>
         <Grid size={2}></Grid>
         <Grid size={4}>
