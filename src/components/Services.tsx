@@ -29,19 +29,28 @@ const Services = () => {
             3D Data Visualisation
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <LeaderboardIcon color="warning" /> We help organisations turn
-            complex, multi-dimensional data into interactive 3D experiences
-            people can explore and understand.
+            <LeaderboardIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
+            We help organisations turn complex, multi-dimensional data into
+            interactive 3D experiences people can explore and understand.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <LeaderboardIcon color="warning" /> Whether it's live real-world
-            data, scientific results, geospatial models, or historical trends,
-            we build visualisations that reveal patterns, support decisions, and
-            elevate communication.
+            <LeaderboardIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
+            Whether it's live real-world data, scientific results, geospatial
+            models, or historical trends, we build visualisations that reveal
+            patterns, support decisions, and elevate communication.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 1 }}>
-            <LeaderboardIcon color="warning" /> Data does not have to be flat
-            anymore.
+            <LeaderboardIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
+            Data does not have to be flat anymore.
           </Typography>
         </Grid>
         <Grid size={2}></Grid>
@@ -59,16 +68,16 @@ const Services = () => {
             Virtual Reality Development
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <HomeMaxIcon color="warning" /> We design and build immersive VR
-            applications that create memorable experiences. This can be
-            extending data visualisations to enhance spatial relationships and
-            hands-on interaction. Visualisations don't have to stop at the
-            browser, you can truly step into your data.
+            <HomeMaxIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            We design and build immersive VR applications that create memorable
+            experiences. This can be extending data visualisations to enhance
+            spatial relationships and hands-on interaction. Visualisations don't
+            have to stop at the browser, you can truly step into your data.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <HomeMaxIcon color="warning" /> Broader experiences include
-            interactive training, product demos, architectural walkthroughs, and
-            interactive educational content.
+            <HomeMaxIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            Broader experiences include interactive training, product demos,
+            architectural walkthroughs, and interactive educational content.
           </Typography>
         </Grid>
       </Grid>
@@ -78,15 +87,16 @@ const Services = () => {
             Consultancy
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <GroupsIcon color="warning" /> Stuck on direction, tools, or
-            technical details? I provide independent guidance on architecture,
-            tooling, and delivery for interactive 3D.
+            <GroupsIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            Stuck on direction, tools, or technical details? I provide
+            independent guidance on architecture, tooling, and delivery for
+            interactive 3D.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <GroupsIcon color="warning" /> We can help you make the right
-            choices across 3D data visualisation and general 3D/VR. We'll
-            clarify goals, pick the right tech, and map a practical path to a
-            working prototype or production app.
+            <GroupsIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            We can help you make the right choices across 3D data visualisation
+            and general 3D/VR. We'll clarify goals, pick the right tech, and map
+            a practical path to a working prototype or production app.
           </Typography>
         </Grid>
         <Grid size={2}></Grid>
