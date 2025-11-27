@@ -5,7 +5,7 @@ import BoltIcon from "@mui/icons-material/Bolt";
 import Chip from "@mui/material/Chip";
 import { styled } from "@mui/material/styles";
 
-const IMG_WIDTH = 1.5;
+const IMG_WIDTH = 2;
 const Partners = () => {
   const Logo = styled("img")({
     width: "100%",
@@ -20,7 +20,7 @@ const Partners = () => {
         color="warning"
         sx={{ mb: 3 }}
       />
-      <Grid container spacing={0} sx={{ mb: 4 }}>
+      <Grid container sx={{ mb: 4 }}>
         <Grid size={7}>
           <Typography variant="h3">
             Some of our <span style={{ color: "orange" }}>collaborations</span>.
@@ -34,25 +34,28 @@ const Partners = () => {
         sx={{ display: "flex", alignItems: "center", padding: "0%" }}
       >
         <Grid size={IMG_WIDTH}>
-          <Logo src="./images/logo_uon_dark.png" />
+          <Logo src="./images/logo_uon_dark_grey.jpg" />
         </Grid>
         <Grid size={IMG_WIDTH}>
-          <Logo src="./images/NHS_Logo_bigger.png" />
+          <Logo src="./images/NHS_grey.jpg" />
         </Grid>
         <Grid size={IMG_WIDTH}>
-          <Logo src="./images/logo_nihr.png" />
+          <Logo src="./images/logo_nihr_grey.png" />
         </Grid>
         <Grid size={IMG_WIDTH}>
-          <Logo src="./images/logo_imh2.png" />
+          <Logo src="./images/logo_imh2_grey.png" />
         </Grid>
         <Grid size={IMG_WIDTH}>
-          <Logo src="./images/ThrillLab.jpg" />
+          <Logo src="./images/Digilabs_grey.png" />
+        </Grid>
+        <Grid size={IMG_WIDTH}>
+          <Logo src="./images/ThrillLab_grey.jpg" />
         </Grid>
         <Grid size={IMG_WIDTH}>
           <Logo src="./images/artxr_full.png" />
         </Grid>
         <Grid size={IMG_WIDTH}>
-          <Logo src="./images/iosh.png" />
+          <Logo src="./images/iosh_grey.png" />
         </Grid>
         <Grid size={IMG_WIDTH}>
           <Logo src="./images/loughborough_logo_black_white.png" />
