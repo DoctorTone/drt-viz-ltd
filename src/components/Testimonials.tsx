@@ -33,7 +33,12 @@ const Testimonials = () => {
               <StarIcon color="warning" />
               <StarIcon color="warning" />
               <Typography variant="h6" sx={{ mb: 3 }} color="grey">
-                Tony was great...
+                "I have worked with Tony for a number of years developing a VR
+                platform. His skill level and expertise is second to none and he
+                is the upmost professional with business interactions and the
+                process of solving problems. Always a gentleman and a pleasure
+                to work with, I genuinely enjoy working with Tony and always
+                look forward to our projects together."
               </Typography>
               <Typography variant="h6">Eric, ArtXR</Typography>
             </CardContent>
@@ -56,9 +61,17 @@ const Testimonials = () => {
               <StarIcon color="warning" />
               <StarIcon color="warning" />
               <Typography variant="h6" sx={{ mb: 3 }} color="grey">
-                Tony was great...
+                "I've worked with Tony for many years, but our most recent
+                project was a web application that was used to successfully
+                deliver three clinical trials. Tony's work was robust enough to
+                be accredited by a clinical trials unit, which is a success in
+                itself, and he worked flexibly and responsibly with a graphic
+                design to produce a web application that was highly usable for
+                people with disabilities. Thoroughly recommended."
               </Typography>
-              <Typography variant="h6">Eric, ArtXR</Typography>
+              <Typography variant="h6">
+                Stefan, Nottingham University
+              </Typography>
             </CardContent>
           </Card>
         </Grid>
