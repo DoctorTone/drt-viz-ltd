@@ -11,7 +11,7 @@ import { styled } from "@mui/material/styles";
 
 const FAQ = () => {
   const DataAccordian = styled(Accordion)({
-    background: "#0a0401",
+    background: "black",
     color: "white",
     border: "1px solid rgba(255, 255, 255, 0.3)",
     borderRadius: "15px",
@@ -29,11 +29,11 @@ const FAQ = () => {
       />
       <Grid container>
         <Grid size={6}>
-          <Typography variant="h2">
+          <Typography variant="h2" sx={{ mb: 2 }}>
             Frequently asked <span style={{ color: "orange" }}>questions</span>.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey" }}>
-            Why 3D is the best way to visualise your data.
+            See why 3D is the best way to visualise your data.
           </Typography>
         </Grid>
         <Grid size={6}>
