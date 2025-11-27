@@ -49,15 +49,26 @@ const About = () => {
             Founder
           </Typography>
         </Grid>
-        <Grid size={1}></Grid>
-        <Grid size={7}>
-          <Typography variant="h6" sx={{ mt: 2 }}>
-            Hi, I'm Tony.<br></br> I'm a software developer with over 25 years
-            of experience building interactive 3D applications, specialising in
-            data visualisation and virtual reality. I help teams turn complex
-            datasets and ideas into immersive, engaging experiences. I've
-            partnered with industry, academia, startups, solopreneurs and
-            organisations to create stunning real-world applications.
+        <Grid size={2}></Grid>
+        <Grid
+          size={7}
+          sx={{
+            border: "1px solid rgba(255, 255, 255, 0.25)",
+            borderRadius: "20px",
+            backgroundColor: "black",
+            padding: "25px",
+          }}
+        >
+          <Typography variant="h6" sx={{ mt: 2, mb: 2 }}>
+            Hi, I'm Tony.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey" }}>
+            I'm a software developer with over 25 years of experience building
+            interactive 3D applications, specialising in data visualisation and
+            virtual reality. I help teams turn complex datasets and ideas into
+            immersive, engaging experiences. I've partnered with industry,
+            academia, startups, solopreneurs and organisations to create
+            stunning real-world applications.
           </Typography>
         </Grid>
       </Grid>
