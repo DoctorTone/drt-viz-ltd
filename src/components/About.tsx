@@ -15,19 +15,28 @@ const About = () => {
         color="warning"
         sx={{ mb: 2 }}
       />
-      <Grid container sx={{ mb: 4 }}>
+      <Grid container sx={{ mb: 6 }}>
         <Grid size={6}>
           <Typography variant="h3" sx={{ mb: 3 }}>
             Meet <span style={{ color: "orange" }}>DRT</span>.
           </Typography>
-        </Grid>
-        <Grid size={6}>
-          <Typography variant="h6" color="grey">
-            DRT Software was formed in 2015, with the aim of providing bespoke
-            3D data visualisations. Since then we've worked with a host of
-            amazing people and companies in creating all sorts of visualisations
-            and virtual reality applications.
+          <Typography variant="h6" sx={{ color: "orange" }}>
+            2015
           </Typography>
+          <Typography variant="h4" sx={{ color: "white", mb: 2 }}>
+            Created to visualise.
+          </Typography>
+          <Typography variant="h6" color="grey">
+            DRT Software was formed in 2015 with the aim of creating bespoke 3D
+            data visualisations. Since then, we've collaborated with a wide
+            range of clients across sectors including geospatial, climate,
+            sports, medical, music, art and research. We've helped turn their
+            complex data into clear and meaningful visuals.
+          </Typography>
+        </Grid>
+        <Grid size={2.5}></Grid>
+        <Grid size={3.5}>
+          <img src="./images/3DBarChart.png" className="borderedLight w-100" />
         </Grid>
       </Grid>
       <Grid container>

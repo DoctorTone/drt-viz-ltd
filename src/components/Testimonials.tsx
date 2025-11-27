@@ -11,7 +11,8 @@ const Testimonials = () => {
       <Grid container spacing={2}>
         <Grid size={6}>
           <Typography variant="h3" sx={{ mb: 5 }}>
-            What our clients say about us.
+            What our clients say about{" "}
+            <span style={{ color: "orange" }}>us</span>.
           </Typography>
         </Grid>
         <Grid size={6}></Grid>
