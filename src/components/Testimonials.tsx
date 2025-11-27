@@ -7,7 +7,7 @@ import StarIcon from "@mui/icons-material/Star";
 
 const Testimonials = () => {
   return (
-    <Container sx={{ mb: 6 }}>
+    <Container sx={{ mb: 10 }}>
       <Grid container spacing={2}>
         <Grid size={6}>
           <Typography variant="h3" sx={{ mb: 5 }}>
@@ -24,6 +24,7 @@ const Testimonials = () => {
               color: "white",
               border: "1px solid rgba(255, 255, 255, 0.25)",
               borderRadius: "10px",
+              height: "100%",
             }}
           >
             <CardContent>
@@ -52,6 +53,7 @@ const Testimonials = () => {
               color: "white",
               border: "1px solid rgba(255, 255, 255, 0.25)",
               borderRadius: "10px",
+              height: "100%",
             }}
           >
             <CardContent>
