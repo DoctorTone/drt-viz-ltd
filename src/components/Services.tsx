@@ -9,8 +9,16 @@ import GroupsIcon from "@mui/icons-material/Groups";
 import EmailIcon from "@mui/icons-material/Email";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import gsap from "gsap";
 
 const Services = () => {
+  const animate = () => {
+    gsap.to(window, {
+      duration: 2,
+      scrollTo: { y: "#section7", offsetY: 100 },
+    });
+  };
+
   return (
     <Container id="section4" sx={{ mb: 6 }}>
       <Chip
@@ -51,7 +59,7 @@ const Services = () => {
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <EmailIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-            <Button variant="contained" color="warning">
+            <Button variant="contained" color="warning" onClick={animate}>
               Contact Us
             </Button>
           </Box>
@@ -84,7 +92,7 @@ const Services = () => {
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <EmailIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-            <Button variant="contained" color="warning">
+            <Button variant="contained" color="warning" onClick={animate}>
               Contact Us
             </Button>
           </Box>
@@ -109,7 +117,7 @@ const Services = () => {
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <EmailIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-            <Button variant="contained" color="warning">
+            <Button variant="contained" color="warning" onClick={animate}>
               Contact Us
             </Button>
           </Box>
