@@ -18,8 +18,9 @@ const Services = () => {
         label="Services"
         variant="outlined"
         color="warning"
+        sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
-      <Grid container spacing={0} sx={{ mt: 3 }}>
+      <Grid container spacing={0}>
         <Grid size={6}>
           <Typography variant="h2" sx={{ mb: 5 }}>
             Our <span style={{ color: "orange" }}>expertise</span>.

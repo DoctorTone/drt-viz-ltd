@@ -14,7 +14,7 @@ const Portfolio = () => {
         label="Portfolio"
         variant="outlined"
         color="warning"
-        sx={{ mb: 2 }}
+        sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
       <Typography variant="h2" sx={{ mb: 3 }}>
         Visual <span style={{ color: "orange" }}>Solutions</span>.

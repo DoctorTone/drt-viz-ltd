@@ -25,7 +25,7 @@ const FAQ = () => {
         label="FAQ"
         variant="outlined"
         color="warning"
-        sx={{ mb: 2 }}
+        sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
       <Grid container>
         <Grid size={6}>

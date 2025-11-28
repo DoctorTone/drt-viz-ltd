@@ -35,7 +35,7 @@ const Partners = () => {
         label="Partners"
         variant="outlined"
         color="warning"
-        sx={{ mb: 3 }}
+        sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
       <Grid container sx={{ mb: 8 }}>
         <Grid size={7}>

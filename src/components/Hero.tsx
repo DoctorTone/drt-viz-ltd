@@ -10,9 +10,9 @@ const Hero = () => {
       <Chip
         icon={<BoltIcon />}
         label="Home"
-        variant="outlined"
         color="warning"
-        sx={{ mb: 2 }}
+        variant="outlined"
+        sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
       <Grid container spacing={6} sx={{ display: "flex" }}>
         <Grid size={6}>

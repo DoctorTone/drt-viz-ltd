@@ -12,7 +12,7 @@ const About = () => {
         label="About"
         variant="outlined"
         color="warning"
-        sx={{ mb: 2 }}
+        sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
       <Grid container sx={{ mb: 6 }}>
         <Grid size={6}>

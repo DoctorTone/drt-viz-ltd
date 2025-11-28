@@ -15,7 +15,7 @@ const Solutions = () => {
         label="Solutions"
         variant="outlined"
         color="warning"
-        sx={{ mb: 2 }}
+        sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
       <Typography variant="h2">
         Transform your <span style={{ color: "orange" }}>data</span>.
