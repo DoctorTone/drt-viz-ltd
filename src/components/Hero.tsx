@@ -6,7 +6,7 @@ import BoltIcon from "@mui/icons-material/Bolt";
 
 const Hero = () => {
   return (
-    <Container sx={{ mt: 12 }}>
+    <Container id="section1" sx={{ mt: 12 }}>
       <Chip
         icon={<BoltIcon />}
         label="Home"

@@ -19,7 +19,7 @@ const FAQ = () => {
   });
 
   return (
-    <Container sx={{ mb: 6 }}>
+    <Container id="section5" sx={{ mb: 6 }}>
       <Chip
         icon={<BoltIcon />}
         label="FAQ"

@@ -8,7 +8,7 @@ import Box from "@mui/material/Box";
 
 const Portfolio = () => {
   return (
-    <Container sx={{ mt: 10, mb: 6 }}>
+    <Container id="section3" sx={{ mt: 10, mb: 6 }}>
       <Chip
         icon={<BoltIcon />}
         label="Portfolio"

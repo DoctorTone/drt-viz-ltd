@@ -9,7 +9,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 
 const Solutions = () => {
   return (
-    <Container sx={{ mt: 10, mb: 10 }}>
+    <Container id="section2" sx={{ mt: 10, mb: 10 }}>
       <Chip
         icon={<BoltIcon />}
         label="Solutions"

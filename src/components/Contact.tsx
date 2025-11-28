@@ -32,7 +32,7 @@ const Contact = () => {
   });
 
   return (
-    <Container sx={{ mb: 10 }}>
+    <Container id="section7" sx={{ mb: 10 }}>
       <Chip
         icon={<BoltIcon />}
         label="Contact"

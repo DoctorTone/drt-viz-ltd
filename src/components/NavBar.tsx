@@ -2,8 +2,24 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import AppBar from "@mui/material/AppBar";
 import Typography from "@mui/material/Typography";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
 
 const NavBar = () => {
+  gsap.registerPlugin(ScrollToPlugin);
+
+  useGSAP(() => {
+    document.querySelectorAll(".section").forEach((link, index) => {
+      link.addEventListener("click", () => {
+        gsap.to(window, {
+          duration: 2,
+          scrollTo: { y: "#section" + (index + 1), offsetY: 100 },
+        });
+      });
+    });
+  }, []);
+
   return (
     <AppBar
       position="sticky"

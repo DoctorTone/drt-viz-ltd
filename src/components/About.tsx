@@ -6,7 +6,7 @@ import Grid from "@mui/material/Grid";
 
 const About = () => {
   return (
-    <Container sx={{ mt: 10, mb: 6 }}>
+    <Container id="section6" sx={{ mt: 10, mb: 6 }}>
       <Chip
         icon={<BoltIcon />}
         label="About"
