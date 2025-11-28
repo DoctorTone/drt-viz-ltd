@@ -66,7 +66,11 @@ const Contact = () => {
               <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
                 We aim to respond within one working day.
               </Typography>
-              <Box component="form">
+              <Box
+                component="form"
+                action="https://usebasin.com/f/da50ea670849"
+                method="POST"
+              >
                 <FormControl className="w-100">
                   <Typography variant="h6" sx={{ color: "white" }}>
                     Name
@@ -75,6 +79,7 @@ const Contact = () => {
                     required
                     id="outlined-required"
                     placeholder="Your name"
+                    name="userName"
                     fullWidth
                     variant="outlined"
                     sx={{ mb: 2 }}
@@ -88,6 +93,8 @@ const Contact = () => {
                     placeholder="Your email address"
                     fullWidth
                     variant="outlined"
+                    type="email"
+                    name="userEmail"
                     sx={{ mb: 2 }}
                   />
                   <Typography variant="h6" sx={{ color: "white" }}>
@@ -98,6 +105,7 @@ const Contact = () => {
                     id="outlined-required"
                     color="warning"
                     placeholder="Your phone number"
+                    name="userPhone"
                     fullWidth
                     variant="outlined"
                     sx={{ mb: 2 }}
@@ -110,6 +118,7 @@ const Contact = () => {
                     id="outlined-required"
                     color="warning"
                     placeholder="Your message"
+                    name="userText"
                     fullWidth
                     variant="outlined"
                     multiline
@@ -117,10 +126,15 @@ const Contact = () => {
                     sx={{ mb: 2 }}
                   />
                 </FormControl>
+                <Button
+                  type="submit"
+                  variant="contained"
+                  color="warning"
+                  sx={{ mb: 2 }}
+                >
+                  Submit
+                </Button>
               </Box>
-              <Button variant="contained" color="warning" sx={{ mb: 2 }}>
-                Submit
-              </Button>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 All information is 100% private.
               </Typography>
