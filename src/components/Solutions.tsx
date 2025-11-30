@@ -5,7 +5,12 @@ import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
-import SettingsIcon from "@mui/icons-material/Settings";
+import InsightsIcon from "@mui/icons-material/Insights";
+import BarChartIcon from "@mui/icons-material/BarChart";
+import LightbulbIcon from "@mui/icons-material/Lightbulb";
+import ScaleIcon from "@mui/icons-material/Scale";
+import AnnouncementIcon from "@mui/icons-material/Announcement";
+import PsychologyIcon from "@mui/icons-material/Psychology";
 
 const Solutions = () => {
   return (
@@ -35,7 +40,7 @@ const Solutions = () => {
             }}
           >
             <CardContent>
-              <SettingsIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
+              <InsightsIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Deeper Insights</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 The additional space allows patterns, trends and relationships
@@ -55,7 +60,7 @@ const Solutions = () => {
             }}
           >
             <CardContent>
-              <SettingsIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
+              <BarChartIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Data Complexity</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 Complex, real-world, multi-dimensional data may be displayed and
@@ -75,7 +80,7 @@ const Solutions = () => {
             }}
           >
             <CardContent>
-              <SettingsIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
+              <PsychologyIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Engagement</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 Interactive 3D content makes data easier to understand and
@@ -95,7 +100,7 @@ const Solutions = () => {
             }}
           >
             <CardContent>
-              <SettingsIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
+              <ScaleIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Decision Making</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 Insights that are clear and easy to interpret lead to quicker
@@ -115,7 +120,7 @@ const Solutions = () => {
             }}
           >
             <CardContent>
-              <SettingsIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
+              <LightbulbIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Innovation</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 3D environments can reveal information that traditional 2D
@@ -135,7 +140,11 @@ const Solutions = () => {
             }}
           >
             <CardContent>
-              <SettingsIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
+              <AnnouncementIcon
+                color="warning"
+                sx={{ mb: 5 }}
+                fontSize="large"
+              />
               <Typography variant="h5">Communications</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 Engaging visualisations present data in a way that drives
