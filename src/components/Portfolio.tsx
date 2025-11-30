@@ -5,8 +5,10 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
+import { useNavigate } from "react-router-dom";
 
 const Portfolio = () => {
+  const navigate = useNavigate();
   return (
     <Container id="section3" sx={{ mt: 10, mb: 6 }}>
       <Chip
@@ -124,7 +126,11 @@ const Portfolio = () => {
         </Grid>
       </Grid>
       <Box sx={{ mt: 6, textAlign: "center" }}>
-        <Button variant="outlined" color="warning">
+        <Button
+          variant="outlined"
+          color="warning"
+          onClick={() => navigate("/dataviz")}
+        >
           See Our Range of Demos
         </Button>
       </Box>
