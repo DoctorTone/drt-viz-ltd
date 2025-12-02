@@ -52,18 +52,10 @@ const NavBar = () => {
               display: "flex",
               gap: "50px",
               flexGrow: 1,
-              justifyContent: "flex-end",
+              justifyContent: "center",
               alignItems: "center",
             }}
           >
-            <Typography
-              variant="h6"
-              component="a"
-              href="mailto:enquiries@drt-software.com"
-              sx={{ textDecoration: "none", color: "orange" }}
-            >
-              enquiries@drt-software.com
-            </Typography>
             <Typography
               variant="h6"
               className="section"
@@ -135,7 +127,7 @@ const NavBar = () => {
               className="section"
               sx={{
                 textDecoration: "none",
-                color: "#a8a8a8",
+                color: "orange",
                 cursor: "pointer",
               }}
             >

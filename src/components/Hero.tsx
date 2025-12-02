@@ -28,7 +28,7 @@ const Hero = () => {
         </Grid>
         <Grid size={6} className="">
           <video muted loop preload="auto" autoPlay className=" bordered w-100">
-            <source src="./videos/PointCloud.mp4" type="video/mp4" />
+            <source src="./videos/Lightning.mp4" type="video/mp4" />
           </video>
         </Grid>
       </Grid>
