@@ -1,9 +1,9 @@
-import NavBar from "../components/NavBar";
+import NavBarDataViz from "../components/NavBarDataViz";
 
 const DataViz = () => {
   return (
     <>
-      <NavBar />
+      <NavBarDataViz />
     </>
   );
 };
