@@ -124,12 +124,7 @@ const Portfolio = () => {
         </Grid>
       </Grid>
       <Box sx={{ mt: 6, textAlign: "center" }}>
-        <Button
-          variant="outlined"
-          color="warning"
-          href="/dataviz"
-          onClick={() => window.scrollTo(0, 0)}
-        >
+        <Button variant="outlined" color="warning" href="/dataviz">
           See Our Range of Demos
         </Button>
       </Box>

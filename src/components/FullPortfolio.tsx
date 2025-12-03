@@ -120,7 +120,7 @@ const FullPortfolio = () => {
       <Grid container>
         <Grid size={6}>
           <Typography variant="h6" sx={{ color: "grey" }}>
-            We've helped many companies showcase their data in a whole new
+            See how we've helped companies showcase their data in a whole new
             light.
           </Typography>
         </Grid>

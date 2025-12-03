@@ -58,12 +58,7 @@ const NavBarDataViz = () => {
             }}
           >
             <Typography variant="h6" className="section links">
-              <a href="/" onClick={() => window.scrollTo(0, 0)}>
-                Home
-              </a>
-            </Typography>
-            <Typography variant="h6" className="section links">
-              <a href="/#section3">Back to Portfolio</a>
+              <a href="/">Home</a>
             </Typography>
             <Typography
               variant="h6"

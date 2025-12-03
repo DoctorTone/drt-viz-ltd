@@ -9,10 +9,11 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import Partners from "../components/Partners";
 import Footer from "../components/Footer";
+import { PageTransition } from "../components/PageTransition";
 
 const MainPage = () => {
   return (
-    <>
+    <PageTransition>
       <NavBar />
       <Hero />
       <Solutions />
@@ -24,7 +25,7 @@ const MainPage = () => {
       <Partners />
       <Contact />
       <Footer />
-    </>
+    </PageTransition>
   );
 };
 

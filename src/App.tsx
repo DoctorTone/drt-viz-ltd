@@ -1,16 +1,13 @@
-import MainPage from "../src/pages/MainPage";
-import { Routes, Route } from "react-router-dom";
-import DataViz from "../src/pages/DataViz";
-import { ScrollToHash } from "./components/ScrollToHash";
+import { BrowserRouter } from "react-router-dom";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
   return (
     <>
-      <ScrollToHash />
-      <Routes>
-        <Route path="/*" element={<MainPage />} />
-        <Route path="/dataviz" element={<DataViz />} />
-      </Routes>
+      <BrowserRouter>
+        {/* <ScrollToHash /> */}
+        <AnimatedRoutes />
+      </BrowserRouter>
     </>
   );
 }
