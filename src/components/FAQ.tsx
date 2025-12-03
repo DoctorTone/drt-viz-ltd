@@ -97,6 +97,37 @@ const FAQ = () => {
               </Typography>
             </AccordionDetails>
           </DataAccordian>
+          <DataAccordian>
+            <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
+              <Typography variant="h6">
+                I always thought the gratuitous use of 3D was discouraged?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography variant="h6" sx={{ color: "grey" }}>
+                It used to be. It doesn't work for static images as the data
+                becomes difficult to see as parts of it are occluded. We build
+                fully interactive applications where you can examine the data in
+                detail, making the analysis easier.
+              </Typography>
+            </AccordionDetails>
+          </DataAccordian>
+          <DataAccordian>
+            <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
+              <Typography variant="h6">
+                Isn't 3D just style over substance? Pretty graphics hiding the
+                real data?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography variant="h6" sx={{ color: "grey" }}>
+                NO! The visual detail helps emphasise the data and can showcase
+                it in new and innovative ways that a chart could never do! Some
+                data is naturally 3D and can be situated in a much better
+                context to increase understanding.
+              </Typography>
+            </AccordionDetails>
+          </DataAccordian>
         </Grid>
       </Grid>
     </Container>
