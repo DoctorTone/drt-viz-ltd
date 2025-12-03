@@ -10,8 +10,9 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { styled } from "@mui/material/styles";
 
+const TIMEOUT = 500;
 const FAQ = () => {
-  const [expanded, setExpanded] = useState<string | false>("");
+  const [expanded, setExpanded] = useState<string | false>(false);
 
   const handleChange =
     (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
@@ -24,6 +25,8 @@ const FAQ = () => {
     border: "1px solid rgba(255, 255, 255, 0.3)",
     borderRadius: "15px",
     marginBottom: "3%",
+    "&:first-of-type": { borderRadius: "15px" },
+    "&:last-of-type": { borderRadius: "15px" },
   });
 
   return (
@@ -48,6 +51,13 @@ const FAQ = () => {
           <DataAccordian
             expanded={expanded === "panel1"}
             onChange={handleChange("panel1")}
+            slotProps={{
+              transition: {
+                unmountOnExit: true,
+                timeout: TIMEOUT, // optional
+                appear: true, // optional
+              },
+            }}
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
@@ -66,6 +76,13 @@ const FAQ = () => {
           <DataAccordian
             expanded={expanded === "panel2"}
             onChange={handleChange("panel2")}
+            slotProps={{
+              transition: {
+                unmountOnExit: true,
+                timeout: TIMEOUT, // optional
+                appear: true, // optional
+              },
+            }}
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
@@ -83,6 +100,13 @@ const FAQ = () => {
           <DataAccordian
             expanded={expanded === "panel3"}
             onChange={handleChange("panel3")}
+            slotProps={{
+              transition: {
+                unmountOnExit: true,
+                timeout: TIMEOUT, // optional
+                appear: true, // optional
+              },
+            }}
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
@@ -101,6 +125,13 @@ const FAQ = () => {
           <DataAccordian
             expanded={expanded === "panel4"}
             onChange={handleChange("panel4")}
+            slotProps={{
+              transition: {
+                unmountOnExit: true,
+                timeout: TIMEOUT, // optional
+                appear: true, // optional
+              },
+            }}
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
@@ -120,6 +151,13 @@ const FAQ = () => {
           <DataAccordian
             expanded={expanded === "panel5"}
             onChange={handleChange("panel5")}
+            slotProps={{
+              transition: {
+                unmountOnExit: true,
+                timeout: TIMEOUT, // optional
+                appear: true, // optional
+              },
+            }}
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
@@ -138,6 +176,13 @@ const FAQ = () => {
           <DataAccordian
             expanded={expanded === "panel6"}
             onChange={handleChange("panel6")}
+            slotProps={{
+              transition: {
+                unmountOnExit: true,
+                timeout: TIMEOUT, // optional
+                appear: true, // optional
+              },
+            }}
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
@@ -151,6 +196,28 @@ const FAQ = () => {
                 it in new and innovative ways that a chart could never do! Some
                 data is naturally 3D and can be situated in a much better
                 context to increase understanding.
+              </Typography>
+            </AccordionDetails>
+          </DataAccordian>
+          <DataAccordian
+            expanded={expanded === "panel7"}
+            onChange={handleChange("panel7")}
+            slotProps={{
+              transition: {
+                unmountOnExit: true,
+                timeout: TIMEOUT, // optional
+                appear: true, // optional
+              },
+            }}
+          >
+            <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
+              <Typography variant="h6">
+                Why don't you make an app that I can drop my data into?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography variant="h6" sx={{ color: "grey" }}>
+                Watch this space!!!......
               </Typography>
             </AccordionDetails>
           </DataAccordian>
