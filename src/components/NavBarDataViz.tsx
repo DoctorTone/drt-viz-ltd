@@ -58,29 +58,13 @@ const NavBarDataViz = () => {
               alignItems: "center",
             }}
           >
-            <Typography
-              variant="h6"
-              className="section links"
-              sx={{
-                textDecoration: "none",
-                color: "#a8a8a8",
-                cursor: "pointer",
-              }}
-            >
+            <Typography variant="h6" className="section links">
               <a href="/" onClick={() => window.scrollTo(0, 0)}>
                 Home
               </a>
             </Typography>
-            <Typography
-              variant="h6"
-              className="section"
-              sx={{
-                textDecoration: "none",
-                color: "#a8a8a8",
-                cursor: "pointer",
-              }}
-            >
-              Back to Portfolio
+            <Typography variant="h6" className="section links">
+              <a href="/#section3">Back to Portfolio</a>
             </Typography>
             <Typography
               variant="h6"
