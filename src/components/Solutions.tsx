@@ -8,7 +8,7 @@ import Grid from "@mui/material/Grid";
 import InsightsIcon from "@mui/icons-material/Insights";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
-import ScaleIcon from "@mui/icons-material/Scale";
+import BalanceIcon from "@mui/icons-material/Balance";
 import AnnouncementIcon from "@mui/icons-material/Announcement";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import { styled } from "@mui/material/styles";
@@ -77,7 +77,7 @@ const Solutions = () => {
         <Grid size={4}>
           <DataCard variant="outlined">
             <CardContent>
-              <ScaleIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
+              <BalanceIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Decision Making</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 Insights that are clear and easy to interpret lead to quicker
