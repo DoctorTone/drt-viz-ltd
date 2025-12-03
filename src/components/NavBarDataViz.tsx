@@ -5,8 +5,10 @@ import Typography from "@mui/material/Typography";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
+import { useNavigate } from "react-router-dom";
 
 const NavBarDataViz = () => {
+  const navigate = useNavigate();
   gsap.registerPlugin(ScrollToPlugin);
 
   useGSAP(() => {
@@ -58,14 +60,16 @@ const NavBarDataViz = () => {
           >
             <Typography
               variant="h6"
-              className="section"
+              className="section links"
               sx={{
                 textDecoration: "none",
                 color: "#a8a8a8",
                 cursor: "pointer",
               }}
             >
-              Home
+              <a href="/" onClick={() => window.scrollTo(0, 0)}>
+                Home
+              </a>
             </Typography>
             <Typography
               variant="h6"

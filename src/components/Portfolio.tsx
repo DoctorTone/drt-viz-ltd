@@ -129,7 +129,8 @@ const Portfolio = () => {
         <Button
           variant="outlined"
           color="warning"
-          onClick={() => navigate("/dataviz")}
+          href="/dataviz"
+          onClick={() => window.scrollTo(0, 0)}
         >
           See Our Range of Demos
         </Button>
