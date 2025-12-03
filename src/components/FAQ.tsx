@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Container from "@mui/material/Container";
 import Chip from "@mui/material/Chip";
 import BoltIcon from "@mui/icons-material/Bolt";
@@ -10,6 +11,13 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import { styled } from "@mui/material/styles";
 
 const FAQ = () => {
+  const [expanded, setExpanded] = useState<string | false>("");
+
+  const handleChange =
+    (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
+      setExpanded(newExpanded ? panel : false);
+    };
+
   const DataAccordian = styled(Accordion)({
     background: "black",
     color: "white",
@@ -37,7 +45,10 @@ const FAQ = () => {
           </Typography>
         </Grid>
         <Grid size={6}>
-          <DataAccordian>
+          <DataAccordian
+            expanded={expanded === "panel1"}
+            onChange={handleChange("panel1")}
+          >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
                 What are the benefits of 3D data viz?
@@ -52,7 +63,10 @@ const FAQ = () => {
               </Typography>
             </AccordionDetails>
           </DataAccordian>
-          <DataAccordian>
+          <DataAccordian
+            expanded={expanded === "panel2"}
+            onChange={handleChange("panel2")}
+          >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
                 What sort of data can I visualise?
@@ -66,7 +80,10 @@ const FAQ = () => {
               </Typography>
             </AccordionDetails>
           </DataAccordian>
-          <DataAccordian>
+          <DataAccordian
+            expanded={expanded === "panel3"}
+            onChange={handleChange("panel3")}
+          >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
                 Does the data have to be 3D or multi-dimensional?
@@ -81,7 +98,10 @@ const FAQ = () => {
               </Typography>
             </AccordionDetails>
           </DataAccordian>
-          <DataAccordian>
+          <DataAccordian
+            expanded={expanded === "panel4"}
+            onChange={handleChange("panel4")}
+          >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
                 Can I still visualise my 2D data?
@@ -97,7 +117,10 @@ const FAQ = () => {
               </Typography>
             </AccordionDetails>
           </DataAccordian>
-          <DataAccordian>
+          <DataAccordian
+            expanded={expanded === "panel5"}
+            onChange={handleChange("panel5")}
+          >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
                 I always thought the gratuitous use of 3D was discouraged?
@@ -112,7 +135,10 @@ const FAQ = () => {
               </Typography>
             </AccordionDetails>
           </DataAccordian>
-          <DataAccordian>
+          <DataAccordian
+            expanded={expanded === "panel6"}
+            onChange={handleChange("panel6")}
+          >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
                 Isn't 3D just style over substance? Pretty graphics hiding the
