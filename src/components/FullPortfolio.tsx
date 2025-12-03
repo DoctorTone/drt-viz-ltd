@@ -109,10 +109,19 @@ const FullPortfolio = () => {
         color="warning"
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
-      <Grid container>
+      <Grid container spacing={4}>
         <Grid size={6}>
           <Typography variant="h2" sx={{ mb: 3 }}>
             Making complex data <span style={{ color: "orange" }}>simple</span>.
+          </Typography>
+        </Grid>
+      </Grid>
+
+      <Grid container>
+        <Grid size={6}>
+          <Typography variant="h6" sx={{ color: "grey" }}>
+            We've helped many companies showcase their data in a whole new
+            light.
           </Typography>
         </Grid>
       </Grid>
