@@ -33,4 +33,6 @@ body {
 .links a {
   color: #a8a8a8;
   text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
