@@ -11,8 +11,17 @@ import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import ScaleIcon from "@mui/icons-material/Scale";
 import AnnouncementIcon from "@mui/icons-material/Announcement";
 import PsychologyIcon from "@mui/icons-material/Psychology";
+import { styled } from "@mui/material/styles";
 
 const Solutions = () => {
+  const DataCard = styled(Card)({
+    background: "black",
+    color: "white",
+    border: "1px solid rgba(255, 255, 255, 0.25)",
+    borderRadius: "10px",
+    height: "100%",
+  });
+
   return (
     <Container id="section2" sx={{ mt: 10, mb: 10 }}>
       <Chip
@@ -30,15 +39,7 @@ const Solutions = () => {
       </Typography>
       <Grid container spacing={2}>
         <Grid size={4}>
-          <Card
-            variant="outlined"
-            sx={{
-              background: "black",
-              color: "white",
-              border: "1px solid rgba(255, 255, 255, 0.25)",
-              borderRadius: "10px",
-            }}
-          >
+          <DataCard variant="outlined">
             <CardContent>
               <InsightsIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Deeper Insights</Typography>
@@ -47,18 +48,10 @@ const Solutions = () => {
                 to be identified with greater clarity and ease.
               </Typography>
             </CardContent>
-          </Card>
+          </DataCard>
         </Grid>
         <Grid size={4}>
-          <Card
-            variant="outlined"
-            sx={{
-              background: "black",
-              color: "white",
-              border: "1px solid rgba(255, 255, 255, 0.25)",
-              borderRadius: "10px",
-            }}
-          >
+          <DataCard variant="outlined">
             <CardContent>
               <BarChartIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Data Complexity</Typography>
@@ -67,18 +60,10 @@ const Solutions = () => {
                 analysed. Identify how the data changes across space and time.
               </Typography>
             </CardContent>
-          </Card>
+          </DataCard>
         </Grid>
         <Grid size={4}>
-          <Card
-            variant="outlined"
-            sx={{
-              background: "black",
-              color: "white",
-              border: "1px solid rgba(255, 255, 255, 0.25)",
-              borderRadius: "10px",
-            }}
-          >
+          <DataCard variant="outlined">
             <CardContent>
               <PsychologyIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Engagement</Typography>
@@ -87,18 +72,10 @@ const Solutions = () => {
                 remember. For both a technical and non-technical audience.
               </Typography>
             </CardContent>
-          </Card>
+          </DataCard>
         </Grid>
         <Grid size={4}>
-          <Card
-            variant="outlined"
-            sx={{
-              background: "black",
-              color: "white",
-              border: "1px solid rgba(255, 255, 255, 0.25)",
-              borderRadius: "10px",
-            }}
-          >
+          <DataCard variant="outlined">
             <CardContent>
               <ScaleIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Decision Making</Typography>
@@ -107,18 +84,10 @@ const Solutions = () => {
                 decision making. Ultimately saving time and money.
               </Typography>
             </CardContent>
-          </Card>
+          </DataCard>
         </Grid>
         <Grid size={4}>
-          <Card
-            variant="outlined"
-            sx={{
-              background: "black",
-              color: "white",
-              border: "1px solid rgba(255, 255, 255, 0.25)",
-              borderRadius: "10px",
-            }}
-          >
+          <DataCard variant="outlined">
             <CardContent>
               <LightbulbIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Innovation</Typography>
@@ -127,18 +96,10 @@ const Solutions = () => {
                 dashboards overlook. Early adoption will be a key to growth.
               </Typography>
             </CardContent>
-          </Card>
+          </DataCard>
         </Grid>
         <Grid size={4}>
-          <Card
-            variant="outlined"
-            sx={{
-              background: "black",
-              color: "white",
-              border: "1px solid rgba(255, 255, 255, 0.25)",
-              borderRadius: "10px",
-            }}
-          >
+          <DataCard variant="outlined">
             <CardContent>
               <AnnouncementIcon
                 color="warning"
@@ -151,7 +112,7 @@ const Solutions = () => {
                 conversation and elevates reports, pitches and presentations.
               </Typography>
             </CardContent>
-          </Card>
+          </DataCard>
         </Grid>
       </Grid>
     </Container>
