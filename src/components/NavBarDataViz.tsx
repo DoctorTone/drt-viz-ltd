@@ -8,7 +8,6 @@ import ScrollToPlugin from "gsap/ScrollToPlugin";
 import { useNavigate } from "react-router-dom";
 
 const NavBarDataViz = () => {
-  const navigate = useNavigate();
   gsap.registerPlugin(ScrollToPlugin);
 
   useGSAP(() => {
@@ -74,6 +73,12 @@ const NavBarDataViz = () => {
                 color: "orange",
                 cursor: "pointer",
               }}
+              onClick={() =>
+                gsap.to(window, {
+                  duration: 2,
+                  scrollTo: { y: "#section7", offsetY: 100 },
+                })
+              }
             >
               Contact
             </Typography>
