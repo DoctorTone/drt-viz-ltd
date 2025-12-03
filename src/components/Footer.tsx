@@ -43,7 +43,7 @@ const Footer = () => {
             />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/tonyglover/"
+            href="https://x.com/DrtSoftware"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -57,7 +57,7 @@ const Footer = () => {
             />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/tonyglover/"
+            href="https://www.youtube.com/channel/UCNYHLpd8oKLoE2xw49ZX1nQ?"
             target="_blank"
             rel="noreferrer noopener"
           >
