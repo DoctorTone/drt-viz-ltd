@@ -39,7 +39,8 @@ const About = () => {
         </Grid>
       </Grid>
       <Grid container>
-        <Grid size={3}>
+        <Grid size={{ xs: 3, md: 0 }} />
+        <Grid size={{ xs: 6, md: 3 }}>
           <img src="./images/tony.jpg" className="w-100 profile" />
           <Typography variant="h6" sx={{ textAlign: "center" }}>
             Dr Tony Glover
@@ -48,9 +49,9 @@ const About = () => {
             Founder
           </Typography>
         </Grid>
-        <Grid size={2}></Grid>
+        <Grid size={{ xs: 0, md: 2 }}></Grid>
         <Grid
-          size={7}
+          size={{ xs: 12, md: 7 }}
           sx={{
             border: "1px solid rgba(255, 255, 255, 0.25)",
             borderRadius: "20px",
