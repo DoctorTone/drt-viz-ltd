@@ -1,3 +1,5 @@
+import { useState, type MouseEvent } from "react";
+import { useNavigate } from "react-router";
 import Toolbar from "@mui/material/Toolbar";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
@@ -6,9 +8,15 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 
 const NavBarDataViz = () => {
   gsap.registerPlugin(ScrollToPlugin);
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const navigate = useNavigate();
 
   useGSAP(() => {
     document.querySelectorAll(".section").forEach((link, index) => {
@@ -20,6 +28,20 @@ const NavBarDataViz = () => {
       });
     });
   }, []);
+
+  const handleOpenNavMenu = (event: MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = (section: number) => {
+    setAnchorEl(null);
+
+    gsap.to(window, {
+      duration: 2,
+      scrollTo: { y: "#section" + section, offsetY: 100 },
+    });
+  };
+  const open = Boolean(anchorEl);
 
   return (
     <AppBar
@@ -36,7 +58,46 @@ const NavBarDataViz = () => {
         border: "1px solid rgba(255, 255, 255, 0.25)",
       }}
     >
-      <Toolbar sx={{ display: "flex" }}>
+      <Toolbar sx={{ display: { xs: "flex", md: "none" } }}>
+        <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-start" }}>
+          <img src="./images/drtLogo.png" />
+        </Box>
+        <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
+          <IconButton
+            size="large"
+            aria-label="account of current user"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            onClick={handleOpenNavMenu}
+            color="warning"
+            edge="end"
+            sx={{ ml: 1 }}
+          >
+            <MenuIcon />
+          </IconButton>
+        </Box>
+
+        <Menu
+          id="basic-menu"
+          anchorEl={anchorEl}
+          open={open}
+          slotProps={{
+            paper: {
+              sx: {
+                backgroundColor: "#222", // dark grey
+                color: "white", // ensure text is readable
+                borderRadius: "10px",
+              },
+            },
+          }}
+          onClose={() => handleClose(-1)}
+        >
+          <MenuItem onClick={() => navigate(-1)}>Back</MenuItem>
+          <MenuItem onClick={() => handleClose(1)}>Visualisations</MenuItem>
+          <MenuItem onClick={() => handleClose(7)}>Contact</MenuItem>
+        </Menu>
+      </Toolbar>
+      <Toolbar sx={{ display: { xs: "none", md: "flex" } }}>
         <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-start" }}>
           <img src="./images/drtLogo.png" />
         </Box>
