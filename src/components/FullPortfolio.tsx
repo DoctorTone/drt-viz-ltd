@@ -101,7 +101,7 @@ const FullPortfolio = () => {
   };
 
   return (
-    <Container sx={{ mt: 6 }}>
+    <Container id="portfolio" sx={{ mt: 6 }}>
       <Chip
         icon={<BoltIcon />}
         label="Portfolio"

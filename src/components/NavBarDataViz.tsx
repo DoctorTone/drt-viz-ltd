@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
+import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import { useNavigate } from "react-router-dom";
 
 const NavBarDataViz = () => {
@@ -58,7 +59,23 @@ const NavBarDataViz = () => {
             }}
           >
             <Typography variant="h6" className="section links">
-              <a href="/">Home</a>
+              <a href="/">
+                <ArrowLeftIcon sx={{ verticalAlign: "sub" }} />
+                Back
+              </a>
+            </Typography>
+            <Typography
+              variant="h6"
+              className="section"
+              onClick={() =>
+                gsap.to(window, {
+                  duration: 2,
+                  scrollTo: { y: "#portfolio", offsetY: 100 },
+                })
+              }
+              sx={{ color: "#a8a8a8", cursor: "pointer" }}
+            >
+              Visualisations
             </Typography>
             <Typography
               variant="h6"
