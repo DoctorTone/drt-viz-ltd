@@ -61,9 +61,8 @@ const NavBar = () => {
           component="div"
           sx={{
             display: { xs: "flex", md: "none" },
-            flexGrow: 1,
-            alignItems: "center",
-            gap: "50px",
+            justifyContent: "flex-end",
+            gap: "150px",
           }}
         >
           <img src="./images/drtLogo.png" />
@@ -74,6 +73,7 @@ const NavBar = () => {
             aria-haspopup="true"
             onClick={handleOpenNavMenu}
             color="warning"
+            edge="end"
             sx={{ ml: 1 }}
           >
             <MenuIcon />
@@ -82,6 +82,15 @@ const NavBar = () => {
             id="basic-menu"
             anchorEl={anchorEl}
             open={open}
+            slotProps={{
+              paper: {
+                sx: {
+                  backgroundColor: "#222", // dark grey
+                  color: "white", // ensure text is readable
+                  borderRadius: "10px",
+                },
+              },
+            }}
             onClose={() => handleClose(-1)}
           >
             <MenuItem onClick={() => handleClose(1)}>Home</MenuItem>

@@ -15,7 +15,7 @@ const Hero = () => {
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
       <Grid container spacing={6} sx={{ display: "flex" }}>
-        <Grid size={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Typography variant="h2" sx={{ mb: 12 }}>
             Complex data made <span style={{ color: "orange" }}>simple</span>.
           </Typography>
@@ -26,7 +26,7 @@ const Hero = () => {
             Interactive 3D visualisations that bring your data to life.
           </Typography>
         </Grid>
-        <Grid size={6} className="">
+        <Grid size={{ xs: 12, md: 6 }}>
           <video muted loop preload="auto" autoPlay className=" bordered w-100">
             <source src="./videos/Lightning.mp4" type="video/mp4" />
           </video>
