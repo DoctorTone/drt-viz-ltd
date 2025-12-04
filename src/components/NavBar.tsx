@@ -1,3 +1,4 @@
+import { useState, type MouseEvent } from "react";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import AppBar from "@mui/material/AppBar";
@@ -5,9 +6,27 @@ import Typography from "@mui/material/Typography";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 
 const NavBar = () => {
   gsap.registerPlugin(ScrollToPlugin);
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+
+  const handleOpenNavMenu = (event: MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = (section: number) => {
+    setAnchorEl(null);
+    gsap.to(window, {
+      duration: 2,
+      scrollTo: { y: "#section" + section, offsetY: 100 },
+    });
+  };
+  const open = Boolean(anchorEl);
 
   useGSAP(() => {
     document.querySelectorAll(".section").forEach((link, index) => {
@@ -39,7 +58,49 @@ const NavBar = () => {
         <Box
           component="div"
           sx={{
-            display: "flex",
+            display: { xs: "flex", md: "none" },
+            flexGrow: 1,
+            alignItems: "center",
+            gap: "50px",
+          }}
+        >
+          <img src="./images/drtLogo.png" />
+          <IconButton
+            size="large"
+            aria-label="account of current user"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            onClick={handleOpenNavMenu}
+            color="warning"
+            sx={{ ml: 1 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Menu
+            id="basic-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+          >
+            <MenuItem onClick={() => handleClose(1)}>Visualisations</MenuItem>
+            <MenuItem className="sectionMobile" onClick={() => handleClose(2)}>
+              Services
+            </MenuItem>
+            <MenuItem className="sectionMobile" onClick={() => handleClose(3)}>
+              Testimonials
+            </MenuItem>
+            <MenuItem className="sectionMobile" onClick={() => handleClose(4)}>
+              FAQ
+            </MenuItem>
+            <MenuItem className="sectionMobile" onClick={() => handleClose(5)}>
+              About
+            </MenuItem>
+          </Menu>
+        </Box>
+        <Box
+          component="div"
+          sx={{
+            display: { xs: "none", md: "flex" },
             flexGrow: 1,
             alignItems: "center",
             gap: "50px",
