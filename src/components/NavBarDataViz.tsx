@@ -6,7 +6,6 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
-import { useNavigate } from "react-router-dom";
 
 const NavBarDataViz = () => {
   gsap.registerPlugin(ScrollToPlugin);
