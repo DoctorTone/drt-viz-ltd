@@ -36,65 +36,58 @@ const NavBarDataViz = () => {
         border: "1px solid rgba(255, 255, 255, 0.25)",
       }}
     >
-      <Toolbar>
+      <Toolbar sx={{ display: "flex" }}>
+        <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-start" }}>
+          <img src="./images/drtLogo.png" />
+        </Box>
         <Box
           component="div"
           sx={{
             display: "flex",
-            flexGrow: 1,
-            alignItems: "center",
-            gap: "50px",
+            flex: 1,
+            gap: 3,
+            // flexGrow: 1,
+            justifyContent: "center",
           }}
         >
-          <img src="./images/drtLogo.png" />
-          <Box
-            component="div"
-            sx={{
-              display: "flex",
-              gap: "50px",
-              flexGrow: 1,
-              justifyContent: "center",
-              alignItems: "center",
-            }}
+          <Typography variant="h6" className="section links">
+            <a href="/">
+              <ArrowLeftIcon sx={{ verticalAlign: "sub" }} />
+              Back
+            </a>
+          </Typography>
+          <Typography
+            variant="h6"
+            className="section"
+            onClick={() =>
+              gsap.to(window, {
+                duration: 2,
+                scrollTo: { y: "#portfolio", offsetY: 100 },
+              })
+            }
+            sx={{ color: "#a8a8a8", cursor: "pointer" }}
           >
-            <Typography variant="h6" className="section links">
-              <a href="/">
-                <ArrowLeftIcon sx={{ verticalAlign: "sub" }} />
-                Back
-              </a>
-            </Typography>
-            <Typography
-              variant="h6"
-              className="section"
-              onClick={() =>
-                gsap.to(window, {
-                  duration: 2,
-                  scrollTo: { y: "#portfolio", offsetY: 100 },
-                })
-              }
-              sx={{ color: "#a8a8a8", cursor: "pointer" }}
-            >
-              Visualisations
-            </Typography>
-            <Typography
-              variant="h6"
-              className="section"
-              sx={{
-                textDecoration: "none",
-                color: "orange",
-                cursor: "pointer",
-              }}
-              onClick={() =>
-                gsap.to(window, {
-                  duration: 2,
-                  scrollTo: { y: "#section7", offsetY: 100 },
-                })
-              }
-            >
-              Contact
-            </Typography>
-          </Box>
+            Visualisations
+          </Typography>
+          <Typography
+            variant="h6"
+            className="section"
+            sx={{
+              textDecoration: "none",
+              color: "orange",
+              cursor: "pointer",
+            }}
+            onClick={() =>
+              gsap.to(window, {
+                duration: 2,
+                scrollTo: { y: "#section7", offsetY: 100 },
+              })
+            }
+          >
+            Contact
+          </Typography>
         </Box>
+        <Box sx={{ flex: 1 }}></Box>
       </Toolbar>
     </AppBar>
   );
