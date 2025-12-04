@@ -29,14 +29,14 @@ const Services = () => {
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
       <Grid container spacing={0}>
-        <Grid size={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Typography variant="h2" sx={{ mb: 5 }}>
             Our <span style={{ color: "orange" }}>expertise</span>.
           </Typography>
         </Grid>
       </Grid>
       <Grid container sx={{ mb: 8 }}>
-        <Grid size={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             3D Data Visualisation
           </Typography>
@@ -57,24 +57,26 @@ const Services = () => {
             models, or historical trends, we build visualisations that reveal
             patterns, support decisions, and elevate communication.
           </Typography>
-          <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Box
+            sx={{ display: "flex", alignItems: "center", mb: { xs: 4, md: 0 } }}
+          >
             <EmailIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             <Button variant="contained" color="warning" onClick={animate}>
               Contact Us
             </Button>
           </Box>
         </Grid>
-        <Grid size={2}></Grid>
-        <Grid size={4}>
+        <Grid size={{ xs: 0, md: 2 }}></Grid>
+        <Grid size={{ xs: 12, md: 4 }}>
           <img src="./images/3dData.jpg" className="borderedLight w-100" />
         </Grid>
       </Grid>
       <Grid container sx={{ mb: 8 }}>
-        <Grid size={4}>
+        <Grid size={{ xs: 12, md: 4 }} sx={{ mb: { xs: 4, md: 0 } }}>
           <img src="./images/VRDev.jpg" className="borderedLight w-100" />
         </Grid>
-        <Grid size={2}></Grid>
-        <Grid size={6}>
+        <Grid size={{ xs: 0, md: 2 }}></Grid>
+        <Grid size={{ xs: 12, md: 4 }}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             Virtual Reality Development
           </Typography>
@@ -99,7 +101,7 @@ const Services = () => {
         </Grid>
       </Grid>
       <Grid container sx={{ mb: 4 }}>
-        <Grid size={6}>
+        <Grid size={{ xs: 12, md: 4 }}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             Consultancy
           </Typography>
@@ -115,15 +117,17 @@ const Services = () => {
             and general 3D/VR. We'll clarify goals, pick the right tech, and map
             a practical path to a working prototype or production app.
           </Typography>
-          <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Box
+            sx={{ display: "flex", alignItems: "center", mb: { xs: 4, md: 0 } }}
+          >
             <EmailIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             <Button variant="contained" color="warning" onClick={animate}>
               Contact Us
             </Button>
           </Box>
         </Grid>
-        <Grid size={2}></Grid>
-        <Grid size={4}>
+        <Grid size={{ xs: 0, md: 2 }}></Grid>
+        <Grid size={{ xs: 12, md: 4 }}>
           <img src="./images/3D.png" className="borderedLight w-100" />
         </Grid>
       </Grid>
