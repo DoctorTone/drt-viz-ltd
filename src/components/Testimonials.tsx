@@ -4,19 +4,28 @@ import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import StarIcon from "@mui/icons-material/Star";
+import Chip from "@mui/material/Chip";
+import BoltIcon from "@mui/icons-material/Bolt";
 
 const Testimonials = () => {
   return (
     <Container sx={{ mb: 10 }}>
+      <Chip
+        icon={<BoltIcon />}
+        label="Testimonials"
+        variant="outlined"
+        color="warning"
+        sx={{ mb: 2, color: "orange", borderColor: "orange" }}
+      />
       <Grid container spacing={2}>
-        <Grid size={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Typography variant="h3" sx={{ mb: 5 }}>
             What our clients say about{" "}
             <span style={{ color: "orange" }}>us</span>.
           </Typography>
         </Grid>
-        <Grid size={6}></Grid>
-        <Grid size={6}>
+        <Grid size={{ xs: 0, md: 6 }}></Grid>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Card
             variant="outlined"
             sx={{
@@ -45,7 +54,7 @@ const Testimonials = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid size={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Card
             variant="outlined"
             sx={{
