@@ -15,7 +15,7 @@ const About = () => {
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
       <Grid container sx={{ mb: 6 }}>
-        <Grid size={6}>
+        <Grid size={{ xs: 12, md: 6 }} sx={{ mb: { xs: 4, md: 0 } }}>
           <Typography variant="h3" sx={{ mb: 3 }}>
             Meet <span style={{ color: "orange" }}>DRT</span>.
           </Typography>
@@ -33,8 +33,8 @@ const About = () => {
             complex data into clear and meaningful visuals.
           </Typography>
         </Grid>
-        <Grid size={2.5}></Grid>
-        <Grid size={3.5}>
+        <Grid size={{ xs: 0, md: 2.5 }}></Grid>
+        <Grid size={{ xs: 12, md: 3.5 }}>
           <img src="./images/3DBarChart.png" className="borderedLight w-100" />
         </Grid>
       </Grid>

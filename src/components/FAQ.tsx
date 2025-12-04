@@ -15,7 +15,7 @@ const FAQ = () => {
   const [expanded, setExpanded] = useState<string | false>(false);
 
   const handleChange =
-    (panel: string) => (event: SyntheticEvent, newExpanded: boolean) => {
+    (panel: string) => (_: SyntheticEvent, newExpanded: boolean) => {
       setExpanded(newExpanded ? panel : false);
     };
 
