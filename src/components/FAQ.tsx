@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type SyntheticEvent } from "react";
 import Container from "@mui/material/Container";
 import Chip from "@mui/material/Chip";
 import BoltIcon from "@mui/icons-material/Bolt";
@@ -15,7 +15,7 @@ const FAQ = () => {
   const [expanded, setExpanded] = useState<string | false>(false);
 
   const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
+    (panel: string) => (event: SyntheticEvent, newExpanded: boolean) => {
       setExpanded(newExpanded ? panel : false);
     };
 
@@ -39,7 +39,7 @@ const FAQ = () => {
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
       <Grid container>
-        <Grid size={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Typography variant="h2" sx={{ mb: 2 }}>
             Frequently asked <span style={{ color: "orange" }}>questions</span>.
           </Typography>
@@ -47,7 +47,7 @@ const FAQ = () => {
             See why 3D is the best way to visualise your data.
           </Typography>
         </Grid>
-        <Grid size={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <DataAccordian
             expanded={expanded === "panel1"}
             onChange={handleChange("panel1")}
