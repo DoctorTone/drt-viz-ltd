@@ -15,19 +15,6 @@ const NavBar = () => {
   gsap.registerPlugin(ScrollToPlugin);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
-  const handleOpenNavMenu = (event: MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = (section: number) => {
-    setAnchorEl(null);
-    gsap.to(window, {
-      duration: 2,
-      scrollTo: { y: "#section" + section, offsetY: 100 },
-    });
-  };
-  const open = Boolean(anchorEl);
-
   useGSAP(() => {
     document.querySelectorAll(".section").forEach((link, index) => {
       link.addEventListener("click", () => {
@@ -38,6 +25,21 @@ const NavBar = () => {
       });
     });
   }, []);
+
+  const handleOpenNavMenu = (event: MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = (section: number) => {
+    setAnchorEl(null);
+    if (section < 0) return;
+
+    gsap.to(window, {
+      duration: 2,
+      scrollTo: { y: "#section" + section, offsetY: 100 },
+    });
+  };
+  const open = Boolean(anchorEl);
 
   return (
     <AppBar
@@ -80,20 +82,26 @@ const NavBar = () => {
             id="basic-menu"
             anchorEl={anchorEl}
             open={open}
-            onClose={handleClose}
+            onClose={() => handleClose(-1)}
           >
-            <MenuItem onClick={() => handleClose(1)}>Visualisations</MenuItem>
+            <MenuItem onClick={() => handleClose(1)}>Home</MenuItem>
             <MenuItem className="sectionMobile" onClick={() => handleClose(2)}>
-              Services
+              Solutions
             </MenuItem>
             <MenuItem className="sectionMobile" onClick={() => handleClose(3)}>
-              Testimonials
+              Portfolio
             </MenuItem>
             <MenuItem className="sectionMobile" onClick={() => handleClose(4)}>
-              FAQ
+              Services
             </MenuItem>
             <MenuItem className="sectionMobile" onClick={() => handleClose(5)}>
+              FAQ
+            </MenuItem>
+            <MenuItem className="sectionMobile" onClick={() => handleClose(6)}>
               About
+            </MenuItem>
+            <MenuItem className="sectionMobile" onClick={() => handleClose(7)}>
+              Contact
             </MenuItem>
           </Menu>
         </Box>
