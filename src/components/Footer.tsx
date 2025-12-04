@@ -21,7 +21,10 @@ const Footer = () => {
             <EmailIcon sx={{ verticalAlign: "sub" }} /> Enquiries
           </a>
         </Typography>
-        <Typography variant="h6" sx={{ color: "grey" }}>
+        <Typography
+          variant="h6"
+          sx={{ display: { xs: "none", md: "block" }, color: "grey" }}
+        >
           Copyright &copy; 2025 DRT Software. All rights reserved.
         </Typography>
         <Box
@@ -70,6 +73,17 @@ const Footer = () => {
             />
           </Link>
         </Box>
+      </Box>
+      <Box
+        sx={{
+          display: { xs: "block", md: "none" },
+          textAlign: "center",
+          mt: 1,
+        }}
+      >
+        <Typography variant="h6" sx={{ color: "grey" }}>
+          Copyright &copy; 2025 DRT Software. All rights reserved.
+        </Typography>
       </Box>
     </Container>
   );

@@ -27,7 +27,7 @@ const Hero = () => {
           </Typography>
         </Grid>
         <Grid size={{ xs: 12, md: 6 }}>
-          <video muted loop preload="auto" autoPlay className=" bordered w-100">
+          <video muted loop preload="auto" autoPlay className="bordered w-90">
             <source src="./videos/Lightning.mp4" type="video/mp4" />
           </video>
         </Grid>
