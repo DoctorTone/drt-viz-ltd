@@ -29,14 +29,14 @@ const Services = () => {
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
       <Grid container spacing={0}>
-        <Grid size={{ xs: 12, md: 6 }}>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h2" sx={{ mb: 5 }}>
             Our <span style={{ color: "orange" }}>expertise</span>.
           </Typography>
         </Grid>
       </Grid>
-      <Grid container sx={{ mb: 8 }}>
-        <Grid size={{ xs: 12, md: 6 }}>
+      <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             3D Data Visualisation
           </Typography>
@@ -66,17 +66,17 @@ const Services = () => {
             </Button>
           </Box>
         </Grid>
-        <Grid size={{ xs: 0, md: 2 }}></Grid>
-        <Grid size={{ xs: 12, md: 4 }}>
+        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
+        <Grid size={{ xs: 12, sm: 5, md: 4 }}>
           <img src="./images/3dData.jpg" className="borderedLight w-100" />
         </Grid>
       </Grid>
-      <Grid container sx={{ mb: 8 }}>
-        <Grid size={{ xs: 12, md: 4 }} sx={{ mb: { xs: 4, md: 0 } }}>
+      <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
+        <Grid size={{ xs: 12, sm: 5, md: 4 }} sx={{ mb: { xs: 4, md: 0 } }}>
           <img src="./images/VRDev.jpg" className="borderedLight w-100" />
         </Grid>
-        <Grid size={{ xs: 0, md: 2 }}></Grid>
-        <Grid size={{ xs: 12, md: 4 }}>
+        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             Virtual Reality Development
           </Typography>
@@ -100,8 +100,8 @@ const Services = () => {
           </Box>
         </Grid>
       </Grid>
-      <Grid container sx={{ mb: 4 }}>
-        <Grid size={{ xs: 12, md: 4 }}>
+      <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             Consultancy
           </Typography>
@@ -126,8 +126,8 @@ const Services = () => {
             </Button>
           </Box>
         </Grid>
-        <Grid size={{ xs: 0, md: 2 }}></Grid>
-        <Grid size={{ xs: 12, md: 4 }}>
+        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
+        <Grid size={{ xs: 12, sm: 5, md: 4 }}>
           <img src="./images/3D.png" className="borderedLight w-100" />
         </Grid>
       </Grid>
