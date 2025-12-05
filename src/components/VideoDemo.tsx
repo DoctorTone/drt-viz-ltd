@@ -14,11 +14,17 @@ const VideoDemo = forwardRef<HTMLVideoElement, VideoProps>(
     return (
       <>
         {vidRecord.left ? (
-          <Grid container spacing={6} sx={{ mt: 3, padding: "30px" }}>
-            <Grid
-              size={{ xs: 12, md: 6 }}
-              sx={{ display: "flex", alignItems: "center" }}
-            >
+          <Grid
+            container
+            spacing={6}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              mt: 3,
+              padding: "30px",
+            }}
+          >
+            <Grid size={{ xs: 12, sm: 6, md: 6 }}>
               <div className="bordered">
                 <a
                   href={vidRecord.url}
@@ -39,7 +45,7 @@ const VideoDemo = forwardRef<HTMLVideoElement, VideoProps>(
                 </a>
               </div>
             </Grid>
-            <Grid size={{ xs: 12, md: 6 }} sx={{ textAlign: "center" }}>
+            <Grid size={{ xs: 12, sm: 6, md: 6 }} sx={{ textAlign: "center" }}>
               <Typography variant="h5" color="#386fc7">
                 Visualisations
               </Typography>
@@ -71,8 +77,17 @@ const VideoDemo = forwardRef<HTMLVideoElement, VideoProps>(
             </Grid>
           </Grid>
         ) : (
-          <Grid container spacing={6} sx={{ mt: 3, padding: "30px" }}>
-            <Grid size={{ xs: 12, md: 6 }} sx={{ textAlign: "center" }}>
+          <Grid
+            container
+            spacing={6}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              mt: 3,
+              padding: "30px",
+            }}
+          >
+            <Grid size={{ xs: 12, sm: 6, md: 6 }} sx={{ textAlign: "center" }}>
               <Typography variant="h5" color="#386fc7">
                 Visualisations
               </Typography>
@@ -103,7 +118,7 @@ const VideoDemo = forwardRef<HTMLVideoElement, VideoProps>(
               </Box>
             </Grid>
             <Grid
-              size={{ xs: 12, md: 6 }}
+              size={{ xs: 12, sm: 6, md: 6 }}
               sx={{ display: "flex", alignItems: "center" }}
             >
               <div className="bordered">
