@@ -18,14 +18,14 @@ const Testimonials = () => {
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
       <Grid container spacing={2}>
-        <Grid size={{ xs: 12, md: 6 }}>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h3" sx={{ mb: 5 }}>
             What our clients say about{" "}
             <span style={{ color: "orange" }}>us</span>.
           </Typography>
         </Grid>
-        <Grid size={{ xs: 0, md: 6 }}></Grid>
-        <Grid size={{ xs: 12, md: 6 }}>
+        <Grid size={{ xs: 0, sm: 6, md: 6 }}></Grid>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Card
             variant="outlined"
             sx={{
@@ -54,7 +54,7 @@ const Testimonials = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid size={{ xs: 12, md: 6 }}>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Card
             variant="outlined"
             sx={{
