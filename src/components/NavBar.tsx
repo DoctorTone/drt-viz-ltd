@@ -56,16 +56,11 @@ const NavBar = () => {
         border: "1px solid rgba(255, 255, 255, 0.25)",
       }}
     >
-      <Toolbar>
-        <Box
-          component="div"
-          sx={{
-            display: { xs: "flex", md: "none" },
-            justifyContent: "flex-end",
-            gap: "150px",
-          }}
-        >
+      <Toolbar sx={{ display: { xs: "flex", md: "none" } }}>
+        <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-start" }}>
           <img src="./images/drtLogo.png" />
+        </Box>
+        <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
           <IconButton
             size="large"
             aria-label="account of current user"
@@ -114,105 +109,98 @@ const NavBar = () => {
             </MenuItem>
           </Menu>
         </Box>
+      </Toolbar>
+      <Toolbar sx={{ display: { xs: "none", md: "flex" } }}>
+        <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-start" }}>
+          <img src="./images/drtLogo.png" />
+        </Box>
         <Box
-          component="div"
           sx={{
-            display: { xs: "none", md: "flex" },
-            flexGrow: 1,
-            alignItems: "center",
-            gap: "50px",
+            display: "flex",
+            flex: 1,
+            gap: 3,
+            justifyContent: "center",
           }}
         >
-          <img src="./images/drtLogo.png" />
-          <Box
-            component="div"
+          <Typography
+            variant="h6"
+            className="section"
             sx={{
-              display: "flex",
-              gap: "50px",
-              flexGrow: 1,
-              justifyContent: "center",
-              alignItems: "center",
+              textDecoration: "none",
+              color: "#a8a8a8",
+              cursor: "pointer",
             }}
           >
-            <Typography
-              variant="h6"
-              className="section"
-              sx={{
-                textDecoration: "none",
-                color: "#a8a8a8",
-                cursor: "pointer",
-              }}
-            >
-              Home
-            </Typography>
-            <Typography
-              variant="h6"
-              className="section"
-              sx={{
-                textDecoration: "none",
-                color: "#a8a8a8",
-                cursor: "pointer",
-              }}
-            >
-              Solutions
-            </Typography>
-            <Typography
-              variant="h6"
-              className="section"
-              sx={{
-                textDecoration: "none",
-                color: "#a8a8a8",
-                cursor: "pointer",
-              }}
-            >
-              Portfolio
-            </Typography>
-            <Typography
-              variant="h6"
-              className="section"
-              sx={{
-                textDecoration: "none",
-                color: "#a8a8a8",
-                cursor: "pointer",
-              }}
-            >
-              Services
-            </Typography>
-            <Typography
-              variant="h6"
-              className="section"
-              sx={{
-                textDecoration: "none",
-                color: "#a8a8a8",
-                cursor: "pointer",
-              }}
-            >
-              FAQ
-            </Typography>
-            <Typography
-              variant="h6"
-              className="section"
-              sx={{
-                textDecoration: "none",
-                color: "#a8a8a8",
-                cursor: "pointer",
-              }}
-            >
-              About
-            </Typography>
-            <Typography
-              variant="h6"
-              className="section"
-              sx={{
-                textDecoration: "none",
-                color: "orange",
-                cursor: "pointer",
-              }}
-            >
-              Contact
-            </Typography>
-          </Box>
+            Home
+          </Typography>
+          <Typography
+            variant="h6"
+            className="section"
+            sx={{
+              textDecoration: "none",
+              color: "#a8a8a8",
+              cursor: "pointer",
+            }}
+          >
+            Solutions
+          </Typography>
+          <Typography
+            variant="h6"
+            className="section"
+            sx={{
+              textDecoration: "none",
+              color: "#a8a8a8",
+              cursor: "pointer",
+            }}
+          >
+            Portfolio
+          </Typography>
+          <Typography
+            variant="h6"
+            className="section"
+            sx={{
+              textDecoration: "none",
+              color: "#a8a8a8",
+              cursor: "pointer",
+            }}
+          >
+            Services
+          </Typography>
+          <Typography
+            variant="h6"
+            className="section"
+            sx={{
+              textDecoration: "none",
+              color: "#a8a8a8",
+              cursor: "pointer",
+            }}
+          >
+            FAQ
+          </Typography>
+          <Typography
+            variant="h6"
+            className="section"
+            sx={{
+              textDecoration: "none",
+              color: "#a8a8a8",
+              cursor: "pointer",
+            }}
+          >
+            About
+          </Typography>
+          <Typography
+            variant="h6"
+            className="section"
+            sx={{
+              textDecoration: "none",
+              color: "orange",
+              cursor: "pointer",
+            }}
+          >
+            Contact
+          </Typography>
         </Box>
+        <Box sx={{ flex: 1 }}></Box>
       </Toolbar>
     </AppBar>
   );
