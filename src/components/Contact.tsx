@@ -41,7 +41,7 @@ const Contact = () => {
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
       <Grid container>
-        <Grid size={{ xs: 12, md: 6 }}>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h3" sx={{ mb: 5 }}>
             Let's give your project an extra{" "}
             <span style={{ color: "orange" }}>dimension</span>.
@@ -49,8 +49,8 @@ const Contact = () => {
         </Grid>
       </Grid>
       <Grid container>
-        <Grid size={{ xs: 0, md: 3 }}></Grid>
-        <Grid size={{ xs: 12, md: 6 }}>
+        <Grid size={{ xs: 0, sm: 2, md: 3 }}></Grid>
+        <Grid size={{ xs: 12, sm: 8, md: 6 }}>
           <Card
             variant="outlined"
             sx={{
