@@ -38,7 +38,7 @@ const Solutions = () => {
         See the advantages of visualising in three dimensions.
       </Typography>
       <Grid container spacing={2}>
-        <Grid size={{ xs: 12, md: 4 }}>
+        <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">
             <CardContent>
               <InsightsIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
@@ -50,7 +50,7 @@ const Solutions = () => {
             </CardContent>
           </DataCard>
         </Grid>
-        <Grid size={{ xs: 12, md: 4 }}>
+        <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">
             <CardContent>
               <BarChartIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
@@ -62,7 +62,7 @@ const Solutions = () => {
             </CardContent>
           </DataCard>
         </Grid>
-        <Grid size={{ xs: 12, md: 4 }}>
+        <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">
             <CardContent>
               <PsychologyIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
@@ -74,7 +74,7 @@ const Solutions = () => {
             </CardContent>
           </DataCard>
         </Grid>
-        <Grid size={{ xs: 12, md: 4 }}>
+        <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">
             <CardContent>
               <BalanceIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
@@ -86,7 +86,7 @@ const Solutions = () => {
             </CardContent>
           </DataCard>
         </Grid>
-        <Grid size={{ xs: 12, md: 4 }}>
+        <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">
             <CardContent>
               <LightbulbIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
@@ -98,7 +98,7 @@ const Solutions = () => {
             </CardContent>
           </DataCard>
         </Grid>
-        <Grid size={{ xs: 12, md: 4 }}>
+        <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">
             <CardContent>
               <AnnouncementIcon
