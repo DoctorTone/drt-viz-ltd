@@ -39,7 +39,7 @@ const FAQ = () => {
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
       <Grid container>
-        <Grid size={{ xs: 12, md: 6 }}>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h2" sx={{ mb: 2 }}>
             Frequently asked <span style={{ color: "orange" }}>questions</span>.
           </Typography>
@@ -47,7 +47,7 @@ const FAQ = () => {
             See why 3D is the best way to visualise your data.
           </Typography>
         </Grid>
-        <Grid size={{ xs: 12, md: 6 }}>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <DataAccordian
             expanded={expanded === "panel1"}
             onChange={handleChange("panel1")}
