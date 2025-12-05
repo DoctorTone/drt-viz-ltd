@@ -20,7 +20,7 @@ const Portfolio = () => {
         Visual <span style={{ color: "orange" }}>Solutions</span>.
       </Typography>
       <Grid container spacing={6}>
-        <Grid size={{ xs: 12, md: 4 }}>
+        <Grid size={{ xs: 12, md: 4 }} sx={{ pr: 2 }}>
           <a
             href="https://drt-software.com/LightningViz/"
             target="_blank"
@@ -54,7 +54,7 @@ const Portfolio = () => {
             </Button>
           </Box>
         </Grid>
-        <Grid size={{ xs: 12, md: 4 }}>
+        <Grid size={{ xs: 12, md: 4 }} sx={{ pr: 2 }}>
           <a
             href="https://www.drt-software.com/SleepViz/"
             target="_blank"
@@ -88,7 +88,7 @@ const Portfolio = () => {
             </Button>
           </Box>
         </Grid>
-        <Grid size={{ xs: 12, md: 4 }}>
+        <Grid size={{ xs: 12, md: 4 }} sx={{ pr: 2 }}>
           <a
             href="https://drt-software.com/PointCloud/"
             target="_blank"

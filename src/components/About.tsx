@@ -14,7 +14,10 @@ const About = () => {
         color="warning"
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
-      <Grid container sx={{ display: "flex", alignItems: "center", mb: 6 }}>
+      <Grid
+        container
+        sx={{ display: "flex", alignItems: "center", mb: 6, pr: 2 }}
+      >
         <Grid size={{ xs: 12, sm: 6, md: 6 }} sx={{ mb: { xs: 4, md: 0 } }}>
           <Typography variant="h3" sx={{ mb: 3 }}>
             Meet <span style={{ color: "orange" }}>DRT</span>.
