@@ -18,10 +18,10 @@ const VIDEOS: VideoRecord[] = [
     category: "Geospatial",
     title: "Lightning",
     url: "https://drt-software.com/LightningViz/",
-    text1: `There are lots of infographics around events like Halloween, but these are usually 
-		static and often lacking a sense of atmosphere.`,
-    text2: ` This demo takes the infographic theme a bit further, adding ambient effects and animation
-		to tell the story, but still showing interesting facts and data.`,
+    text1: `3D is ideal for visualising geospatial data as it situates the information in a realistic 
+		context.`,
+    text2: `Viewing data on a globe makes patterns and varaiations easier to understand, such as the 
+		lightning data here, which perfectly illustrates the regional variations.`,
     text3: undefined,
   },
   {
