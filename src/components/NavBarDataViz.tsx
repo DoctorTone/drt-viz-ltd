@@ -111,7 +111,7 @@ const NavBarDataViz = () => {
             justifyContent: "center",
           }}
         >
-          <Typography variant="h6" className="section links">
+          <Typography variant="h6" className="section links back-link">
             <a href="/">
               <ArrowLeftIcon sx={{ verticalAlign: "sub" }} />
               Back

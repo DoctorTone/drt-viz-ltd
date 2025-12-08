@@ -39,3 +39,9 @@ body {
   padding: 0;
   margin: 0;
 }
+.back-link {
+  display: inline-flex;
+  align-items: center; /* vertically align arrow + text */
+  gap: 0.25rem; /* space between arrow and text */
+  white-space: nowrap;
+}
