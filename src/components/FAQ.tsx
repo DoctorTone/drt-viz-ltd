@@ -143,8 +143,8 @@ const FAQ = () => {
                 Absolutely. 3D offers an alternative way to see any type of
                 data. Traditional methods, such as bar charts, dashboards, etc.,
                 are perfectly acceptable ways to view your data. 3D can display
-                it in a different light, making it more appealing for
-                presentations or pitches.
+                it in a different light, making it easier to spot trends and
+                patterns and can look more visually appealing.
               </Typography>
             </AccordionDetails>
           </DataAccordian>
