@@ -57,7 +57,7 @@ const Solutions = () => {
               <Typography variant="h5">Data Complexity</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 Complex, real-world, multi-dimensional data may be displayed and
-                analysed. Identify how the data changes across space and time.
+                analysed. Variations may be tracked across space and time.
               </Typography>
             </CardContent>
           </DataCard>
@@ -68,8 +68,9 @@ const Solutions = () => {
               <PsychologyIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Engagement</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                Interactive 3D content makes data easier to understand and
-                remember. For both a technical and non-technical audience.
+                Interactive 3D content makes data easier to manipulate and
+                understand. This helps engage both technical and non-technical
+                audiences.
               </Typography>
             </CardContent>
           </DataCard>
@@ -81,7 +82,7 @@ const Solutions = () => {
               <Typography variant="h5">Decision Making</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 Insights that are clear and easy to interpret lead to quicker
-                decision making. Ultimately saving time and money.
+                decision making. This ultimately saves time and money.
               </Typography>
             </CardContent>
           </DataCard>
