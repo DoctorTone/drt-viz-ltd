@@ -5,12 +5,12 @@ import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
-import InsightsIcon from "@mui/icons-material/Insights";
-import BarChartIcon from "@mui/icons-material/BarChart";
-import LightbulbIcon from "@mui/icons-material/Lightbulb";
-import BalanceIcon from "@mui/icons-material/Balance";
 import AnnouncementIcon from "@mui/icons-material/Announcement";
 import PsychologyIcon from "@mui/icons-material/Psychology";
+import TimelineIcon from "@mui/icons-material/Timeline";
+import ImageSearchIcon from "@mui/icons-material/ImageSearch";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import ExtensionIcon from "@mui/icons-material/Extension";
 import { styled } from "@mui/material/styles";
 
 const Solutions = () => {
@@ -55,7 +55,7 @@ const Solutions = () => {
         <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">
             <CardContent>
-              <BarChartIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
+              <TimelineIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Pattern Recognition</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 Interactive visualisations can reveal spatial correlations,
@@ -69,7 +69,11 @@ const Solutions = () => {
         <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">
             <CardContent>
-              <PsychologyIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
+              <AnnouncementIcon
+                color="warning"
+                sx={{ mb: 5 }}
+                fontSize="large"
+              />
               <Typography variant="h5">Communications</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 A wider audience, especially those who are not data experts, can
@@ -82,7 +86,11 @@ const Solutions = () => {
         <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">
             <CardContent>
-              <BalanceIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
+              <ImageSearchIcon
+                color="warning"
+                sx={{ mb: 5 }}
+                fontSize="large"
+              />
               <Typography variant="h5">Analysis</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 Multiple datasets and information can be layered and combined
@@ -95,7 +103,11 @@ const Solutions = () => {
         <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">
             <CardContent>
-              <LightbulbIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
+              <AutoStoriesIcon
+                color="warning"
+                sx={{ mb: 5 }}
+                fontSize="large"
+              />
               <Typography variant="h5">Storytelling</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 Data can be animated over time, portraying factors such as urban
@@ -108,11 +120,7 @@ const Solutions = () => {
         <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">
             <CardContent>
-              <AnnouncementIcon
-                color="warning"
-                sx={{ mb: 5 }}
-                fontSize="large"
-              />
+              <ExtensionIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Integration</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 Technology such as virtual reality can be used to immerse users
