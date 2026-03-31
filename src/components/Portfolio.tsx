@@ -116,7 +116,7 @@ const Portfolio = () => {
       </Grid>
       <Box sx={{ mt: 6, textAlign: "center" }}>
         <Button variant="outlined" color="warning" href="/dataviz">
-          See Our Range of Demos
+          See further details
         </Button>
       </Box>
     </Container>
