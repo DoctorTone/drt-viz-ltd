@@ -44,7 +44,7 @@ const FAQ = () => {
             Frequently asked <span style={{ color: "orange" }}>questions</span>.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey" }}>
-            See why 3D is the best way to visualise your data.
+            See how we can visualise all yor data.
           </Typography>
         </Grid>
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
@@ -61,15 +61,14 @@ const FAQ = () => {
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
-                What are the benefits of 3D data viz?
+                What types of geospatial data can you visualise?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                Due to all the additional space, you can see the patterns and
-                trends in the data more clearly and it's easier to explore and
-                interact. For multi-dimensional data, or data with lots of
-                attributes, this will be the most efficient way to see it.
+                We work with all sorts of data - satellite imagery, point
+                clouds, elevations, vector data, climate data. If it has spatial
+                coordinates and some data values we can visualise it!
               </Typography>
             </AccordionDetails>
           </DataAccordian>
@@ -86,14 +85,14 @@ const FAQ = () => {
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
-                What sort of data can I visualise?
+                Do I need to provide the data in a specific format?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                Anything!! We visualise data in many differing formats and many
-                different sectors. We have yet to see a dataset that we couldn't
-                visualise!
+                No. We work with formats such as GeoTIFF, GeoJSON, shapefiles,
+                etc. and handle all the preprocessing. Regardless of your data
+                format we can convert it to something we can use.
               </Typography>
             </AccordionDetails>
           </DataAccordian>
@@ -110,15 +109,15 @@ const FAQ = () => {
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
-                Does the data have to be 3D or multi-dimensional?
+                How long does a typical project take?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                Not at all! The data can be in pretty much any format. We can
-                extract the fields that you are interested in and visualise
-                those, or make multiple visualisations from different subsets,
-                or even visualise everything and filter out just what you want.
+                A proof-of-concept may take as little as 2 weeks. Depending on
+                the complexity of the project and the required featureset, a
+                prodcution-ready project may 6-12 weeks. We can discuss this on
+                our initial meeting.
               </Typography>
             </AccordionDetails>
           </DataAccordian>
@@ -135,16 +134,15 @@ const FAQ = () => {
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
-                Can I still visualise my 2D data?
+                What platforms do you develop for? Will it work on mobile?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                Absolutely. 3D offers an alternative way to see any type of
-                data. Traditional methods, such as bar charts, dashboards, etc.,
-                are perfectly acceptable ways to view your data. 3D can display
-                it in a different light, making it easier to spot trends and
-                patterns and can look more visually appealing.
+                The majority of our work is web-based, so it will work on
+                devices such as mobiles, tablets and PC's. We also build desktop
+                applications (on platforms such as Unreal), but we will aim to
+                accomodate your desired platform.
               </Typography>
             </AccordionDetails>
           </DataAccordian>
@@ -161,15 +159,14 @@ const FAQ = () => {
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
-                I always thought the gratuitous use of 3D was discouraged?
+                Will I need special software to view the application?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                It used to be. It doesn't work for static images as the data
-                becomes difficult to see as parts of it are occluded. We build
-                fully interactive applications where you can examine the data in
-                detail, making the analysis easier.
+                Not at all. The majority of our software runs in a web browser.
+                VR or desktop applications may differ but we will provide full
+                deployment support.
               </Typography>
             </AccordionDetails>
           </DataAccordian>
@@ -186,16 +183,14 @@ const FAQ = () => {
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
-                Isn't 3D just style over substance? Pretty graphics hiding the
-                real data?
+                Can you integrate with our existing GIS systems?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                NO! The visual detail helps emphasise the data and can showcase
-                it in new and innovative ways that a chart could never do! Some
-                data is naturally 3D and can be situated in a much better
-                context to increase understanding.
+                Yes. We've integrated with ArcGIS, QGIS, PostGIS databases, and
+                custom geospatial APIs. We'll design the data pipeline to fit
+                your existing workflow.
               </Typography>
             </AccordionDetails>
           </DataAccordian>
@@ -212,12 +207,14 @@ const FAQ = () => {
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon color="warning" />}>
               <Typography variant="h6">
-                Why don't you make an app that I can drop my data into?
+                What if we want to update the data later?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                Watch this space!!!......
+                The application can be built to accept data uploads or connect
+                to a live API or database. We'll design the workflow based on
+                your needs.
               </Typography>
             </AccordionDetails>
           </DataAccordian>
