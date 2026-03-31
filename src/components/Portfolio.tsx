@@ -100,7 +100,7 @@ const Portfolio = () => {
           </a>
           <Box sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ mt: 1, mb: 1 }}>
-              City map
+              City pointcloud
             </Typography>
             <Button
               variant="contained"

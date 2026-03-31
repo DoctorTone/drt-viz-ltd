@@ -41,11 +41,13 @@ const Solutions = () => {
         <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">
             <CardContent>
-              <InsightsIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
-              <Typography variant="h5">Deeper Insights</Typography>
+              <PsychologyIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
+              <Typography variant="h5">Spatial Understanding</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                The additional space allows patterns, trends and relationships
-                to be identified with greater clarity and ease.
+                3D visualisation is perfectly suited to the real world.
+                Geographical relationships are immediately visible, such as
+                terrain or elevation. No translation from a flat map is
+                required.
               </Typography>
             </CardContent>
           </DataCard>
@@ -54,10 +56,12 @@ const Solutions = () => {
           <DataCard variant="outlined">
             <CardContent>
               <BarChartIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
-              <Typography variant="h5">Data Complexity</Typography>
+              <Typography variant="h5">Pattern Recognition</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                Complex, real-world, multi-dimensional data may be displayed and
-                analysed. Variations may be tracked across space and time.
+                Interactive visualisations can reveal spatial correlations,
+                filter out trends and hotspots that a 2D map may obscure. A
+                three-dimensional view can reveal relationships that were
+                previously unknown.
               </Typography>
             </CardContent>
           </DataCard>
@@ -66,11 +70,11 @@ const Solutions = () => {
           <DataCard variant="outlined">
             <CardContent>
               <PsychologyIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
-              <Typography variant="h5">Engagement</Typography>
+              <Typography variant="h5">Communications</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                Interactive 3D content makes data easier to manipulate and
-                understand. This helps engage both technical and non-technical
-                audiences.
+                A wider audience, especially those who are not data experts, can
+                understand complex spatial data more easily. This allows the
+                technical findings to be more accessible to decision makers.
               </Typography>
             </CardContent>
           </DataCard>
@@ -79,10 +83,11 @@ const Solutions = () => {
           <DataCard variant="outlined">
             <CardContent>
               <BalanceIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
-              <Typography variant="h5">Decision Making</Typography>
+              <Typography variant="h5">Analysis</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                Insights that are clear and easy to interpret lead to quicker
-                decision making. This ultimately saves time and money.
+                Multiple datasets and information can be layered and combined
+                into one view. The interaction of all this data can be seen
+                without switching between maps.
               </Typography>
             </CardContent>
           </DataCard>
@@ -91,10 +96,11 @@ const Solutions = () => {
           <DataCard variant="outlined">
             <CardContent>
               <LightbulbIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
-              <Typography variant="h5">Innovation</Typography>
+              <Typography variant="h5">Storytelling</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                3D environments can reveal information that traditional 2D
-                dashboards overlook. Early adoption will be a key to growth.
+                Data can be animated over time, portraying factors such as urban
+                growth or climate patterns. Accurate planning and cost decisions
+                can be made when considering multiple scenarios.
               </Typography>
             </CardContent>
           </DataCard>
@@ -107,10 +113,11 @@ const Solutions = () => {
                 sx={{ mb: 5 }}
                 fontSize="large"
               />
-              <Typography variant="h5">Communications</Typography>
+              <Typography variant="h5">Integration</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                Engaging visualisations present data in a way that drives
-                conversation and elevates reports, pitches and presentations.
+                Technology such as virtual reality can be used to immerse users
+                in the data, generating further realism. AI may be used for
+                predictive modelling and automated feature extraction.
               </Typography>
             </CardContent>
           </DataCard>
