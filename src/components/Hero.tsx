@@ -20,7 +20,7 @@ const Hero = () => {
             Complex data made <span style={{ color: "orange" }}>simple</span>.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey" }}>
-            See your data in a whole new dimension.
+            See your geospatial data in a whole new dimension.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey" }}>
             Interactive 3D visualisations that bring your data to life.

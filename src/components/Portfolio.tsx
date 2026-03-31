@@ -37,11 +37,8 @@ const Portfolio = () => {
             </video>
           </a>
           <Box sx={{ textAlign: "center" }}>
-            <Typography variant="h6" sx={{ mt: 1 }}>
+            <Typography variant="h6" sx={{ mt: 1, mb: 1 }}>
               Global lightning strikes
-            </Typography>
-            <Typography variant="subtitle1" sx={{ color: "grey" }}>
-              Geospatial
             </Typography>
             <Button
               variant="contained"
@@ -56,7 +53,7 @@ const Portfolio = () => {
         </Grid>
         <Grid size={{ xs: 12, md: 4 }} sx={{ pr: 2 }}>
           <a
-            href="https://www.drt-software.com/SleepViz/"
+            href="https://www.drt-software.com/HeatIsland/"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -67,20 +64,17 @@ const Portfolio = () => {
               autoPlay
               className="borderedLight w-100"
             >
-              <source src="./videos/Sleep.mp4" type="video/mp4" />
+              <source src="./videos/HeatIsland.mp4" type="video/mp4" />
             </video>
           </a>
           <Box sx={{ textAlign: "center" }}>
-            <Typography variant="h6" sx={{ mt: 1 }}>
-              Sleep analysis
-            </Typography>
-            <Typography variant="subtitle1" sx={{ color: "grey" }}>
-              Multi-dimensional
+            <Typography variant="h6" sx={{ mt: 1, mb: 1 }}>
+              Heat Islands
             </Typography>
             <Button
               variant="contained"
               color="warning"
-              href="https://www.drt-software.com/SleepViz/"
+              href="https://www.drt-software.com/HeatIsland/"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -105,11 +99,8 @@ const Portfolio = () => {
             </video>
           </a>
           <Box sx={{ textAlign: "center" }}>
-            <Typography variant="h6" sx={{ mt: 1 }}>
+            <Typography variant="h6" sx={{ mt: 1, mb: 1 }}>
               City map
-            </Typography>
-            <Typography variant="subtitle1" sx={{ color: "grey" }}>
-              Pointcloud
             </Typography>
             <Button
               variant="contained"

@@ -71,7 +71,7 @@ const Services = () => {
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
         <Grid size={{ xs: 12, sm: 5, md: 4 }}>
-          <img src="./images/3dData.jpg" className="borderedLight w-100" />
+          <img src="./images/globe.jpg" className="borderedLight w-100" />
         </Grid>
       </Grid>
       <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
