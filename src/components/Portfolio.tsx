@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
 
 const Portfolio = () => {
   return (
@@ -36,19 +37,28 @@ const Portfolio = () => {
               <source src="./videos/Lightning.mp4" type="video/mp4" />
             </video>
           </a>
-          <Box sx={{ textAlign: "center" }}>
-            <Typography variant="h6" sx={{ mt: 1, mb: 1 }}>
+          <Box>
+            <Typography variant="h6" sx={{ mt: 1, mb: 1, textAlign: "center" }}>
               Global lightning strikes
             </Typography>
-            <Button
-              variant="contained"
-              color="warning"
-              href="https://drt-software.com/LightningViz/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              See Demo
-            </Button>
+            <Stack direction="row" spacing={1} mt={2} justifyContent="center">
+              <Button
+                variant="contained"
+                color="warning"
+                href="https://drt-software.com/LightningViz/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                View Demo
+              </Button>
+              <Button
+                variant="outlined"
+                color="warning"
+                href="/case-studies/heat-islands"
+              >
+                Case Study
+              </Button>
+            </Stack>
           </Box>
         </Grid>
         <Grid size={{ xs: 12, md: 4 }} sx={{ pr: 2 }}>
@@ -71,15 +81,24 @@ const Portfolio = () => {
             <Typography variant="h6" sx={{ mt: 1, mb: 1 }}>
               Heat Islands
             </Typography>
-            <Button
-              variant="contained"
-              color="warning"
-              href="https://www.drt-software.com/HeatIsland/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              See Demo
-            </Button>
+            <Stack direction="row" spacing={1} mt={2} justifyContent="center">
+              <Button
+                variant="contained"
+                color="warning"
+                href="https://www.drt-software.com/HeatIsland/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                View Demo
+              </Button>
+              <Button
+                variant="outlined"
+                color="warning"
+                href="/case-studies/heat-islands"
+              >
+                Case Study
+              </Button>
+            </Stack>
           </Box>
         </Grid>
         <Grid size={{ xs: 12, md: 4 }} sx={{ pr: 2 }}>
@@ -109,7 +128,7 @@ const Portfolio = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              See Demo
+              View Demo
             </Button>
           </Box>
         </Grid>
