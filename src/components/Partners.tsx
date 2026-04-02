@@ -4,7 +4,8 @@ import Typography from "@mui/material/Typography";
 import BoltIcon from "@mui/icons-material/Bolt";
 import Chip from "@mui/material/Chip";
 import Box from "@mui/material/Box";
-import Marquee from "react-fast-marquee";
+import FastMarquee from "react-fast-marquee";
+const Marquee = (FastMarquee as any).default || FastMarquee;
 
 const logoList = [
   { src: "./images/logo_uon_dark_grey.jpg", alt: "Nottingham University" },

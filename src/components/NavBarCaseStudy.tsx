@@ -1,0 +1,157 @@
+import { useState, type MouseEvent } from "react";
+import { useNavigate } from "react-router";
+import Toolbar from "@mui/material/Toolbar";
+import Box from "@mui/material/Box";
+import AppBar from "@mui/material/AppBar";
+import Typography from "@mui/material/Typography";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+
+const NavBarCaseStudy = () => {
+  gsap.registerPlugin(ScrollToPlugin);
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const navigate = useNavigate();
+
+  useGSAP(() => {
+    document.querySelectorAll(".section").forEach((link, index) => {
+      link.addEventListener("click", () => {
+        gsap.to(window, {
+          duration: 2,
+          scrollTo: { y: "#section" + (index + 1), offsetY: 100 },
+        });
+      });
+    });
+  }, []);
+
+  const handleOpenNavMenu = (event: MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = (section: number) => {
+    setAnchorEl(null);
+
+    gsap.to(window, {
+      duration: 2,
+      scrollTo: { y: "#section" + section, offsetY: 100 },
+    });
+  };
+  const open = Boolean(anchorEl);
+
+  return (
+    <AppBar
+      position="sticky"
+      elevation={0}
+      sx={{
+        mt: 3,
+        padding: "5px",
+        backgroundColor: "#2b2b2b",
+        borderRadius: "10px",
+        color: "#fff",
+        width: { xs: "90%", sm: "70%", md: "90%", lg: "75%" },
+        left: { xs: "5%", sm: "17.5%", md: "5%", lg: "12.5%" },
+        border: "1px solid rgba(255, 255, 255, 0.25)",
+      }}
+    >
+      <Toolbar sx={{ display: { xs: "flex", md: "none" } }}>
+        <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-start" }}>
+          <img src="./images/drtLogo.png" />
+        </Box>
+        <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
+          <IconButton
+            size="large"
+            aria-label="account of current user"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            onClick={handleOpenNavMenu}
+            color="warning"
+            edge="end"
+            sx={{ ml: 1 }}
+          >
+            <MenuIcon />
+          </IconButton>
+        </Box>
+
+        <Menu
+          id="basic-menu"
+          anchorEl={anchorEl}
+          open={open}
+          slotProps={{
+            paper: {
+              sx: {
+                backgroundColor: "#222", // dark grey
+                color: "white", // ensure text is readable
+                borderRadius: "10px",
+              },
+            },
+          }}
+          onClose={() => handleClose(-1)}
+        >
+          <MenuItem onClick={() => navigate(-1)}>Back</MenuItem>
+          <MenuItem onClick={() => handleClose(1)}>Case Study</MenuItem>
+          <MenuItem onClick={() => handleClose(7)}>Contact</MenuItem>
+        </Menu>
+      </Toolbar>
+      <Toolbar sx={{ display: { xs: "none", md: "flex" } }}>
+        <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-start" }}>
+          <img src="./images/drtLogo.png" />
+        </Box>
+        <Box
+          component="div"
+          sx={{
+            display: "flex",
+            flex: 1,
+            gap: 3,
+            // flexGrow: 1,
+            justifyContent: "center",
+          }}
+        >
+          <Typography variant="h6" className="section links back-link">
+            <a href="/">
+              <ArrowLeftIcon sx={{ verticalAlign: "sub" }} />
+              Back
+            </a>
+          </Typography>
+          <Typography
+            variant="h6"
+            className="section"
+            onClick={() =>
+              gsap.to(window, {
+                duration: 2,
+                scrollTo: { y: "#portfolio", offsetY: 100 },
+              })
+            }
+            sx={{ color: "#a8a8a8", cursor: "pointer" }}
+          >
+            Case Study
+          </Typography>
+          <Typography
+            variant="h6"
+            className="section"
+            sx={{
+              textDecoration: "none",
+              color: "orange",
+              cursor: "pointer",
+            }}
+            onClick={() =>
+              gsap.to(window, {
+                duration: 2,
+                scrollTo: { y: "#section7", offsetY: 100 },
+              })
+            }
+          >
+            Contact
+          </Typography>
+        </Box>
+        <Box sx={{ flex: 1 }}></Box>
+      </Toolbar>
+    </AppBar>
+  );
+};
+
+export default NavBarCaseStudy;

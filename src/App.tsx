@@ -5,7 +5,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <ScrollToHash /> */}
         <AnimatedRoutes />
       </BrowserRouter>
     </>
