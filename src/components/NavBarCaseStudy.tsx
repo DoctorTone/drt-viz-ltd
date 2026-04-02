@@ -60,7 +60,7 @@ const NavBarCaseStudy = () => {
     >
       <Toolbar sx={{ display: { xs: "flex", md: "none" } }}>
         <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-start" }}>
-          <img src="./images/drtLogo.png" />
+          <img src="/images/drtLogo.png" />
         </Box>
         <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
           <IconButton
@@ -99,7 +99,7 @@ const NavBarCaseStudy = () => {
       </Toolbar>
       <Toolbar sx={{ display: { xs: "none", md: "flex" } }}>
         <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-start" }}>
-          <img src="./images/drtLogo.png" />
+          <img src="/images/drtLogo.png" />
         </Box>
         <Box
           component="div"

@@ -1,13 +1,14 @@
 import NavBarCaseStudy from "../components/NavBarCaseStudy";
-import FullPortfolio from "../components/FullPortfolio";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import CaseHeatIsland from "../components/CaseHeatIsland";
 import { PageTransition } from "../components/PageTransition";
 
 const CaseStudy = () => {
   return (
     <PageTransition>
       <NavBarCaseStudy />
+      <CaseHeatIsland />
       <Contact />
       <Footer />
     </PageTransition>
