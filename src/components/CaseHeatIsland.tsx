@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 
 const CaseHeatIsland = () => {
   return (
-    <Container>
+    <Container id="section1" sx={{ mt: 6 }}>
       <Chip
         icon={<BoltIcon />}
         label="Case Study"
@@ -14,11 +14,21 @@ const CaseHeatIsland = () => {
         color="warning"
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
-      <Grid container spacing={4}>
-        <Grid size={{ xs: 12, md: 6 }}>
-          <Typography variant="h2" sx={{ mb: 3 }}>
-            Making complex data <span style={{ color: "orange" }}>simple</span>.
+      <Grid container>
+        <Grid size={{ md: 2 }}></Grid>
+        <Grid size={{ xs: 12, md: 8 }}>
+          <Typography variant="h3" sx={{ mt: 1, mb: 1, textAlign: "center" }}>
+            Heat Islands
           </Typography>
+          <video
+            muted
+            loop
+            preload="auto"
+            autoPlay
+            className="borderedLight w-100"
+          >
+            <source src="/videos/HeatIsland.mp4" type="video/mp4" />
+          </video>
         </Grid>
       </Grid>
     </Container>
