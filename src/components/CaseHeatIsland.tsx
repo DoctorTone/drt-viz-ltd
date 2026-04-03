@@ -6,8 +6,20 @@ import Typography from "@mui/material/Typography";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import PsychologyIcon from "@mui/icons-material/Psychology";
+import { styled } from "@mui/material/styles";
 
 const CaseHeatIsland = () => {
+  const DataCard = styled(Card)({
+    background: "black",
+    color: "white",
+    border: "1px solid rgba(255, 255, 255, 0.25)",
+    borderRadius: "10px",
+    height: "100%",
+  });
+
   return (
     <Container id="section1" sx={{ mt: 6 }}>
       <Chip
@@ -76,6 +88,62 @@ const CaseHeatIsland = () => {
           View Demo
         </Button>
       </Box>
+      <Grid container spacing={2}>
+        <Grid size={6}>
+          <DataCard variant="outlined">
+            <CardContent>
+              <Typography variant="h5" color="orange" sx={{ mb: 3 }}>
+                The Challenge
+              </Typography>
+              <Typography variant="h6" sx={{ color: "grey" }}>
+                Urban heat islands raise city temperatures by 5-10°C, increasing
+                energy costs and heat-related health risks. Traditional 2D maps
+                show hotspots but can't reveal WHY certain areas are hotter—is
+                it building density? Height? Materials? Lack of green space?
+              </Typography>
+              <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
+                Urban planners and climate researchers need to understand
+                spatial-thermal relationships to target interventions
+                effectively.
+              </Typography>
+            </CardContent>
+          </DataCard>
+        </Grid>
+        <Grid size={6}>
+          <DataCard variant="outlined">
+            <CardContent>
+              <Typography variant="h5" color="orange" sx={{ mb: 3 }}>
+                The Solution
+              </Typography>
+              <Typography variant="h6" sx={{ color: "grey" }}>
+                Urban heat islands raise city temperatures by 5-10°C, increasing
+                energy costs and heat-related health risks. Traditional 2D maps
+                show hotspots but can't reveal WHY certain areas are hotter—is
+                it building density? Height? Materials? Lack of green space?
+              </Typography>
+              <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
+                Urban planners and climate researchers need to understand
+                spatial-thermal relationships to target interventions
+                effectively.
+              </Typography>
+            </CardContent>
+          </DataCard>
+        </Grid>
+      </Grid>
+      <Grid container>
+        <Grid size={6}>
+          <Typography variant="h4" sx={{ mt: 3, mb: 3 }}>
+            Key <span style={{ color: "orange" }}>Insights</span>
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
+            <LeaderboardIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
+            Dense Low-Rise Areas Trap More Heat
+          </Typography>
+        </Grid>
+      </Grid>
     </Container>
   );
 };
