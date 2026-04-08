@@ -91,7 +91,11 @@ const Portfolio = () => {
               >
                 View Demo
               </Button>
-              <Button variant="outlined" color="warning" href="/case-studies">
+              <Button
+                variant="outlined"
+                color="warning"
+                href="/case-studies/heat-islands"
+              >
                 Case Study
               </Button>
             </Stack>

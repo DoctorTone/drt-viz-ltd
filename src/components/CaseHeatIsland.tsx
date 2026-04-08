@@ -88,27 +88,35 @@ const CaseHeatIsland = () => {
           View Demo
         </Button>
       </Box>
-      <Grid container spacing={2}>
+      <Grid container spacing={0}>
         <Grid size={6}>
-          <DataCard variant="outlined">
-            <CardContent>
-              <Typography variant="h5" color="orange" sx={{ mb: 3 }}>
-                The Challenge
-              </Typography>
-              <Typography variant="h6" sx={{ color: "grey" }}>
-                Urban heat islands raise city temperatures by 5-10°C, increasing
-                energy costs and heat-related health risks. Traditional 2D maps
-                show hotspots but can't reveal WHY certain areas are hotter—is
-                it building density? Height? Materials? Lack of green space?
-              </Typography>
-              <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-                Urban planners and climate researchers need to understand
-                spatial-thermal relationships to target interventions
-                effectively.
-              </Typography>
-            </CardContent>
-          </DataCard>
+          <Typography variant="h4" sx={{ mb: 3 }}>
+            The Challenge
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey" }}>
+            <LeaderboardIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
+            Urban heat islands raise city temperatures by 5-10°C, increasing
+            energy costs and heat-related health risks. Traditional 2D maps show
+            hotspots but can't reveal WHY certain areas are hotter—is it
+            building density? Height? Materials? Lack of green space?
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
+            Urban planners and climate researchers need to understand
+            spatial-thermal relationships to target interventions effectively.
+          </Typography>
         </Grid>
+        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
+        <Grid size={{ xs: 12, sm: 5, md: 4 }}>
+          <img
+            src="/images/thermal_preview.jpg"
+            className="borderedLight w-100"
+          />
+        </Grid>
+      </Grid>
+      <Grid container>
         <Grid size={6}>
           <DataCard variant="outlined">
             <CardContent>
