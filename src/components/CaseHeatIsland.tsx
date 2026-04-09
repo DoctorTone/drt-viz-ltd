@@ -207,6 +207,58 @@ const CaseHeatIsland = () => {
           </Typography>
         </Grid>
       </Grid>
+      <Grid
+        container
+        sx={{ display: "flex", alignItems: "center", mb: 8, pr: 2 }}
+      >
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
+          <Typography variant="h4" sx={{ mb: 3 }}>
+            Industrial zones are hottest
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            Warehouses show surface temperatures that are 8°C above residential
+            averages due to large flat roofs with dark materials.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <span style={{ color: "white" }}>
+              <strong>Impact</strong>
+            </span>{" "}
+            : Building design should incentivise reflective roofing materials in
+            industrial zones.
+          </Typography>
+        </Grid>
+        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
+        <Grid size={{ xs: 12, sm: 5, md: 4 }}>
+          <img src="/images/hottest.jpg" className="borderedLight w-100" />
+        </Grid>
+      </Grid>
+      <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
+        <Grid
+          size={{ xs: 12, sm: 5, md: 4 }}
+          sx={{ mb: { xs: 4, md: 0 }, pr: 2 }}
+        >
+          <img src="/images/coolest.jpg" className="borderedLight w-100" />
+        </Grid>
+        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
+        <Grid size={6}>
+          <Typography variant="h4" sx={{ mb: 3 }}>
+            Tall buildings are cooler than expected
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey" }}>
+            Modern tall buildings with reflective materials appear cooler due to
+            less roof area per floor and rooftop cooling systems lowering the
+            surface temperature.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
+            <span style={{ color: "white" }}>
+              <strong>Impact</strong>
+            </span>{" "}
+            : Building materials are just as significant as building height.
+            Retrofitting older buildings with reflective coatings where possible
+            could reduce temperatures significantly.
+          </Typography>
+        </Grid>
+      </Grid>
     </Container>
   );
 };
