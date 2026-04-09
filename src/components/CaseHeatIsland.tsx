@@ -234,8 +234,8 @@ const CaseHeatIsland = () => {
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             <i>
-              Note: Dark areas in map denote low-temperature regions of parkland
-              or water.
+              Note: Parks, green spaces and water areas appear as gaps in the
+              data, but the cooling effect is still in surrounding buildings.
             </i>
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
