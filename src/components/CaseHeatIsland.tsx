@@ -195,7 +195,7 @@ const CaseHeatIsland = () => {
           <img src="/images/cooling.jpg" className="borderedLight w-100" />
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
-        <Grid size={6}>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             Parks Create Cooling Zones
           </Typography>
@@ -249,7 +249,7 @@ const CaseHeatIsland = () => {
           <img src="/images/coolest.jpg" className="borderedLight w-100" />
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
-        <Grid size={6}>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             Tall buildings are cooler than expected
           </Typography>
