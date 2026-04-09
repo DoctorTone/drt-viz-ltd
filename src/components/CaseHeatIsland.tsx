@@ -7,8 +7,9 @@ import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import PsychologyIcon from "@mui/icons-material/Psychology";
+import RoofingIcon from "@mui/icons-material/Roofing";
+import ThermostatIcon from "@mui/icons-material/Thermostat";
+import SpeedIcon from "@mui/icons-material/Speed";
 import { styled } from "@mui/material/styles";
 
 const CaseHeatIsland = () => {
@@ -57,25 +58,19 @@ const CaseHeatIsland = () => {
           climate adaptation and urban planning strategies.
         </Typography>
         <Typography variant="h6">
-          <LeaderboardIcon
-            color="warning"
-            sx={{ verticalAlign: "sub", mr: 2 }}
-          />
+          <RoofingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
           27,723 buildings visualised.
         </Typography>
         <Typography variant="h6">
-          <LeaderboardIcon
+          <ThermostatIcon
             color="warning"
             sx={{ verticalAlign: "sub", mr: 2 }}
           />
-          Temperatrure range of 27.5C to 44.6C.
+          Temperatrure range of 27.5°C to 44.6°C.
         </Typography>
         <Typography variant="h6" sx={{ mb: 3 }}>
-          <LeaderboardIcon
-            color="warning"
-            sx={{ verticalAlign: "sub", mr: 2 }}
-          />
-          Optimal performnce of 60 frames per second on desktop, tablet and
+          <SpeedIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+          Optimal performance of 60 frames per second on desktop, tablet and
           mobile.
         </Typography>
         <Button
@@ -88,11 +83,18 @@ const CaseHeatIsland = () => {
           View Demo
         </Button>
       </Box>
+      <Chip
+        icon={<BoltIcon />}
+        label="Challenge"
+        variant="outlined"
+        color="warning"
+        sx={{ mb: 2, color: "orange", borderColor: "orange" }}
+      />
       <Grid
         container
         sx={{ display: "flex", alignItems: "center", mb: 8, pr: 2 }}
       >
-        <Grid size={6}>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             The Challenge
           </Typography>
@@ -111,8 +113,8 @@ const CaseHeatIsland = () => {
             spatial-thermal relationships to target interventions effectively.
           </Typography>
         </Grid>
-        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
-        <Grid size={{ xs: 12, sm: 5, md: 4 }}>
+        <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
+        <Grid size={{ xs: 12, sm: 5, md: 5 }}>
           <img
             src="/images/thermal_preview.jpg"
             className="borderedLight w-100"
@@ -121,13 +123,13 @@ const CaseHeatIsland = () => {
       </Grid>
       <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
         <Grid
-          size={{ xs: 12, sm: 5, md: 4 }}
+          size={{ xs: 12, sm: 5, md: 5 }}
           sx={{ mb: { xs: 4, md: 0 }, pr: 2 }}
         >
           <img src="/images/solution.jpg" className="borderedLight w-100" />
         </Grid>
-        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
-        <Grid size={6}>
+        <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             The Solution
           </Typography>
@@ -143,6 +145,13 @@ const CaseHeatIsland = () => {
           </Typography>
         </Grid>
       </Grid>
+      <Chip
+        icon={<BoltIcon />}
+        label="Insights"
+        variant="outlined"
+        color="warning"
+        sx={{ mb: 2, color: "orange", borderColor: "orange" }}
+      />
       <Grid container spacing={0}>
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h2" sx={{ mb: 5 }}>
@@ -173,19 +182,19 @@ const CaseHeatIsland = () => {
             maintain airflow.
           </Typography>
         </Grid>
-        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
-        <Grid size={{ xs: 12, sm: 5, md: 4 }}>
+        <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
+        <Grid size={{ xs: 12, sm: 5, md: 5 }}>
           <img src="/images/trap.jpg" className="borderedLight w-100" />
         </Grid>
       </Grid>
       <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
         <Grid
-          size={{ xs: 12, sm: 5, md: 4 }}
+          size={{ xs: 12, sm: 5, md: 5 }}
           sx={{ mb: { xs: 4, md: 0 }, pr: 2 }}
         >
           <img src="/images/cooling.jpg" className="borderedLight w-100" />
         </Grid>
-        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
+        <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
         <Grid size={6}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             Parks Create Cooling Zones
@@ -227,19 +236,19 @@ const CaseHeatIsland = () => {
             industrial zones.
           </Typography>
         </Grid>
-        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
-        <Grid size={{ xs: 12, sm: 5, md: 4 }}>
+        <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
+        <Grid size={{ xs: 12, sm: 5, md: 5 }}>
           <img src="/images/hottest.jpg" className="borderedLight w-100" />
         </Grid>
       </Grid>
       <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
         <Grid
-          size={{ xs: 12, sm: 5, md: 4 }}
+          size={{ xs: 12, sm: 5, md: 5 }}
           sx={{ mb: { xs: 4, md: 0 }, pr: 2 }}
         >
           <img src="/images/coolest.jpg" className="borderedLight w-100" />
         </Grid>
-        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
+        <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
         <Grid size={6}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             Tall buildings are cooler than expected
