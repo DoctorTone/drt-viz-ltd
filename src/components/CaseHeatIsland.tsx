@@ -4,12 +4,16 @@ import BoltIcon from "@mui/icons-material/Bolt";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
+import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
+import SunnyIcon from "@mui/icons-material/Sunny";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import RoofingIcon from "@mui/icons-material/Roofing";
 import ThermostatIcon from "@mui/icons-material/Thermostat";
 import SpeedIcon from "@mui/icons-material/Speed";
+import HikingIcon from "@mui/icons-material/Hiking";
+import AcUnitIcon from "@mui/icons-material/AcUnit";
 import { styled } from "@mui/material/styles";
 
 const CaseHeatIsland = () => {
@@ -98,17 +102,23 @@ const CaseHeatIsland = () => {
           <Typography variant="h4" sx={{ mb: 3 }}>
             The Challenge
           </Typography>
-          <Typography variant="h6" sx={{ color: "grey" }}>
-            <LeaderboardIcon
-              color="warning"
-              sx={{ verticalAlign: "sub", mr: 2 }}
-            />
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <HikingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             Urban heat islands raise city temperatures by 5-10°C, increasing
-            energy costs and heat-related health risks. Traditional 2D maps show
-            hotspots but can't reveal WHY certain areas are hotter—is it
-            building density? Height? Materials? Lack of green space?
+            energy costs and heat-related health risks.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <HikingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            Traditional 2D maps show hotspots but can't reveal why certain areas
+            are hotter?
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <HikingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            Is it building density, height or the type of materials used? Or
+            could it be a lack of green space?
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
+            <HikingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             Urban planners and climate researchers need to understand
             spatial-thermal relationships to target interventions effectively.
           </Typography>
@@ -133,15 +143,29 @@ const CaseHeatIsland = () => {
           <Typography variant="h4" sx={{ mb: 3 }}>
             The Solution
           </Typography>
-          <Typography variant="h6" sx={{ color: "grey" }}>
-            Urban heat islands raise city temperatures by 5-10°C, increasing
-            energy costs and heat-related health risks. Traditional 2D maps show
-            hotspots but can't reveal WHY certain areas are hotter—is it
-            building density? Height? Materials? Lack of green space?
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <TipsAndUpdatesIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
+            We built an interactive 3D visualisation combining Landsat 9 thermal
+            satellite data with OpenStreetMap building footprints.
           </Typography>
-          <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-            Urban planners and climate researchers need to understand
-            spatial-thermal relationships to target interventions effectively.
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <TipsAndUpdatesIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
+            Users can explore 27,723 buildings across central London,
+            color-coded by surface temperature, and fly between preset
+            viewpoints that highlight key areas.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey" }}>
+            <TipsAndUpdatesIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
+            App is available on desktop, tablet and mobile.
           </Typography>
         </Grid>
       </Grid>
@@ -168,14 +192,17 @@ const CaseHeatIsland = () => {
             Dense low-rise areas trap more heat
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             Tightly packed two and three story buildings show temperatures that
             are 4-6°C higher than areas with taller, spaced buildings.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             Narrow streets reduce air circulation and trap heat.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <span style={{ color: "white" }}>
+            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <span style={{ color: "orange" }}>
               <strong>Impact</strong>
             </span>{" "}
             : Urban densification needs to balance height and spacing to
@@ -199,19 +226,23 @@ const CaseHeatIsland = () => {
           <Typography variant="h4" sx={{ mb: 3 }}>
             Parks Create Cooling Zones
           </Typography>
-          <Typography variant="h6" sx={{ color: "grey" }}>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             Green spaces reduce surrounding temperatures by up to 3°C within 200
-            meters, creating measurable cooling zones.
+            meters, creating measurable cooler areas.
           </Typography>
-          <Typography variant="h6" sx={{ color: "grey" }}>
-            Note: Dark areas in map denote low-temperature regions of parkland
-            or water.
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <i>
+              Note: Dark areas in map denote low-temperature regions of parkland
+              or water.
+            </i>
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-            <span style={{ color: "white" }}>
+            <span style={{ color: "orange" }}>
               <strong>Impact</strong>
             </span>{" "}
-            : Strategic park placement can create cooling networks across
+            : Strategic park/water placement can create cooling networks across
             vulnerable neighborhoods.
           </Typography>
         </Grid>
@@ -225,15 +256,17 @@ const CaseHeatIsland = () => {
             Industrial zones are hottest
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             Warehouses show surface temperatures that are 8°C above residential
             averages due to large flat roofs with dark materials.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <span style={{ color: "white" }}>
+            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <span style={{ color: "orange" }}>
               <strong>Impact</strong>
             </span>{" "}
-            : Building design should incentivise reflective roofing materials in
-            industrial zones.
+            : Building design should incentivise or promote reflective roofing
+            materials in industrial zones.
           </Typography>
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
@@ -253,13 +286,15 @@ const CaseHeatIsland = () => {
           <Typography variant="h4" sx={{ mb: 3 }}>
             Tall buildings are cooler than expected
           </Typography>
-          <Typography variant="h6" sx={{ color: "grey" }}>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             Modern tall buildings with reflective materials appear cooler due to
             less roof area per floor and rooftop cooling systems lowering the
             surface temperature.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-            <span style={{ color: "white" }}>
+            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <span style={{ color: "orange" }}>
               <strong>Impact</strong>
             </span>{" "}
             : Building materials are just as significant as building height.

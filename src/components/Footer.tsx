@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <Container sx={{ mb: 6 }}>
       <Box sx={{ mb: 1 }}>
-        <img src="./images/drtLogo.png" />
+        <img src="/images/drtLogo.png" />
       </Box>
       <Divider sx={{ backgroundColor: "grey", mb: 2 }} />
       <Box sx={{ display: "flex", justifyContent: "space-around" }}>
@@ -25,7 +25,7 @@ const Footer = () => {
           variant="h6"
           sx={{ display: { xs: "none", md: "block" }, color: "grey" }}
         >
-          Copyright &copy; 2025 DRT Software. All rights reserved.
+          Copyright &copy; 2026 DRT Software. All rights reserved.
         </Typography>
         <Box
           sx={{ display: "flex", justifyContent: "center", gap: 2 }}
