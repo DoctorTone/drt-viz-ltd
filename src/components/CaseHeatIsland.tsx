@@ -143,17 +143,63 @@ const CaseHeatIsland = () => {
           </Typography>
         </Grid>
       </Grid>
-      <Grid container>
+      <Grid container spacing={0}>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
+          <Typography variant="h2" sx={{ mb: 5 }}>
+            Key <span style={{ color: "orange" }}>insights</span>.
+          </Typography>
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        sx={{ display: "flex", alignItems: "center", mb: 8, pr: 2 }}
+      >
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
+          <Typography variant="h4" sx={{ mb: 3 }}>
+            Dense low-rise areas trap more heat
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            Tightly packed two and three story buildings show temperatures that
+            are 4-6°C higher than areas with taller, spaced buildings.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            Narrow streets reduce air circulation and trap heat.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <span style={{ color: "white" }}>
+              <strong>Impact</strong>
+            </span>{" "}
+            : Urban densification needs to balance height and spacing to
+            maintain airflow.
+          </Typography>
+        </Grid>
+        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
+        <Grid size={{ xs: 12, sm: 5, md: 4 }}>
+          <img src="/images/globe.jpg" className="borderedLight w-100" />
+        </Grid>
+      </Grid>
+      <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
+        <Grid
+          size={{ xs: 12, sm: 5, md: 4 }}
+          sx={{ mb: { xs: 4, md: 0 }, pr: 2 }}
+        >
+          <img src="/images/solution.jpg" className="borderedLight w-100" />
+        </Grid>
+        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
         <Grid size={6}>
-          <Typography variant="h4" sx={{ mt: 3, mb: 3 }}>
-            Key <span style={{ color: "orange" }}>Insights</span>
+          <Typography variant="h4" sx={{ mb: 3 }}>
+            Parks Create Cooling Zones
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey" }}>
+            Green spaces reduce surrounding temperatures by up to 3°C within 200
+            meters, creating measurable cooling zones.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-            <LeaderboardIcon
-              color="warning"
-              sx={{ verticalAlign: "sub", mr: 2 }}
-            />
-            Dense Low-Rise Areas Trap More Heat
+            <span style={{ color: "white" }}>
+              <strong>Impact</strong>
+            </span>{" "}
+            : Strategic park placement can create cooling networks across
+            vulnerable neighborhoods.
           </Typography>
         </Grid>
       </Grid>
