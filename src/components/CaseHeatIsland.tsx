@@ -14,6 +14,7 @@ import ThermostatIcon from "@mui/icons-material/Thermostat";
 import SpeedIcon from "@mui/icons-material/Speed";
 import HikingIcon from "@mui/icons-material/Hiking";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
+import NoteAltIcon from "@mui/icons-material/NoteAlt";
 import { styled } from "@mui/material/styles";
 
 const CaseHeatIsland = () => {
@@ -320,7 +321,7 @@ const CaseHeatIsland = () => {
         <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">
             <CardContent>
-              <AcUnitIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
+              <NoteAltIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Urban Planning</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 3D visualisations can identify areas or neighborhoods that
@@ -333,7 +334,7 @@ const CaseHeatIsland = () => {
         <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">
             <CardContent>
-              <AcUnitIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
+              <NoteAltIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Building Development</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 Policy makers can gain valuable insights from the data to inform
@@ -346,7 +347,7 @@ const CaseHeatIsland = () => {
         <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">
             <CardContent>
-              <AcUnitIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
+              <NoteAltIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Climate/Health Research</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 Wider health concerns due to heat issues can be communicated to
