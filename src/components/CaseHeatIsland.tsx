@@ -175,7 +175,7 @@ const CaseHeatIsland = () => {
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
         <Grid size={{ xs: 12, sm: 5, md: 4 }}>
-          <img src="/images/globe.jpg" className="borderedLight w-100" />
+          <img src="/images/trap.jpg" className="borderedLight w-100" />
         </Grid>
       </Grid>
       <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
@@ -183,7 +183,7 @@ const CaseHeatIsland = () => {
           size={{ xs: 12, sm: 5, md: 4 }}
           sx={{ mb: { xs: 4, md: 0 }, pr: 2 }}
         >
-          <img src="/images/solution.jpg" className="borderedLight w-100" />
+          <img src="/images/cooling.jpg" className="borderedLight w-100" />
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
         <Grid size={6}>
@@ -193,6 +193,10 @@ const CaseHeatIsland = () => {
           <Typography variant="h6" sx={{ color: "grey" }}>
             Green spaces reduce surrounding temperatures by up to 3°C within 200
             meters, creating measurable cooling zones.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey" }}>
+            Note: Dark areas in map denote low-temperature regions of parkland
+            or water.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
             <span style={{ color: "white" }}>
