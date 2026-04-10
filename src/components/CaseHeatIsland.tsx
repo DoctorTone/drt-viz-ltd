@@ -26,6 +26,8 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import PostAddIcon from "@mui/icons-material/PostAdd";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import DescriptionIcon from "@mui/icons-material/Description";
 
 const CaseHeatIsland = () => {
   const DataCard = styled(Card)({
@@ -403,37 +405,28 @@ const CaseHeatIsland = () => {
             <Grid size={{ xs: 12, sm: 6, md: 4 }}>
               <DataCard variant="outlined">
                 <CardContent>
-                  <PostAddIcon
+                  <DescriptionIcon
                     color="warning"
                     sx={{ mb: 5 }}
                     fontSize="large"
                   />
                   <Typography variant="h5">Satellite Imagery</Typography>
                   <List sx={{ color: "grey" }}>
-                    <ListItem>
-                      <ListItemIcon>
-                        <FiberManualRecordIcon
-                          color="warning"
-                          fontSize="small"
-                        />
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
                       <ListItemText primary="Landsat 9 thermal infrared band at 100m resolution" />
                     </ListItem>
-                    <ListItem>
-                      <ListItemIcon>
-                        <FiberManualRecordIcon
-                          color="warning"
-                          fontSize="small"
-                        />
+                    <ListItem disablePadding sx={{ mb: 1 }}>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
                       <ListItemText primary="Capture date: 30th July 2024" />
                     </ListItem>
-                    <ListItem>
-                      <ListItemIcon>
-                        <FiberManualRecordIcon
-                          color="warning"
-                          fontSize="small"
-                        />
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
                       <ListItemText primary="Source: USGS EarthExplorer" />
                     </ListItem>
@@ -444,35 +437,70 @@ const CaseHeatIsland = () => {
             <Grid size={{ xs: 12, sm: 6, md: 4 }}>
               <DataCard variant="outlined">
                 <CardContent>
-                  <PostAddIcon
+                  <DescriptionIcon
                     color="warning"
                     sx={{ mb: 5 }}
                     fontSize="large"
                   />
                   <Typography variant="h5">Building Data</Typography>
-                  <Typography variant="h6" sx={{ color: "grey" }}>
-                    Policy makers can gain valuable insights from the data to
-                    inform site selection for new projects. This can then inform
-                    material and design choices to minimise heat island
-                    contribution.
-                  </Typography>
+                  <List sx={{ color: "grey" }}>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="OpenStreetMap footprints generating 27,723 buildings" />
+                    </ListItem>
+                    <ListItem disablePadding sx={{ mb: 1 }}>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Height attribute and building types" />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Source: Overpass Turbo API" />
+                    </ListItem>
+                  </List>
                 </CardContent>
               </DataCard>
             </Grid>
             <Grid size={{ xs: 12, sm: 6, md: 4 }}>
               <DataCard variant="outlined">
                 <CardContent>
-                  <PostAddIcon
+                  <DescriptionIcon
                     color="warning"
                     sx={{ mb: 5 }}
                     fontSize="large"
                   />
                   <Typography variant="h5">Pipeline</Typography>
-                  <Typography variant="h6" sx={{ color: "grey" }}>
-                    Wider health concerns due to heat issues can be communicated
-                    to policymakers. The impact of any proposed interventions
-                    can be visualised before implementation.
-                  </Typography>
+                  <List sx={{ color: "grey" }}>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Python pre-procesing using rasterio, geopandas, pyproj" />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Coordinate transformation from WGS84 -> UTM 30N" />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Temperature sampling within building footprints" />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Generates optimised JSON output" />
+                    </ListItem>
+                  </List>
                 </CardContent>
               </DataCard>
             </Grid>
