@@ -18,23 +18,23 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import PermMediaIcon from "@mui/icons-material/PermMedia";
 import { styled } from "@mui/material/styles";
 
+const DataAccordion = styled(Accordion)({
+  background: "#0a0401",
+  color: "white",
+  marginBottom: "3%",
+  "&:first-of-type": { borderRadius: "15px" },
+  "&:last-of-type": { borderRadius: "15px" },
+});
+
+const DataCard = styled(Card)({
+  background: "black",
+  color: "white",
+  border: "1px solid rgba(255, 255, 255, 0.25)",
+  borderRadius: "10px",
+  height: "100%",
+});
+
 const Technical = () => {
-  const DataAccordion = styled(Accordion)({
-    background: "#0a0401",
-    color: "white",
-    marginBottom: "3%",
-    "&:first-of-type": { borderRadius: "15px" },
-    "&:last-of-type": { borderRadius: "15px" },
-  });
-
-  const DataCard = styled(Card)({
-    background: "black",
-    color: "white",
-    border: "1px solid rgba(255, 255, 255, 0.25)",
-    borderRadius: "10px",
-    height: "100%",
-  });
-
   return (
     <Container>
       <Chip
@@ -51,7 +51,6 @@ const Technical = () => {
         sx={{ mb: 0 }}
         slotProps={{
           transition: {
-            unmountOnExit: true,
             timeout: 500,
             appear: true,
           },
@@ -171,7 +170,6 @@ const Technical = () => {
         sx={{ mb: 0 }}
         slotProps={{
           transition: {
-            unmountOnExit: true,
             timeout: 500,
             appear: true,
           },

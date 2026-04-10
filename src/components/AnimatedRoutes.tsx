@@ -1,7 +1,8 @@
 import MainPage from "../pages/MainPage";
 import { Routes, Route, useLocation } from "react-router-dom";
 import DataViz from "../pages/DataViz";
-import CaseStudy from "../pages/CaseStudy";
+import CaseStudyHeatIsland from "../pages/CaseStudyHeatIsland";
+import CaseStudyLightning from "../pages/CaseStudyLightning";
 import { AnimatePresence } from "framer-motion";
 
 const AnimatedRoutes = () => {
@@ -12,7 +13,14 @@ const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<MainPage />} />
         <Route path="/dataviz" element={<DataViz />} />
-        <Route path="/case-studies/heat-islands" element={<CaseStudy />} />
+        <Route
+          path="/case-studies/heat-islands"
+          element={<CaseStudyHeatIsland />}
+        />
+        <Route
+          path="/case-studies/lightning-strikes"
+          element={<CaseStudyLightning />}
+        />
       </Routes>
     </AnimatePresence>
   );

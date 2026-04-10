@@ -54,7 +54,7 @@ const Portfolio = () => {
               <Button
                 variant="outlined"
                 color="warning"
-                href="/case-studies/heat-islands"
+                href="/case-studies/lightning-strikes"
               >
                 Case Study
               </Button>

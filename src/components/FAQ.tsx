@@ -11,6 +11,17 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import { styled } from "@mui/material/styles";
 
 const TIMEOUT = 500;
+
+const DataAccordian = styled(Accordion)({
+  background: "black",
+  color: "white",
+  border: "1px solid rgba(255, 255, 255, 0.3)",
+  borderRadius: "15px",
+  marginBottom: "3%",
+  "&:first-of-type": { borderRadius: "15px" },
+  "&:last-of-type": { borderRadius: "15px" },
+});
+
 const FAQ = () => {
   const [expanded, setExpanded] = useState<string | false>(false);
 
@@ -18,16 +29,6 @@ const FAQ = () => {
     (panel: string) => (_: SyntheticEvent, newExpanded: boolean) => {
       setExpanded(newExpanded ? panel : false);
     };
-
-  const DataAccordian = styled(Accordion)({
-    background: "black",
-    color: "white",
-    border: "1px solid rgba(255, 255, 255, 0.3)",
-    borderRadius: "15px",
-    marginBottom: "3%",
-    "&:first-of-type": { borderRadius: "15px" },
-    "&:last-of-type": { borderRadius: "15px" },
-  });
 
   return (
     <Container id="section5" sx={{ mb: 6 }}>
@@ -53,9 +54,8 @@ const FAQ = () => {
             onChange={handleChange("panel1")}
             slotProps={{
               transition: {
-                unmountOnExit: true,
-                timeout: TIMEOUT, // optional
-                appear: true, // optional
+                timeout: TIMEOUT,
+                appear: true,
               },
             }}
           >
@@ -77,9 +77,8 @@ const FAQ = () => {
             onChange={handleChange("panel2")}
             slotProps={{
               transition: {
-                unmountOnExit: true,
-                timeout: TIMEOUT, // optional
-                appear: true, // optional
+                timeout: TIMEOUT,
+                appear: true,
               },
             }}
           >
@@ -101,9 +100,8 @@ const FAQ = () => {
             onChange={handleChange("panel3")}
             slotProps={{
               transition: {
-                unmountOnExit: true,
-                timeout: TIMEOUT, // optional
-                appear: true, // optional
+                timeout: TIMEOUT,
+                appear: true,
               },
             }}
           >
@@ -126,9 +124,8 @@ const FAQ = () => {
             onChange={handleChange("panel4")}
             slotProps={{
               transition: {
-                unmountOnExit: true,
-                timeout: TIMEOUT, // optional
-                appear: true, // optional
+                timeout: TIMEOUT,
+                appear: true,
               },
             }}
           >
@@ -151,9 +148,8 @@ const FAQ = () => {
             onChange={handleChange("panel5")}
             slotProps={{
               transition: {
-                unmountOnExit: true,
-                timeout: TIMEOUT, // optional
-                appear: true, // optional
+                timeout: TIMEOUT,
+                appear: true,
               },
             }}
           >
@@ -175,9 +171,8 @@ const FAQ = () => {
             onChange={handleChange("panel6")}
             slotProps={{
               transition: {
-                unmountOnExit: true,
-                timeout: TIMEOUT, // optional
-                appear: true, // optional
+                timeout: TIMEOUT,
+                appear: true,
               },
             }}
           >
@@ -199,9 +194,8 @@ const FAQ = () => {
             onChange={handleChange("panel7")}
             slotProps={{
               transition: {
-                unmountOnExit: true,
-                timeout: TIMEOUT, // optional
-                appear: true, // optional
+                timeout: TIMEOUT,
+                appear: true,
               },
             }}
           >

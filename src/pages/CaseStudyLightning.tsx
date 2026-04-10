@@ -1,18 +1,18 @@
 import NavBarCaseStudy from "../components/NavBarCaseStudy";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import CaseHeatIsland from "../components/CaseHeatIsland";
+import CaseLightning from "../components/CaseLightning";
 import { PageTransition } from "../components/PageTransition";
 
-const CaseStudy = () => {
+const CaseStudyLightning = () => {
   return (
     <PageTransition>
       <NavBarCaseStudy />
-      <CaseHeatIsland />
+      <CaseLightning />
       <Contact />
       <Footer />
     </PageTransition>
   );
 };
 
-export default CaseStudy;
+export default CaseStudyLightning;
