@@ -44,7 +44,11 @@ const Technical = () => {
         color="warning"
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
+      <Typography variant="h3" sx={{ mb: 3 }}>
+        Technical <span style={{ color: "orange" }}>implementation</span>
+      </Typography>
       <DataAccordion
+        sx={{ mb: 0 }}
         slotProps={{
           transition: {
             unmountOnExit: true,
@@ -54,12 +58,9 @@ const Technical = () => {
         }}
       >
         <AccordionSummary expandIcon={<ArrowDownwardIcon color="warning" />}>
-          <Typography variant="h3">Technical Details</Typography>
+          <Typography variant="h4">Data Processing</Typography>
         </AccordionSummary>
-        <AccordionDetails>
-          <Typography variant="h4" sx={{ mb: 3 }}>
-            Data Processing
-          </Typography>
+        <AccordionDetails sx={{ pb: 0 }}>
           <Grid container spacing={2} sx={{ mb: 6 }}>
             <Grid size={{ xs: 12, sm: 6, md: 4 }}>
               <DataCard variant="outlined">
@@ -164,9 +165,23 @@ const Technical = () => {
               </DataCard>
             </Grid>
           </Grid>
+        </AccordionDetails>
+      </DataAccordion>
+      <DataAccordion
+        slotProps={{
+          transition: {
+            unmountOnExit: true,
+            timeout: 500,
+            appear: true,
+          },
+        }}
+      >
+        <AccordionSummary expandIcon={<ArrowDownwardIcon color="warning" />}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             Visualisation Stack
           </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
           <Grid container spacing={2} sx={{ mb: 6 }}>
             <Grid size={{ xs: 12, sm: 6, md: 4 }}>
               <DataCard variant="outlined">
