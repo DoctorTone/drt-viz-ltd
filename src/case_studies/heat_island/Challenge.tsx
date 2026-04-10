@@ -16,13 +16,20 @@ const Challenge = () => {
         color="warning"
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
+      <Grid container spacing={0}>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
+          <Typography variant="h3" sx={{ mb: 5 }}>
+            The <span style={{ color: "orange" }}>Challenge</span>.
+          </Typography>
+        </Grid>
+      </Grid>
       <Grid
         container
         sx={{ display: "flex", alignItems: "center", mb: 8, pr: 2 }}
       >
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h4" sx={{ mb: 3 }}>
-            The Challenge
+            Two-dimensional <span style={{ color: "orange" }}>maps</span>
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <HikingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
@@ -63,7 +70,7 @@ const Challenge = () => {
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h4" sx={{ mb: 3 }}>
-            The Solution
+            3D <span style={{ color: "orange" }}>Visualisation</span>
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <TipsAndUpdatesIcon

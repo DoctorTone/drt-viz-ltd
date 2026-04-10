@@ -26,7 +26,7 @@ const Benefits = () => {
         color="warning"
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
-      <Typography variant="h2" sx={{ mb: 3 }}>
+      <Typography variant="h3" sx={{ mb: 3 }}>
         Who <span style={{ color: "orange" }}>benefits?</span>
       </Typography>
       <Typography variant="h6" sx={{ color: "grey", mb: 4 }}>

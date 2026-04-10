@@ -18,7 +18,7 @@ const Insights = () => {
       />
       <Grid container spacing={0}>
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
-          <Typography variant="h2" sx={{ mb: 5 }}>
+          <Typography variant="h3" sx={{ mb: 5 }}>
             Key <span style={{ color: "orange" }}>insights</span>.
           </Typography>
         </Grid>

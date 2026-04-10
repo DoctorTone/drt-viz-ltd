@@ -37,7 +37,7 @@ const Hero = () => {
         </Grid>
       </Grid>
       <Box sx={{ mb: 6 }}>
-        <Typography variant="h4" sx={{ mt: 3, mb: 3 }}>
+        <Typography variant="h3" sx={{ mt: 3, mb: 3 }}>
           The <span style={{ color: "orange" }}>Project</span>
         </Typography>
         <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
