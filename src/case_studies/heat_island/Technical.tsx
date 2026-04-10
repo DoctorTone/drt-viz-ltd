@@ -242,13 +242,19 @@ const Technical = () => {
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Four zone temperature <-> colour mapping - blue/green/yellow/red" />
+                      <ListItemText primary="Four zone temperature-to-colour mapping" />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Orbit controls with smooth damping" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Orbit controls with smooth damping" />
+                      <ListItemText primary="Smooth story mode camera transitions" />
                     </ListItem>
                   </List>
                 </CardContent>
