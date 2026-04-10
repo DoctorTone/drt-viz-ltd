@@ -24,10 +24,9 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
-import PostAddIcon from "@mui/icons-material/PostAdd";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import DescriptionIcon from "@mui/icons-material/Description";
+import PermMediaIcon from "@mui/icons-material/PermMedia";
 
 const CaseHeatIsland = () => {
   const DataCard = styled(Card)({
@@ -512,52 +511,96 @@ const CaseHeatIsland = () => {
             <Grid size={{ xs: 12, sm: 6, md: 4 }}>
               <DataCard variant="outlined">
                 <CardContent>
-                  <NoteAltIcon
+                  <PermMediaIcon
                     color="warning"
                     sx={{ mb: 5 }}
                     fontSize="large"
                   />
-                  <Typography variant="h5">Urban Planning</Typography>
-                  <Typography variant="h6" sx={{ color: "grey" }}>
-                    3D visualisations can identify areas or neighborhoods that
-                    require cooling interventions. This can inform priorisation
-                    of infrastructure investments based on heat vulnerability.
-                  </Typography>
+                  <Typography variant="h5">Framework</Typography>
+                  <List sx={{ color: "grey" }}>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="React Three Fiber and Three.js" />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Material UI for interface" />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Python for data pre-processing" />
+                    </ListItem>
+                  </List>
                 </CardContent>
               </DataCard>
             </Grid>
             <Grid size={{ xs: 12, sm: 6, md: 4 }}>
               <DataCard variant="outlined">
                 <CardContent>
-                  <NoteAltIcon
+                  <PermMediaIcon
                     color="warning"
                     sx={{ mb: 5 }}
                     fontSize="large"
                   />
-                  <Typography variant="h5">Building Development</Typography>
-                  <Typography variant="h6" sx={{ color: "grey" }}>
-                    Policy makers can gain valuable insights from the data to
-                    inform site selection for new projects. This can then inform
-                    material and design choices to minimise heat island
-                    contribution.
-                  </Typography>
+                  <Typography variant="h5">Rendering</Typography>
+                  <List sx={{ color: "grey" }}>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Instanced geometry rendering 27K buildings with single draw call" />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Four zone temperature <-> colour mapping - blue/green/yellow/red" />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Orbit controls with smooth damping" />
+                    </ListItem>
+                  </List>
                 </CardContent>
               </DataCard>
             </Grid>
             <Grid size={{ xs: 12, sm: 6, md: 4 }}>
               <DataCard variant="outlined">
                 <CardContent>
-                  <NoteAltIcon
+                  <PermMediaIcon
                     color="warning"
                     sx={{ mb: 5 }}
                     fontSize="large"
                   />
-                  <Typography variant="h5">Climate/Health Research</Typography>
-                  <Typography variant="h6" sx={{ color: "grey" }}>
-                    Wider health concerns due to heat issues can be communicated
-                    to policymakers. The impact of any proposed interventions
-                    can be visualised before implementation.
-                  </Typography>
+                  <Typography variant="h5">Performance</Typography>
+                  <List sx={{ color: "grey" }}>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="60 frames per second on desktop/tablet/mobile" />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Asynchronous data loading with progress indicator" />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Responsive layouts for mobile" />
+                    </ListItem>
+                  </List>
                 </CardContent>
               </DataCard>
             </Grid>
