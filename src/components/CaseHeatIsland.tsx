@@ -5,13 +5,8 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 import SunnyIcon from "@mui/icons-material/Sunny";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import RoofingIcon from "@mui/icons-material/Roofing";
-import ThermostatIcon from "@mui/icons-material/Thermostat";
-import SpeedIcon from "@mui/icons-material/Speed";
 import HikingIcon from "@mui/icons-material/Hiking";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import NoteAltIcon from "@mui/icons-material/NoteAlt";
@@ -27,6 +22,7 @@ import ListItemText from "@mui/material/ListItemText";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import DescriptionIcon from "@mui/icons-material/Description";
 import PermMediaIcon from "@mui/icons-material/PermMedia";
+import Hero from "../case_studies/heat_island/Hero";
 
 const CaseHeatIsland = () => {
   const DataCard = styled(Card)({
@@ -46,67 +42,8 @@ const CaseHeatIsland = () => {
   });
 
   return (
-    <Container id="section1" sx={{ mt: 6 }}>
-      <Chip
-        icon={<BoltIcon />}
-        label="Case Study"
-        variant="outlined"
-        color="warning"
-        sx={{ mb: 2, color: "orange", borderColor: "orange" }}
-      />
-      <Grid container sx={{ mb: 4 }}>
-        <Grid size={{ md: 2 }}></Grid>
-        <Grid size={{ xs: 12, md: 8 }}>
-          <Typography variant="h3" sx={{ mb: 3, textAlign: "center" }}>
-            London Urban Heat Islands
-          </Typography>
-          <video
-            muted
-            loop
-            preload="auto"
-            autoPlay
-            className="borderedLight w-100"
-          >
-            <source src="/videos/HeatIsland.mp4" type="video/mp4" />
-          </video>
-        </Grid>
-      </Grid>
-      <Box sx={{ mb: 6 }}>
-        <Typography variant="h4" sx={{ mt: 3, mb: 3 }}>
-          The <span style={{ color: "orange" }}>Project</span>
-        </Typography>
-        <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-          This is an interactive 3D visualisation of London's urban heat
-          patterns using satellite thermal imaging data and more than 27,000
-          building footprints. It reveals the spatial relationships that inform
-          climate adaptation and urban planning strategies.
-        </Typography>
-        <Typography variant="h6">
-          <RoofingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-          27,723 buildings visualised.
-        </Typography>
-        <Typography variant="h6">
-          <ThermostatIcon
-            color="warning"
-            sx={{ verticalAlign: "sub", mr: 2 }}
-          />
-          Temperatrure range of 27.5°C to 44.6°C.
-        </Typography>
-        <Typography variant="h6" sx={{ mb: 3 }}>
-          <SpeedIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-          Optimal performance of 60 frames per second on desktop, tablet and
-          mobile.
-        </Typography>
-        <Button
-          variant="contained"
-          color="warning"
-          href="https://www.drt-software.com/HeatIsland/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          View Demo
-        </Button>
-      </Box>
+    <Container>
+      <Hero />
       <Chip
         icon={<BoltIcon />}
         label="Challenge"
