@@ -168,6 +168,7 @@ const Technical = () => {
         </AccordionDetails>
       </DataAccordion>
       <DataAccordion
+        sx={{ mb: 0 }}
         slotProps={{
           transition: {
             unmountOnExit: true,
@@ -194,25 +195,25 @@ const Technical = () => {
                   <Typography variant="h5">Framework</Typography>
                   <List sx={{ color: "grey" }}>
                     <ListItem disablePadding>
-                      <ListItemIcon sx={{ minWidth: 48 }}>
+                      <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
                       <ListItemText primary="React Three Fiber and Three.js" />
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemIcon sx={{ minWidth: 48 }}>
+                      <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
                       <ListItemText primary="Material UI for interface" />
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemIcon sx={{ minWidth: 48 }}>
+                      <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
                       <ListItemText primary="Python for data pre-processing" />
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemIcon sx={{ minWidth: 48 }}>
+                      <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
                       <ListItemText primary="GSAP library for camera animations" />
