@@ -536,6 +536,12 @@ const CaseHeatIsland = () => {
                       </ListItemIcon>
                       <ListItemText primary="Python for data pre-processing" />
                     </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="GSAP library for camera animations" />
+                    </ListItem>
                   </List>
                 </CardContent>
               </DataCard>
