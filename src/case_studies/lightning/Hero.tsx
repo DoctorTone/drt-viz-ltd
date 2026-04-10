@@ -32,7 +32,7 @@ const Hero = () => {
             autoPlay
             className="borderedLight w-100"
           >
-            <source src="/videos/HeatIsland.mp4" type="video/mp4" />
+            <source src="/videos/Lightning.mp4" type="video/mp4" />
           </video>
         </Grid>
       </Grid>
@@ -41,14 +41,14 @@ const Hero = () => {
           The <span style={{ color: "orange" }}>Project</span>
         </Typography>
         <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-          This is an interactive 3D visualisation of London's urban heat
-          patterns using satellite thermal imaging data and more than 27,000
-          building footprints. It reveals the spatial relationships that inform
-          climate adaptation and urban planning strategies.
+          This is a 3D visualisation of the thousands of lightning strikes
+          occuring across the planet for a whole year. It uses the NASA blue
+          marble and Earth Data datasets to show the strike density across the
+          globe for any given month.
         </Typography>
         <Typography variant="h6">
           <RoofingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-          27,723 buildings visualised.
+          1000's of global strikes visualised.
         </Typography>
         <Typography variant="h6">
           <ThermostatIcon
@@ -65,7 +65,7 @@ const Hero = () => {
         <Button
           variant="contained"
           color="warning"
-          href="https://www.drt-software.com/HeatIsland/"
+          href="https://drt-software.com/LightningViz/"
           target="_blank"
           rel="noreferrer noopener"
         >

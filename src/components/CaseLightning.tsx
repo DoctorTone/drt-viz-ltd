@@ -1,7 +1,11 @@
-import React from "react";
+import Hero from "../case_studies/lightning/Hero";
 
 const CaseLightning = () => {
-  return <div>CaseLightning</div>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 };
 
 export default CaseLightning;
