@@ -102,16 +102,27 @@ const Insights = () => {
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-            Warehouses show surface temperatures that are 8°C above residential
-            averages due to large flat roofs with dark materials.
+            Despite covering the majority of the Earth's surface, ocean regions
+            experience much less lightning activity compared to continental
+            areas.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            Strike density is overwhelmingly concentrated over land, where
+            surface heating and topography drive thunderstorm formation.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            Marine lightning is relatively rare but may indicate significant
+            storm systems.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             <span style={{ color: "orange" }}>
               <strong>Impact</strong>
             </span>{" "}
-            : Building design should incentivise or promote reflective roofing
-            materials in industrial zones.
+            : More concentrated land monitoring networks are required than
+            oceanic systems.
           </Typography>
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
@@ -133,18 +144,22 @@ const Insights = () => {
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-            Modern tall buildings with reflective materials appear cooler due to
-            less roof area per floor and rooftop cooling systems lowering the
-            surface temperature.
+            Unlike highly seasonal regions, equatorial zones maintain high
+            strike activity all year round.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            These consistent patterns reflect constant atmospheric conditions in
+            tropical climates.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
             <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             <span style={{ color: "orange" }}>
               <strong>Impact</strong>
             </span>{" "}
-            : Building materials are just as significant as building height.
-            Retrofitting older buildings with reflective coatings where possible
-            could reduce temperatures significantly.
+            : Tropical infrastructure requires year-round lightning protection,
+            unlike temperate zones, which can focus efforts around storm
+            seasons.
           </Typography>
         </Grid>
       </Grid>
