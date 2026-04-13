@@ -4,8 +4,7 @@ import BoltIcon from "@mui/icons-material/Bolt";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import RoofingIcon from "@mui/icons-material/Roofing";
-import ThermostatIcon from "@mui/icons-material/Thermostat";
+import MapIcon from "@mui/icons-material/Map";
 import SpeedIcon from "@mui/icons-material/Speed";
 import Button from "@mui/material/Button";
 
@@ -42,20 +41,18 @@ const Hero = () => {
         </Typography>
         <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
           This is a 3D visualisation of the thousands of lightning strikes
-          occuring across the planet for a whole year. It uses the NASA blue
-          marble and Earth Data datasets to show the strike density across the
-          globe for any given month.
+          occuring across the planet for a whole year. It uses the NASA Blue
+          Marble and Earth Data datasets to show a dynamic representation of the
+          Earth's electrical activity.
         </Typography>
         <Typography variant="h6">
-          <RoofingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+          <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
           1000's of global strikes visualised.
         </Typography>
         <Typography variant="h6">
-          <ThermostatIcon
-            color="warning"
-            sx={{ verticalAlign: "sub", mr: 2 }}
-          />
-          Temperatrure range of 27.5°C to 44.6°C.
+          <MapIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+          Built as part of the 30 Day Map Challenge within the Energy and Light
+          theme.
         </Typography>
         <Typography variant="h6" sx={{ mb: 3 }}>
           <SpeedIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
