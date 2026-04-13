@@ -3,7 +3,6 @@ import Chip from "@mui/material/Chip";
 import BoltIcon from "@mui/icons-material/Bolt";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import HikingIcon from "@mui/icons-material/Hiking";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 
 const Challenge = () => {
@@ -57,10 +56,7 @@ const Challenge = () => {
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
         <Grid size={{ xs: 12, sm: 5, md: 5 }}>
-          <img
-            src="/images/thermal_preview.jpg"
-            className="borderedLight w-100"
-          />
+          <img src="/images/lightning.jpg" className="borderedLight w-100" />
         </Grid>
       </Grid>
       <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
@@ -68,7 +64,7 @@ const Challenge = () => {
           size={{ xs: 12, sm: 5, md: 5 }}
           sx={{ mb: { xs: 4, md: 0 }, pr: 2 }}
         >
-          <img src="/images/solution.jpg" className="borderedLight w-100" />
+          <img src="/images/globe.jpg" className="borderedLight w-100" />
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
