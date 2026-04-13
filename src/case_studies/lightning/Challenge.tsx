@@ -57,6 +57,20 @@ const Challenge = () => {
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
         <Grid size={{ xs: 12, sm: 5, md: 5 }}>
           <img src="/images/lightning.jpg" className="borderedLight w-100" />
+          <Typography
+            variant="body2"
+            className="links"
+            sx={{ color: "grey", textAlign: "center", mt: 1 }}
+          >
+            Photo by{" "}
+            <a href="https://unsplash.com/@smcauliffe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Sean McAuliffe
+            </a>{" "}
+            on{" "}
+            <a href="https://unsplash.com/photos/lightning-struck-on-city-at-night-time-vmvlzJz1lHg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
+          </Typography>
         </Grid>
       </Grid>
       <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
