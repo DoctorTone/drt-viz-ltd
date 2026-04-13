@@ -81,7 +81,7 @@ const Technical = () => {
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="NASA LIS/OTD Climatology Dataset" />
+                      <ListItemText primary="NASA Lightning Imaging Sensor/Optical Transient Detector Climatology Dataset" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
@@ -139,7 +139,7 @@ const Technical = () => {
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Python pre-procesing using h5py and numpy" />
+                      <ListItemText primary="Python pre-processing using h5py and numpy" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
@@ -196,7 +196,7 @@ const Technical = () => {
                       <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Custom GLSL shaders for point system" />
+                      <ListItemText primary="Custom GLSL shaders for particle system" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
@@ -228,7 +228,7 @@ const Technical = () => {
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Custom shader-based point system for optimal performance" />
+                      <ListItemText primary="Custom shader-based particle system for optimal performance" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
@@ -266,7 +266,7 @@ const Technical = () => {
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Thousands of active points at 60 frames per second" />
+                      <ListItemText primary="Thousands of active particles at 60 frames per second" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>

@@ -22,7 +22,7 @@ const Hero = () => {
         <Grid size={{ md: 2 }}></Grid>
         <Grid size={{ xs: 12, md: 8 }}>
           <Typography variant="h3" sx={{ mb: 3, textAlign: "center" }}>
-            Gloabal Lightning Strikes
+            Global Lightning Strikes
           </Typography>
           <video
             muted
@@ -41,13 +41,13 @@ const Hero = () => {
         </Typography>
         <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
           This is a 3D visualisation of the thousands of lightning strikes
-          occuring across the planet for a whole year. It uses the NASA Blue
+          occurring across the planet for a whole year. It uses the NASA Blue
           Marble and Earth Data datasets to show a dynamic representation of the
           Earth's electrical activity.
         </Typography>
         <Typography variant="h6">
           <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-          1000's of global strikes visualised.
+          Thousands of global strikes visualised.
         </Typography>
         <Typography variant="h6">
           <MapIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />

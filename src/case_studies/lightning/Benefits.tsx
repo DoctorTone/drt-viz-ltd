@@ -59,8 +59,8 @@ const Benefits = () => {
               <Typography variant="h6" sx={{ color: "grey" }}>
                 Seasonal schedules can be planned for both the air and sea
                 industries avoiding high-activity zones. The public can be
-                alerted about seasonal risk, outdoor event scheduling and
-                response coordination during peak activity periods.
+                educated about seasonal risk, and service managers can optimize
+                outdoor event scheduling and coordinate response resources.
               </Typography>
             </CardContent>
           </DataCard>

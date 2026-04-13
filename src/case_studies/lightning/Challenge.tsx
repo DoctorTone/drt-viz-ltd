@@ -33,8 +33,8 @@ const Challenge = () => {
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-            There are thousands of lighning strikes daily across the globe, but
-            their spatial/temporal patterns are difficult to visualise.
+            There are thousands of lightning strikes daily across the globe, but
+            their spatial and temporal patterns are difficult to visualise.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
@@ -90,7 +90,7 @@ const Challenge = () => {
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            We built an interactive 3D globe visualisation combining NASA Blue
+            I built an interactive 3D globe visualisation combining NASA Blue
             Marble imagery with NASA Earth Observatory lightning strike data.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>

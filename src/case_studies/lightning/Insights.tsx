@@ -70,7 +70,7 @@ const Insights = () => {
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h4" sx={{ mb: 3 }}>
-            Seasonal Patterns Follow Hemisperic Heating
+            Seasonal Patterns Follow Hemispheric Heating
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
@@ -79,9 +79,8 @@ const Insights = () => {
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-            Activity concentrations move with the summer months in each
-            hemisphere - north in the northern summer and south in the southern
-            summer.
+            Activity concentrations migrate north during northern hemisphere
+            summer and south during southern hemisphere summer.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
             <span style={{ color: "orange" }}>
