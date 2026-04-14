@@ -22,7 +22,10 @@ const Applications = () => {
           </Typography>
         </Grid>
       </Grid>
-      <Grid container spacing={0}>
+      <Grid
+        container
+        sx={{ display: "flex", alignItems: "center", mb: 8, pr: 2 }}
+      >
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <AppsIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
