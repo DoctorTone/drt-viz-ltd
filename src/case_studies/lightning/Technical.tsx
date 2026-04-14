@@ -295,10 +295,10 @@ const Technical = () => {
           <Typography variant="h6" sx={{ color: "grey" }}>
             <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
             <span style={{ color: "orange" }}>Result:</span> Smooth 60fps
-            visualization handling thousands of simultaneous particle
+            visualisation handling thousands of simultaneous particle
             animations, with efficient monthly data loading and seamless
             seasonal transitions. The shader-based approach enables
-            planetary-scale lightning visualization that runs smoothly even on
+            planetary-scale lightning visualisation that runs smoothly even on
             mobile devices.
           </Typography>
         </Grid>

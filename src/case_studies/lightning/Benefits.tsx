@@ -57,7 +57,7 @@ const Benefits = () => {
                 Seasonal schedules can be planned for both the air and sea
                 industries avoiding high-activity zones. The public can be
                 educated about seasonal risk, and service managers can optimize
-                outdoor event scheduling and coordinate response resources.
+                outdoor event scheduling and coordinate resources.
               </Typography>
             </CardContent>
           </DataCard>
