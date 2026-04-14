@@ -30,9 +30,9 @@ const About = () => {
           </Typography>
           <Typography variant="h6" color="grey">
             DRT Software was formed in 2015 with the aim of creating bespoke 3D
-            data visualisations. Since then, we've collaborated with a wide
-            range of clients across sectors including geospatial, climate,
-            sports, medical, music, art and research. We've helped turn their
+            data visualisations. Since then, the company has collaborated with a
+            wide range of clients across sectors including geospatial, climate,
+            sports, medical, music, art and research. I've helped turn their
             complex data into clear and meaningful visuals.
           </Typography>
         </Grid>
