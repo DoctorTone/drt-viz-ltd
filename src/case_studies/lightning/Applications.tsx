@@ -3,6 +3,7 @@ import Chip from "@mui/material/Chip";
 import BoltIcon from "@mui/icons-material/Bolt";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import AppsIcon from "@mui/icons-material/Apps";
 
 const Applications = () => {
   return (
@@ -20,25 +21,29 @@ const Applications = () => {
             Application <span style={{ color: "orange" }}>Areas</span>.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
+            <AppsIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
             Climate Research: Track atmospheric electrical activity patterns and
             correlations with climate phenomena.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
+            <AppsIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
             Risk Assessment: Model lightning probability for infrastructure
             planning and insurance underwriting.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
+            <AppsIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
             Aviation Safety: Seasonal route planning and storm avoidance
             systems.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
+            <AppsIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
             Power Grid Management: Predict seasonal outage risk and plan
             protection investments.
           </Typography>
+        </Grid>
+        <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
+        <Grid size={{ xs: 12, sm: 5, md: 5 }}>
+          <img src="/images/cloud.jpg" className="borderedLight w-100" />
         </Grid>
       </Grid>
     </Container>
