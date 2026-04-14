@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import SunnyIcon from "@mui/icons-material/Sunny";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
+import ThunderstormIcon from "@mui/icons-material/Thunderstorm";
 
 const Insights = () => {
   return (
@@ -73,16 +74,26 @@ const Insights = () => {
             Seasonal Patterns Follow Hemispheric Heating
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <ThunderstormIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             Strike patterns shift noticeably between months as solar heating
             moves between hemispheres.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <ThunderstormIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             Activity concentrations migrate north during northern hemisphere
             summer and south during southern hemisphere summer.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
+            <ThunderstormIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             <span style={{ color: "orange" }}>
               <strong>Impact</strong>
             </span>{" "}
@@ -100,23 +111,23 @@ const Insights = () => {
             Land Masses Show Far Greater Activity Than Oceans
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             Despite covering the majority of the Earth's surface, ocean regions
             experience much less lightning activity compared to continental
             areas.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             Strike density is overwhelmingly concentrated over land, where
             surface heating and topography drive thunderstorm formation.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             Marine lightning is relatively rare but may indicate significant
             storm systems.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             <span style={{ color: "orange" }}>
               <strong>Impact</strong>
             </span>{" "}
@@ -142,17 +153,26 @@ const Insights = () => {
             Activity Patterns Remain Consistent Within Tropical Zones
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <ThunderstormIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             Unlike highly seasonal regions, equatorial zones maintain high
             strike activity all year round.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <ThunderstormIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             These consistent patterns reflect constant atmospheric conditions in
             tropical climates.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <ThunderstormIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             <span style={{ color: "orange" }}>
               <strong>Impact</strong>
             </span>{" "}
