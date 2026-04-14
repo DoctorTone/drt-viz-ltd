@@ -58,7 +58,7 @@ const FullPortfolio = () => {
       },
       {
         threshold: Array.from({ length: numSteps + 1 }, (_, i) => i / numSteps),
-      }
+      },
     );
 
     ioRef.current = observer;
@@ -104,7 +104,7 @@ const FullPortfolio = () => {
     <Container id="section1" sx={{ mt: 6 }}>
       <Chip
         icon={<BoltIcon />}
-        label="Portfolio"
+        label="Portfolio Archive"
         variant="outlined"
         color="warning"
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
@@ -120,8 +120,13 @@ const FullPortfolio = () => {
       <Grid container>
         <Grid size={{ xs: 12, md: 6 }}>
           <Typography variant="h6" sx={{ color: "grey" }}>
-            See how we've helped companies showcase their data in a whole new
-            light.
+            Before specialising in geospatial and environmental visualisation, I
+            built 3D data experiences across numerous sectors such as
+            healthcare, sports, finance, education, and VR. These projects
+            demonstrate my technical depth and versatility across diverse data
+            challenges and domains. My current focus is geospatial and
+            environmental data visualisation, where I apply this extensive 3D
+            expertise to climate, urban, and atmospheric analytics.
           </Typography>
         </Grid>
       </Grid>
