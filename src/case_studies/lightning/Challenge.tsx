@@ -33,8 +33,9 @@ const Challenge = () => {
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-            There are thousands of lightning strikes daily across the globe, but
-            their spatial and temporal patterns are difficult to visualise.
+            Thousands of lightning strikes occur daily across the globe, but
+            their spatial and temporal patterns are difficult to visualise on a
+            planetary scale.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
@@ -107,7 +108,9 @@ const Challenge = () => {
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            App is available on desktop, tablet and mobile.
+            <span style={{ color: "orange" }}>Features:</span> Smooth Earth
+            rotation, toggle animation and equator display, custom shader
+            rendering, responsive design.
           </Typography>
         </Grid>
       </Grid>

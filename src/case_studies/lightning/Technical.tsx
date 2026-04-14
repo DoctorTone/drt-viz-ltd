@@ -36,7 +36,7 @@ const DataCard = styled(Card)({
 
 const Technical = () => {
   return (
-    <Container>
+    <Container sx={{ mb: 3 }}>
       <Chip
         icon={<BoltIcon />}
         label="Technical"
@@ -287,6 +287,34 @@ const Technical = () => {
           </Grid>
         </AccordionDetails>
       </DataAccordion>
+      <Grid
+        container
+        sx={{ display: "flex", alignItems: "center", mb: 8, pr: 2 }}
+      >
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
+          <Typography variant="h6" sx={{ color: "grey" }}>
+            <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
+            <span style={{ color: "orange" }}>Result:</span> Smooth 60fps
+            visualization handling thousands of simultaneous particle
+            animations, with efficient monthly data loading and seamless
+            seasonal transitions. The shader-based approach enables
+            planetary-scale lightning visualization that runs smoothly even on
+            mobile devices.
+          </Typography>
+        </Grid>
+        <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
+        <Grid size={{ xs: 12, sm: 5, md: 5 }}>
+          <video
+            muted
+            loop
+            preload="auto"
+            autoPlay
+            className="borderedLight w-100"
+          >
+            <source src="/videos/Lightning.mp4" type="video/mp4" />
+          </video>
+        </Grid>
+      </Grid>
     </Container>
   );
 };

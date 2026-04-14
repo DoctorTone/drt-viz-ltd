@@ -40,10 +40,9 @@ const Hero = () => {
           The <span style={{ color: "orange" }}>Project</span>
         </Typography>
         <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-          This is a 3D visualisation of the thousands of lightning strikes
-          occurring across the planet for a whole year. It uses the NASA Blue
-          Marble and Earth Data datasets to show a dynamic representation of the
-          Earth's electrical activity.
+          Interactive 3D visualisation of global lightning strikes across a full
+          year, revealing seasonal patterns and regional activity hotspots using
+          NASA satellite data.
         </Typography>
         <Typography variant="h6">
           <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
