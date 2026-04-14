@@ -27,34 +27,39 @@ const Applications = () => {
         sx={{ display: "flex", alignItems: "center", mb: 8, pr: 2 }}
       >
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
-          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+          <Typography variant="h6" sx={{ color: "grey" }}>
             <AppsIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
             <span style={{ color: "orange" }}>
               Urban Planning & Climate Adaptation:
-            </span>{" "}
+            </span>
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             Identify heat-vulnerable neighborhoods. Prioritise green
             infrastructure investments based on temperature impact.
           </Typography>
-          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+          <Typography variant="h6" sx={{ color: "grey" }}>
             <AppsIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
-            <span style={{ color: "orange" }}>
-              Real Estate & Development:
-            </span>{" "}
+            <span style={{ color: "orange" }}>Real Estate & Development:</span>
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             Site selection for residential and commercial projects considering
             thermal environment. Material and design choices to minimize heat
             island contribution.
           </Typography>
-          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+          <Typography variant="h6" sx={{ color: "grey" }}>
             <AppsIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
-            <span style={{ color: "orange" }}>Climate Research:</span> Research
-            findings to policymakers and general public. Visualise projected
-            impacts of climate change scenarios on urban temperatures.
+            <span style={{ color: "orange" }}>Climate Research:</span>
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            Communicate research findings to policymakers and general public.
+            Visualise projected impacts of climate change scenarios on urban
+            temperatures.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey" }}>
             <AppsIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
-            <span style={{ color: "orange" }}>
-              Infrastructure Planning:
-            </span>{" "}
+            <span style={{ color: "orange" }}>Infrastructure Planning:</span>
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             Assess heat stress on transportation networks, power grids, and
             water systems. Plan resilient infrastructure that accounts for
             thermal patterns.

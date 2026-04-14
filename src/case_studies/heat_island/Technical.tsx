@@ -140,7 +140,7 @@ const Technical = () => {
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Python pre-procesing using rasterio, geopandas, pyproj" />
+                      <ListItemText primary="Python pre-processing using rasterio, geopandas, pyproj" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
@@ -303,11 +303,11 @@ const Technical = () => {
             <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
             <span style={{ color: "orange" }}>Result:</span> Successfully
             integrated Landsat 9 thermal satellite data with OpenStreetMap
-            building footprints to create a smooth 60fps interactive
-            visualisation. The React Three Fiber implementation handles
-            large-scale geospatial datasets efficiently through instanced
-            rendering, with responsive design optimized for desktop, tablet, and
-            mobile devices.
+            building footprints (27,723 buildings) to create a smooth 60fps
+            interactive visualisation. The React Three Fiber implementation
+            handles large-scale geospatial datasets efficiently through
+            instanced rendering, with responsive design optimized for desktop,
+            tablet, and mobile devices.
           </Typography>
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>

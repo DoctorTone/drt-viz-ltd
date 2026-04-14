@@ -55,7 +55,7 @@ const Hero = () => {
             color="warning"
             sx={{ verticalAlign: "sub", mr: 2 }}
           />
-          Temperatrure range of 27.5°C to 44.6°C.
+          Temperature range of 27.5°C to 44.6°C.
         </Typography>
         <Typography variant="h6" sx={{ mb: 3 }}>
           <SpeedIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />

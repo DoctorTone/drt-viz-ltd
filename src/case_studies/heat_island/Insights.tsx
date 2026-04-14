@@ -69,7 +69,7 @@ const Insights = () => {
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             Green spaces reduce surrounding temperatures by up to 3°C within 200
-            meters, creating measurable cooler areas.
+            meters, creating measurably cooler areas.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
@@ -105,8 +105,8 @@ const Insights = () => {
             <span style={{ color: "orange" }}>
               <strong>Impact</strong>
             </span>{" "}
-            : Building design should incentivise or promote reflective roofing
-            materials in industrial zones.
+            : Building design should incentivise reflective roofing materials in
+            industrial zones.
           </Typography>
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>

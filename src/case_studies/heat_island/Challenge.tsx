@@ -39,12 +39,12 @@ const Challenge = () => {
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <HikingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             Traditional 2D maps show hotspots but can't reveal why certain areas
-            are hotter?
+            are hotter.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <HikingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-            Is it building density, height or the type of materials used? Or
-            could it be a lack of green space?
+            Is it building density? Height? Materials used? Or could it be a
+            lack of green space?
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
             <HikingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
@@ -94,9 +94,10 @@ const Challenge = () => {
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            <span style={{ color: "orange" }}>Features:</span> Smooth camera
-            transitions, instanced building rendering, temperature
-            classification, responsive design.
+            <span style={{ color: "orange" }}>Features:</span> Users can explore
+            more than 27,000 buildings across central London, colour-coded by
+            surface temperature, with smooth camera transitions between preset
+            viewpoints, highlighting key insights.
           </Typography>
         </Grid>
       </Grid>

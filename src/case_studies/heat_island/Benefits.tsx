@@ -60,7 +60,7 @@ const Benefits = () => {
           <DataCard variant="outlined">
             <CardContent>
               <NoteAltIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
-              <Typography variant="h5">Climate/Health Research</Typography>
+              <Typography variant="h5">Climate & Health Research</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
                 Wider health concerns due to heat issues can be communicated to
                 policymakers. The impact of any proposed interventions can be
