@@ -27,26 +27,34 @@ const Applications = () => {
         sx={{ display: "flex", alignItems: "center", mb: 8, pr: 2 }}
       >
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
-          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+          <Typography variant="h6" sx={{ color: "grey" }}>
             <AppsIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
-            <span style={{ color: "orange" }}>Climate Research:</span> Track
-            atmospheric electrical activity patterns and correlations with
+            <span style={{ color: "orange" }}>Climate Research:</span>
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            Track atmospheric electrical activity patterns and correlations with
             climate phenomena.
           </Typography>
-          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+          <Typography variant="h6" sx={{ color: "grey" }}>
             <AppsIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
-            <span style={{ color: "orange" }}>Risk Assessment:</span> Model
-            lightning probability for infrastructure planning and insurance
-            underwriting.
+            <span style={{ color: "orange" }}>Risk Assessment:</span>
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            Model lightning probability for infrastructure planning and
+            insurance underwriting.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey" }}>
             <AppsIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
-            <span style={{ color: "orange" }}>Aviation Safety:</span> Seasonal
-            route planning and storm avoidance systems.
+            <span style={{ color: "orange" }}>Aviation Safety:</span>
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            Seasonal route planning and storm avoidance systems.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey" }}>
             <AppsIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
-            <span style={{ color: "orange" }}>Power Grid Management:</span>{" "}
+            <span style={{ color: "orange" }}>Power Grid Management:</span>
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             Predict seasonal outage risk and plan protection investments.
           </Typography>
         </Grid>
