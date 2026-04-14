@@ -29,9 +29,6 @@ const Benefits = () => {
       <Typography variant="h3" sx={{ mb: 3 }}>
         Who <span style={{ color: "orange" }}>benefits?</span>
       </Typography>
-      <Typography variant="h6" sx={{ color: "grey", mb: 4 }}>
-        See how 3D data visualisation can benefit the wider community.
-      </Typography>
       <Grid container spacing={2} sx={{ mb: 6 }}>
         <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <DataCard variant="outlined">

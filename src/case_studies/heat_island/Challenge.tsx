@@ -77,7 +77,7 @@ const Challenge = () => {
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            We built an interactive 3D visualisation combining Landsat 9 thermal
+            I built an interactive 3D visualisation combining Landsat 9 thermal
             satellite data with OpenStreetMap building footprints.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
@@ -94,7 +94,9 @@ const Challenge = () => {
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            App is available on desktop, tablet and mobile.
+            <span style={{ color: "orange" }}>Features:</span> Smooth camera
+            transitions, instanced building rendering, temperature
+            classification, responsive design.
           </Typography>
         </Grid>
       </Grid>

@@ -16,6 +16,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import PermMediaIcon from "@mui/icons-material/PermMedia";
+import SunnyIcon from "@mui/icons-material/Sunny";
 import { styled } from "@mui/material/styles";
 
 const DataAccordion = styled(Accordion)({
@@ -299,7 +300,7 @@ const Technical = () => {
       >
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h6" sx={{ color: "grey" }}>
-            <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
+            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
             <span style={{ color: "orange" }}>Result:</span> Successfully
             integrated Landsat 9 thermal satellite data with OpenStreetMap
             building footprints to create a smooth 60fps interactive

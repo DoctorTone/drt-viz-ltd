@@ -32,9 +32,8 @@ const Applications = () => {
             <span style={{ color: "orange" }}>
               Urban Planning & Climate Adaptation:
             </span>{" "}
-            Identify heat-vulnerable neighborhoods requiring cooling
-            interventions. Prioritise green infrastructure investments based on
-            temperature impact.
+            Identify heat-vulnerable neighborhoods. Prioritise green
+            infrastructure investments based on temperature impact.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <AppsIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
@@ -57,8 +56,8 @@ const Applications = () => {
               Infrastructure Planning:
             </span>{" "}
             Assess heat stress on transportation networks, power grids, and
-            water systems during extreme heat events. Plan resilient
-            infrastructure that accounts for thermal patterns.
+            water systems. Plan resilient infrastructure that accounts for
+            thermal patterns.
           </Typography>
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
