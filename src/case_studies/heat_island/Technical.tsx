@@ -293,6 +293,35 @@ const Technical = () => {
           </Grid>
         </AccordionDetails>
       </DataAccordion>
+      <Grid
+        container
+        sx={{ display: "flex", alignItems: "center", mb: 8, pr: 2 }}
+      >
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
+          <Typography variant="h6" sx={{ color: "grey" }}>
+            <BoltIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
+            <span style={{ color: "orange" }}>Result:</span> Successfully
+            integrated Landsat 9 thermal satellite data with OpenStreetMap
+            building footprints to create a smooth 60fps interactive
+            visualisation. The React Three Fiber implementation handles
+            large-scale geospatial datasets efficiently through instanced
+            rendering, with responsive design optimized for desktop, tablet, and
+            mobile devices.
+          </Typography>
+        </Grid>
+        <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
+        <Grid size={{ xs: 12, sm: 5, md: 5 }}>
+          <video
+            muted
+            loop
+            preload="auto"
+            autoPlay
+            className="borderedLight w-100"
+          >
+            <source src="/videos/HeatIsland.mp4" type="video/mp4" />
+          </video>
+        </Grid>
+      </Grid>
     </Container>
   );
 };
