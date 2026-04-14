@@ -161,7 +161,7 @@ const Technical = () => {
         </AccordionDetails>
       </DataAccordion>
       <DataAccordion
-        sx={{ mb: 0 }}
+        sx={{ mb: 3 }}
         slotProps={{
           transition: {
             timeout: 500,
