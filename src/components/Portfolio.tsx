@@ -23,6 +23,48 @@ const Portfolio = () => {
       <Grid container spacing={6}>
         <Grid size={{ xs: 12, md: 4 }} sx={{ pr: 2 }}>
           <a
+            href="https://www.drt-software.com/HeatIsland/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <video
+              muted
+              loop
+              preload="auto"
+              autoPlay
+              className="borderedLight w-100"
+            >
+              <source src="./videos/HeatIsland.mp4" type="video/mp4" />
+            </video>
+          </a>
+          <Box sx={{ textAlign: "center" }}>
+            <Typography variant="h6" sx={{ mt: 1, mb: 1 }}>
+              Heat Islands
+            </Typography>
+            <Stack direction="column" spacing={1} mt={2} alignItems="center">
+              <Button
+                variant="contained"
+                color="warning"
+                href="https://www.drt-software.com/HeatIsland/"
+                target="_blank"
+                rel="noreferrer noopener"
+                sx={{ width: "50%", textAlign: "center" }}
+              >
+                View Demo
+              </Button>
+              <Button
+                variant="outlined"
+                color="warning"
+                href="/case-studies/heat-islands"
+                sx={{ width: "50%" }}
+              >
+                Case Study
+              </Button>
+            </Stack>
+          </Box>
+        </Grid>
+        <Grid size={{ xs: 12, md: 4 }} sx={{ pr: 2 }}>
+          <a
             href="https://drt-software.com/LightningViz/"
             target="_blank"
             rel="noreferrer noopener"
@@ -62,48 +104,6 @@ const Portfolio = () => {
                 variant="outlined"
                 color="warning"
                 href="/case-studies/lightning-strikes"
-                sx={{ width: "50%" }}
-              >
-                Case Study
-              </Button>
-            </Stack>
-          </Box>
-        </Grid>
-        <Grid size={{ xs: 12, md: 4 }} sx={{ pr: 2 }}>
-          <a
-            href="https://www.drt-software.com/HeatIsland/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <video
-              muted
-              loop
-              preload="auto"
-              autoPlay
-              className="borderedLight w-100"
-            >
-              <source src="./videos/HeatIsland.mp4" type="video/mp4" />
-            </video>
-          </a>
-          <Box sx={{ textAlign: "center" }}>
-            <Typography variant="h6" sx={{ mt: 1, mb: 1 }}>
-              Heat Islands
-            </Typography>
-            <Stack direction="column" spacing={1} mt={2} alignItems="center">
-              <Button
-                variant="contained"
-                color="warning"
-                href="https://www.drt-software.com/HeatIsland/"
-                target="_blank"
-                rel="noreferrer noopener"
-                sx={{ width: "50%", textAlign: "center" }}
-              >
-                View Demo
-              </Button>
-              <Button
-                variant="outlined"
-                color="warning"
-                href="/case-studies/heat-islands"
                 sx={{ width: "50%" }}
               >
                 Case Study
