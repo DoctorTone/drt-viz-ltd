@@ -41,13 +41,20 @@ const Portfolio = () => {
             <Typography variant="h6" sx={{ mt: 1, mb: 1, textAlign: "center" }}>
               Global lightning strikes
             </Typography>
-            <Stack direction="row" spacing={1} mt={2} justifyContent="center">
+            <Stack
+              direction="column"
+              spacing={1}
+              mt={2}
+              alignItems="center"
+              sx={{ textAlign: "center" }}
+            >
               <Button
                 variant="contained"
                 color="warning"
                 href="https://drt-software.com/LightningViz/"
                 target="_blank"
                 rel="noreferrer noopener"
+                sx={{ width: "50%" }}
               >
                 View Demo
               </Button>
@@ -55,6 +62,7 @@ const Portfolio = () => {
                 variant="outlined"
                 color="warning"
                 href="/case-studies/lightning-strikes"
+                sx={{ width: "50%" }}
               >
                 Case Study
               </Button>
@@ -81,13 +89,14 @@ const Portfolio = () => {
             <Typography variant="h6" sx={{ mt: 1, mb: 1 }}>
               Heat Islands
             </Typography>
-            <Stack direction="row" spacing={1} mt={2} justifyContent="center">
+            <Stack direction="column" spacing={1} mt={2} alignItems="center">
               <Button
                 variant="contained"
                 color="warning"
                 href="https://www.drt-software.com/HeatIsland/"
                 target="_blank"
                 rel="noreferrer noopener"
+                sx={{ width: "50%", textAlign: "center" }}
               >
                 View Demo
               </Button>
@@ -95,6 +104,7 @@ const Portfolio = () => {
                 variant="outlined"
                 color="warning"
                 href="/case-studies/heat-islands"
+                sx={{ width: "50%" }}
               >
                 Case Study
               </Button>
