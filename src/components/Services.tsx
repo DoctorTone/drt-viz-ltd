@@ -69,19 +69,19 @@ const Services = () => {
             </Button>
           </Box>
         </Grid>
-        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
-        <Grid size={{ xs: 12, sm: 5, md: 4 }}>
+        <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
+        <Grid size={{ xs: 12, sm: 5, md: 5 }}>
           <img src="./images/globe.jpg" className="borderedLight w-100" />
         </Grid>
       </Grid>
       <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
         <Grid
-          size={{ xs: 12, sm: 5, md: 4 }}
+          size={{ xs: 12, sm: 5, md: 5 }}
           sx={{ mb: { xs: 4, md: 0 }, pr: 2 }}
         >
           <img src="./images/VRDev.jpg" className="borderedLight w-100" />
         </Grid>
-        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
+        <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             Virtual Reality Development
@@ -139,8 +139,8 @@ const Services = () => {
             </Button>
           </Box>
         </Grid>
-        <Grid size={{ xs: 0, sm: 1, md: 2 }}></Grid>
-        <Grid size={{ xs: 12, sm: 5, md: 4 }}>
+        <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
+        <Grid size={{ xs: 12, sm: 5, md: 5 }}>
           <img src="./images/3D.png" className="borderedLight w-100" />
         </Grid>
       </Grid>

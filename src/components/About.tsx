@@ -36,8 +36,8 @@ const About = () => {
             complex data into clear and meaningful visuals.
           </Typography>
         </Grid>
-        <Grid size={{ xs: 0, sm: 1, md: 2.5 }}></Grid>
-        <Grid size={{ xs: 12, sm: 5, md: 3.5 }}>
+        <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
+        <Grid size={{ xs: 12, sm: 5, md: 5 }}>
           <img src="./images/3DBarChart.png" className="borderedLight w-100" />
         </Grid>
       </Grid>
