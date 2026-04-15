@@ -3,8 +3,6 @@ import Chip from "@mui/material/Chip";
 import BoltIcon from "@mui/icons-material/Bolt";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import SunnyIcon from "@mui/icons-material/Sunny";
-import AcUnitIcon from "@mui/icons-material/AcUnit";
 import ThunderstormIcon from "@mui/icons-material/Thunderstorm";
 
 const Insights = () => {
