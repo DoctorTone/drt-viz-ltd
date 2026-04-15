@@ -29,6 +29,13 @@ body {
   padding: 10px;
   overflow: hidden;
 }
+.borderedLightOrange {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0.5rem orange;
+  padding: 10px;
+  overflow: hidden;
+}
 .profile {
   border: 3px solid rgba(255, 255, 255, 0.75);
   border-radius: 30px;

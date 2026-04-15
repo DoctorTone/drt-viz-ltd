@@ -109,7 +109,7 @@ const FullPortfolio = () => {
         color="warning"
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
       />
-      <Grid container spacing={4}>
+      <Grid container>
         <Grid size={{ xs: 12, md: 6 }}>
           <Typography variant="h2" sx={{ mb: 3 }}>
             Making complex data <span style={{ color: "orange" }}>simple</span>.
@@ -131,11 +131,9 @@ const FullPortfolio = () => {
         </Grid>
       </Grid>
 
-      <Container id="section1" sx={{ mb: 10 }}>
-        {VIDEOS.map((video) => (
-          <VideoDemo key={video.id} ref={bindRef(video.id)} vidRecord={video} />
-        ))}
-      </Container>
+      {VIDEOS.map((video) => (
+        <VideoDemo key={video.id} ref={bindRef(video.id)} vidRecord={video} />
+      ))}
     </Container>
   );
 };

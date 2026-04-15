@@ -21,29 +21,23 @@ const VideoDemo = forwardRef<HTMLVideoElement, VideoProps>(
               display: "flex",
               alignItems: "center",
               mt: 3,
-              padding: "30px",
+              mb: 6,
             }}
           >
             <Grid size={{ xs: 12, sm: 6, md: 6 }}>
-              <div className="bordered">
-                <a
-                  href={vidRecord.url}
-                  target="_blank"
-                  rel="noreferrer noopener"
+              <a href={vidRecord.url} target="_blank" rel="noreferrer noopener">
+                <video
+                  ref={ref}
+                  key={vidRecord.id}
+                  data-id={vidRecord.id}
+                  muted
+                  loop
+                  preload="auto"
+                  className="borderedLightOrange w-100"
                 >
-                  <video
-                    ref={ref}
-                    key={vidRecord.id}
-                    data-id={vidRecord.id}
-                    muted
-                    loop
-                    preload="auto"
-                    className="w-100"
-                  >
-                    <source src={vidRecord.source} type="video/mp4" />
-                  </video>
-                </a>
-              </div>
+                  <source src={vidRecord.source} type="video/mp4" />
+                </video>
+              </a>
             </Grid>
             <Grid size={{ xs: 12, sm: 6, md: 6 }} sx={{ textAlign: "center" }}>
               <Typography variant="h5" color="#386fc7">
@@ -55,11 +49,7 @@ const VideoDemo = forwardRef<HTMLVideoElement, VideoProps>(
               <Typography variant="h3" sx={{ mb: 3 }}>
                 {vidRecord.title}
               </Typography>
-              <Typography
-                variant="body1"
-                className="paddingProjects"
-                sx={{ textAlign: "justify" }}
-              >
+              <Typography variant="body1" sx={{ textAlign: "justify" }}>
                 <p>{vidRecord.text1}</p>
                 {vidRecord.text2 && <p>{vidRecord.text2}</p>}
                 {vidRecord.text3 && <p>{vidRecord.text3}</p>}
@@ -84,7 +74,7 @@ const VideoDemo = forwardRef<HTMLVideoElement, VideoProps>(
               display: "flex",
               alignItems: "center",
               mt: 3,
-              padding: "30px",
+              mb: 6,
             }}
           >
             <Grid size={{ xs: 12, sm: 6, md: 6 }} sx={{ textAlign: "center" }}>
@@ -97,11 +87,7 @@ const VideoDemo = forwardRef<HTMLVideoElement, VideoProps>(
               <Typography variant="h3" sx={{ mb: 3 }}>
                 {vidRecord.title}
               </Typography>
-              <Typography
-                className="paddingProjects"
-                variant="body1"
-                sx={{ textAlign: "justify" }}
-              >
+              <Typography variant="body1" sx={{ textAlign: "justify" }}>
                 <p>{vidRecord.text1}</p>
                 {vidRecord.text2 && <p>{vidRecord.text2}</p>}
                 {vidRecord.text3 && <p>{vidRecord.text3}</p>}
@@ -121,32 +107,26 @@ const VideoDemo = forwardRef<HTMLVideoElement, VideoProps>(
               size={{ xs: 12, sm: 6, md: 6 }}
               sx={{ display: "flex", alignItems: "center" }}
             >
-              <div className="bordered">
-                <a
-                  href={vidRecord.url}
-                  target="_blank"
-                  rel="noreferrer noopener"
+              <a href={vidRecord.url} target="_blank" rel="noreferrer noopener">
+                <video
+                  ref={ref}
+                  key={vidRecord.id}
+                  data-id={vidRecord.id}
+                  muted
+                  playsInline
+                  loop
+                  preload="auto"
+                  className="borderedLightOrange w-100"
                 >
-                  <video
-                    ref={ref}
-                    key={vidRecord.id}
-                    data-id={vidRecord.id}
-                    muted
-                    playsInline
-                    loop
-                    preload="auto"
-                    className="w-100"
-                  >
-                    <source src={vidRecord.source} type="video/mp4" />
-                  </video>
-                </a>
-              </div>
+                  <source src={vidRecord.source} type="video/mp4" />
+                </video>
+              </a>
             </Grid>
           </Grid>
         )}
       </>
     );
-  }
+  },
 );
 
 export default VideoDemo;

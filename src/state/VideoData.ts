@@ -12,32 +12,6 @@ export type VideoRecord = {
 
 const VIDEOS: VideoRecord[] = [
   {
-    id: "lightning",
-    source: "./videos/Lightning.mp4",
-    left: false,
-    category: "Geospatial",
-    title: "Lightning",
-    url: "https://drt-software.com/LightningViz/",
-    text1: `3D is ideal for visualising geospatial data as it situates the information in a realistic 
-		context.`,
-    text2: `Viewing data on a globe makes patterns and varaiations easier to understand, such as the 
-		lightning data here, which perfectly illustrates the regional variations.`,
-    text3: undefined,
-  },
-  {
-    id: "hallowen",
-    source: "./videos/Halloween.mp4",
-    left: true,
-    category: "Seasonal",
-    title: "Halloween",
-    url: "https://drt-software.com/Halloween/",
-    text1: `There are lots of infographics around events like Halloween, but these are usually 
-		static and often lacking a sense of atmosphere.`,
-    text2: ` This demo takes the infographic theme a bit further, adding ambient effects and animation
-		to tell the story, but still showing interesting facts and data.`,
-    text3: undefined,
-  },
-  {
     id: "medical",
     source: "./videos/Medical.mp4",
     left: false,
@@ -106,21 +80,9 @@ const VIDEOS: VideoRecord[] = [
     text3: undefined,
   },
   {
-    id: "cloud",
-    source: "./videos/PointCloud.mp4",
-    left: true,
-    category: "Point cloud",
-    title: "City Landmarks",
-    url: "https://drt-software.com/PointCloud/",
-    text1: `If you think the web cannot handle massive amounts of data in real-time, then watch
-		this demo. Here, a point cloud of over one million points recreates a city centre in 3D.`,
-    text2: `Imagine all the possibilities, from live traffic updates to real-time local insights.`,
-    text3: undefined,
-  },
-  {
     id: "space",
     source: "./videos/Solar.mp4",
-    left: false,
+    left: true,
     category: "Space",
     title: "Solar System",
     url: "https://www.drt-software.com/Solar/",
@@ -129,49 +91,6 @@ const VIDEOS: VideoRecord[] = [
 		especially in comparison to the Earth.`,
     text2: `This is a really powerful way that 3D can help educate, making the subject feel real
 		and memorable.`,
-    text3: undefined,
-  },
-  {
-    id: "covid",
-    source: "./videos/Pandemic.mp4",
-    left: true,
-    category: "Multi Dimensional",
-    title: "Pandemic",
-    url: "https://www.drt-software.com/Covid/",
-    text1: `During the pandemic, data visualisation was vital for understanding the spread 
-		of the virus. This 3D app breaks down the UK data into clear strands, allowing patterns and
-		comparisons to be made more easily.`,
-    text2: `This highlights how 3D visualisations can help scientists and governments make 
-		sense of complex information to better inform the public.`,
-    text3: undefined,
-  },
-  {
-    id: "horror",
-    source: "./videos/Horror.mp4",
-    left: false,
-    category: "Real-Time",
-    title: "Brain Activity",
-    url: "https://www.drt-software.com/Horror/",
-    text1: `The web is an ideal platform for real-time data visualisation. At the Mayhem 
-		Horror Festival, we captured and visualised the EEG brain activity of film fans as they 
-		experienced the scares, live and as they all happened.`,
-    text2: `Built in collaboration with Thrill Laboratory and the Mixed Reality Lab, it's a 
-		great example of turning raw data into an immersive experience, both for cinema-goers and
-		an online audience.`,
-    text3: undefined,
-  },
-  {
-    id: "ftse",
-    source: "./videos/FTSE.mp4",
-    left: true,
-    category: "Finance",
-    title: "FTSE Tracking",
-    url: "https://www.drt-software.com/FTSEViz/",
-    text1: `This application visualises the FTSE-100 over an entire year, revealing daily, 
-		weekly, and monthly share price trends. The 3D bars also give an indcation of pricing
-		fluctuations across time.`,
-    text2: `This amplifies how a novel 3D visualisation can present multiple layers in a single,
-		powerful view.`,
     text3: undefined,
   },
 ];

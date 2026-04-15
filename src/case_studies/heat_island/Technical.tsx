@@ -299,7 +299,7 @@ const Technical = () => {
         sx={{ display: "flex", alignItems: "center", mb: 8, pr: 2 }}
       >
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
-          <Typography variant="h6" sx={{ color: "grey" }}>
+          <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
             <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
             <span style={{ color: "orange" }}>Result:</span> Successfully
             integrated Landsat 9 thermal satellite data with OpenStreetMap
