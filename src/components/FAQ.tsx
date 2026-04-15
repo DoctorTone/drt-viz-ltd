@@ -45,7 +45,7 @@ const FAQ = () => {
             Frequently asked <span style={{ color: "orange" }}>questions</span>.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey" }}>
-            See how we can visualise all yor data.
+            Please contact us with any additional queries.
           </Typography>
         </Grid>
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
