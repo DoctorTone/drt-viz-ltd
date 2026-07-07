@@ -103,12 +103,8 @@ const GEO_VIDEOS: VideoRecord[] = [
     category: "Thermal",
     title: "Urban Heat Islands",
     url: "https://www.drt-software.com/HeatIsland/",
-    text1: `Medical imaging software is typically very complex and expensive. We wanted to create an application that
-                could be used to measure and monitor tumour lesions that was
-                simple to use and gave accurate results.`,
-    text2: `             In conjunction with a neurosurgeon, I built an application that
-                took a collection of 2D medical images and created a 3D volume.
-                This could then be used to visualise and identify anatomic structures.`,
+    text1: `Large cities often experience localised warming patterns around the streets and buildings, creating the phonomena of heat islands.`,
+    text2: `The visualiation combines Landsat 9 thermal imaging data and OpenStreetMap building footprints to reveal the spatial relationship. A 3D environment is ideal for a better understanding of why areas are hotter.`,
     text3: undefined,
   },
   {
@@ -118,12 +114,8 @@ const GEO_VIDEOS: VideoRecord[] = [
     category: "Lightning",
     title: "Global Lightning Strikes",
     url: "https://www.drt-software.com/LightningViz/",
-    text1: `Medical imaging software is typically very complex and expensive. We wanted to create an application that
-                could be used to measure and monitor tumour lesions that was
-                simple to use and gave accurate results.`,
-    text2: `             In conjunction with a neurosurgeon, I built an application that
-                took a collection of 2D medical images and created a 3D volume.
-                This could then be used to visualise and identify anatomic structures.`,
+    text1: `There are millions of lightning strikes happening around the globe on any given day. Mapping these events can help plan for risk assessments.`,
+    text2: `This visualiation reveals the monthly global lightning strike patterns for a whole year. It utilises NASA Earth Observatory lightning strike data.`,
     text3: undefined,
   },
   {
@@ -133,12 +125,8 @@ const GEO_VIDEOS: VideoRecord[] = [
     category: "Pollution",
     title: "City Air Pollution",
     url: "https://www.drt-software.com/AirPollution/",
-    text1: `Medical imaging software is typically very complex and expensive. We wanted to create an application that
-                could be used to measure and monitor tumour lesions that was
-                simple to use and gave accurate results.`,
-    text2: `             In conjunction with a neurosurgeon, I built an application that
-                took a collection of 2D medical images and created a 3D volume.
-                This could then be used to visualise and identify anatomic structures.`,
+    text1: `Air pollution is becoming a major issue in many of the world's largest cities, and in particular places such as Delhi.`,
+    text2: `The interactive 3D visualisation allows the pollution levels on any given day to be selected, over a monthly period. It combines PM2.5 sensor data and converts this to a measure of air quality.`,
     text3: undefined,
   },
   {
@@ -148,12 +136,8 @@ const GEO_VIDEOS: VideoRecord[] = [
     category: "Pointcloud",
     title: "City Point Cloud",
     url: "https://www.drt-software.com/PointCloud/",
-    text1: `Medical imaging software is typically very complex and expensive. We wanted to create an application that
-                could be used to measure and monitor tumour lesions that was
-                simple to use and gave accurate results.`,
-    text2: `             In conjunction with a neurosurgeon, I built an application that
-                took a collection of 2D medical images and created a 3D volume.
-                This could then be used to visualise and identify anatomic structures.`,
+    text1: `Many think the web is not capable of rendering thousands (if not millions) of points to visualise large datasets interactively.`,
+    text2: `Here we have approx. one million data points showing various landmarks in a city centre. Visualisations such as this are ideal for sectors such flood risk planning and mapping transportation systems.`,
     text3: undefined,
   },
 ];
