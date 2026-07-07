@@ -113,7 +113,7 @@ const Portfolio = () => {
         </Grid>
         <Grid size={{ xs: 12, md: 4 }} sx={{ pr: 2 }}>
           <a
-            href="https://drt-software.com/PointCloud/"
+            href="https://drt-software.com/AirPollution/"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -143,9 +143,14 @@ const Portfolio = () => {
           </Box>
         </Grid>
       </Grid>
+      <Box sx={{ mt: 5, textAlign: "center" }}>
+        <Button variant="contained" color="warning" href="/datavizgeo">
+          Geospatial applications
+        </Button>
+      </Box>
       <Box sx={{ mt: 3, textAlign: "center" }}>
         <Button variant="outlined" color="warning" href="/datavizgeneral">
-          View additional visualisations
+          Additional visualisations
         </Button>
       </Box>
     </Container>

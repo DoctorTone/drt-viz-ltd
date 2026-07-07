@@ -4,7 +4,7 @@ import Chip from "@mui/material/Chip";
 import BoltIcon from "@mui/icons-material/Bolt";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import { VIDEOS } from "../state/VideoData";
+import { GEO_VIDEOS } from "../state/VideoData";
 import VideoDemo from "./VideoDemo";
 
 const minVisible = 0.5;
@@ -21,7 +21,7 @@ const centerDistance = (el: Element) => {
   return dx * dx + dy * dy; // squared distance
 };
 
-const FullPortfolio = () => {
+const GeoPortfolio = () => {
   const [playingId, setPlayingId] = useState<string | null>(null);
   const videoRefs = useRef(new Map<string, HTMLVideoElement>());
   const ratios = useRef(new Map<string, number>());
@@ -104,7 +104,7 @@ const FullPortfolio = () => {
     <Container id="section1" sx={{ mt: 6 }}>
       <Chip
         icon={<BoltIcon />}
-        label="Portfolio Archive"
+        label="Geospatial Portfolio"
         variant="outlined"
         color="warning"
         sx={{ mb: 2, color: "orange", borderColor: "orange" }}
@@ -112,7 +112,7 @@ const FullPortfolio = () => {
       <Grid container>
         <Grid size={{ xs: 12, md: 6 }}>
           <Typography variant="h2" sx={{ mb: 3 }}>
-            Bringing 3D data to <span style={{ color: "orange" }}>life</span>.
+            Making complex data <span style={{ color: "orange" }}>simple</span>.
           </Typography>
         </Grid>
       </Grid>
@@ -120,22 +120,18 @@ const FullPortfolio = () => {
       <Grid container>
         <Grid size={{ xs: 12, md: 6 }}>
           <Typography variant="h6" sx={{ color: "grey" }}>
-            Before specialising in geospatial and environmental visualisation, I
-            built 3D data experiences across numerous sectors such as
-            healthcare, sports, finance, education, and VR. These projects
-            demonstrate my technical depth and versatility across diverse data
-            challenges and domains. My current focus is geospatial and
-            environmental data visualisation, where I apply this extensive 3D
-            expertise to climate, urban, and atmospheric analytics.
+            Explore our latest geospatial and environmental visualisations,
+            where we turn complex geographic datasets into immersive 3D
+            environments.
           </Typography>
         </Grid>
       </Grid>
 
-      {VIDEOS.map((video) => (
+      {GEO_VIDEOS.map((video) => (
         <VideoDemo key={video.id} ref={bindRef(video.id)} vidRecord={video} />
       ))}
     </Container>
   );
 };
 
-export default FullPortfolio;
+export default GeoPortfolio;

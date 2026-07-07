@@ -95,8 +95,71 @@ const VIDEOS: VideoRecord[] = [
   },
 ];
 
+const GEO_VIDEOS: VideoRecord[] = [
+  {
+    id: "heat",
+    source: "./videos/HeatIsland.mp4",
+    left: false,
+    category: "Thermal",
+    title: "Urban Heat Islands",
+    url: "https://www.drt-software.com/HeatIsland/",
+    text1: `Medical imaging software is typically very complex and expensive. We wanted to create an application that
+                could be used to measure and monitor tumour lesions that was
+                simple to use and gave accurate results.`,
+    text2: `             In conjunction with a neurosurgeon, I built an application that
+                took a collection of 2D medical images and created a 3D volume.
+                This could then be used to visualise and identify anatomic structures.`,
+    text3: undefined,
+  },
+  {
+    id: "lightning",
+    source: "./videos/Lightning.mp4",
+    left: true,
+    category: "Lightning",
+    title: "Global Lightning Strikes",
+    url: "https://www.drt-software.com/LightningViz/",
+    text1: `Medical imaging software is typically very complex and expensive. We wanted to create an application that
+                could be used to measure and monitor tumour lesions that was
+                simple to use and gave accurate results.`,
+    text2: `             In conjunction with a neurosurgeon, I built an application that
+                took a collection of 2D medical images and created a 3D volume.
+                This could then be used to visualise and identify anatomic structures.`,
+    text3: undefined,
+  },
+  {
+    id: "pollution",
+    source: "./videos/AirPollution.mp4",
+    left: false,
+    category: "Pollution",
+    title: "City Air Pollution",
+    url: "https://www.drt-software.com/AirPollution/",
+    text1: `Medical imaging software is typically very complex and expensive. We wanted to create an application that
+                could be used to measure and monitor tumour lesions that was
+                simple to use and gave accurate results.`,
+    text2: `             In conjunction with a neurosurgeon, I built an application that
+                took a collection of 2D medical images and created a 3D volume.
+                This could then be used to visualise and identify anatomic structures.`,
+    text3: undefined,
+  },
+  {
+    id: "pointcloud",
+    source: "./videos/PointCloud.mp4",
+    left: true,
+    category: "Pointcloud",
+    title: "City Point Cloud",
+    url: "https://www.drt-software.com/PointCloud/",
+    text1: `Medical imaging software is typically very complex and expensive. We wanted to create an application that
+                could be used to measure and monitor tumour lesions that was
+                simple to use and gave accurate results.`,
+    text2: `             In conjunction with a neurosurgeon, I built an application that
+                took a collection of 2D medical images and created a 3D volume.
+                This could then be used to visualise and identify anatomic structures.`,
+    text3: undefined,
+  },
+];
+
 const VIDEO_IDS = {
   medical: 0,
 };
 
-export { VIDEOS, VIDEO_IDS };
+export { VIDEOS, VIDEO_IDS, GEO_VIDEOS };

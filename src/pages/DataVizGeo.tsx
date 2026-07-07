@@ -1,18 +1,18 @@
 import NavBarDataViz from "../components/NavBarDataViz";
-import FullPortfolio from "../components/FullPortfolio";
+import GeoPortfolio from "../components/GeoPortfolio";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import { PageTransition } from "../components/PageTransition";
 
-const DataViz = () => {
+const DataVizGeo = () => {
   return (
     <PageTransition>
       <NavBarDataViz />
-      <FullPortfolio />
+      <GeoPortfolio />
       <Contact />
       <Footer />
     </PageTransition>
   );
 };
 
-export default DataViz;
+export default DataVizGeo;
