@@ -113,7 +113,7 @@ const Portfolio = () => {
         </Grid>
         <Grid size={{ xs: 12, md: 4 }} sx={{ pr: 2 }}>
           <a
-            href="https://drt-software.com/AirPollution/"
+            href="https://drt-software.com/PointCloud/"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -124,17 +124,17 @@ const Portfolio = () => {
               autoPlay
               className="borderedLight w-100"
             >
-              <source src="./videos/AirPollution.mp4" type="video/mp4" />
+              <source src="./videos/PointCloud.mp4" type="video/mp4" />
             </video>
           </a>
           <Box sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ mt: 1, mb: 1 }}>
-              City air pollution
+              City point cloud
             </Typography>
             <Button
               variant="contained"
               color="warning"
-              href="https://drt-software.com/AirPollution/"
+              href="https://drt-software.com/PointCloud/"
               target="_blank"
               rel="noreferrer noopener"
             >
