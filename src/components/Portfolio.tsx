@@ -131,15 +131,32 @@ const Portfolio = () => {
             <Typography variant="h6" sx={{ mt: 1, mb: 1 }}>
               Solar farm visualisation
             </Typography>
-            <Button
-              variant="contained"
-              color="warning"
-              href="https://drt-software.com/SolarViz/"
-              target="_blank"
-              rel="noreferrer noopener"
+            <Stack
+              direction="column"
+              spacing={1}
+              mt={2}
+              alignItems="center"
+              sx={{ textAlign: "center" }}
             >
-              View Demo
-            </Button>
+              <Button
+                variant="contained"
+                color="warning"
+                href="https://drt-software.com/SolarViz/"
+                target="_blank"
+                rel="noreferrer noopener"
+                sx={{ width: "50%" }}
+              >
+                View Demo
+              </Button>
+              <Button
+                variant="outlined"
+                color="warning"
+                href="/case-studies/springwell"
+                sx={{ width: "50%" }}
+              >
+                Case Study
+              </Button>
+            </Stack>
           </Box>
         </Grid>
       </Grid>

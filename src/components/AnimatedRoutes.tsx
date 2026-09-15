@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import DataVizGeneral from "../pages/DataVizGeneral";
 import CaseStudyHeatIsland from "../pages/CaseStudyHeatIsland";
 import CaseStudyLightning from "../pages/CaseStudyLightning";
+import CaseStudySpringwell from "../pages/CaseStudySpringwell";
 import { AnimatePresence } from "framer-motion";
 import DataVizGeo from "../pages/DataVizGeo";
 
@@ -22,6 +23,10 @@ const AnimatedRoutes = () => {
         <Route
           path="/case-studies/lightning-strikes"
           element={<CaseStudyLightning />}
+        />
+        <Route
+          path="/case-studies/springwell"
+          element={<CaseStudySpringwell />}
         />
       </Routes>
     </AnimatePresence>
