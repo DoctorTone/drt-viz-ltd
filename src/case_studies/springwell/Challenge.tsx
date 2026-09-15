@@ -68,27 +68,26 @@ const Challenge = () => {
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            I built an interactive 3D visualisation combining Landsat 9 thermal
-            satellite data with OpenStreetMap building footprints.
+            I built an interactive 3D visualisation that shows the site from the
+            same surveyed viewpoints that the assessment uses.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <TipsAndUpdatesIcon
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            Users can explore 27,723 buildings across central London,
-            color-coded by surface temperature, and fly between preset
-            viewpoints that highlight key areas.
+            Users can view the site at any time over a ten year period,
+            including prior to any development starting, to watch the screening
+            establish.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
             <TipsAndUpdatesIcon
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            <span style={{ color: "orange" }}>Features:</span> Users can explore
-            more than 27,000 buildings across central London, colour-coded by
-            surface temperature, with smooth camera transitions between preset
-            viewpoints, highlighting key insights.
+            The current season can be toggled between summer and winter to
+            determine the leaf-off worst case scenario that the assessment must
+            account for.
           </Typography>
         </Grid>
         <Grid size={{ xs: 12 }} sx={{ mb: { xs: 4, md: 0 }, pr: 2 }}>
