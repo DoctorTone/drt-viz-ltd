@@ -49,7 +49,10 @@ const Insights = () => {
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
         <Grid size={{ xs: 12, sm: 5, md: 5 }}>
-          <img src="/images/trap.jpg" className="borderedLight w-100" />
+          <img
+            src="/images/time_springwell.jpg"
+            className="borderedLight w-100"
+          />
         </Grid>
       </Grid>
       <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
@@ -57,7 +60,10 @@ const Insights = () => {
           size={{ xs: 12, sm: 5, md: 5 }}
           sx={{ mb: { xs: 4, md: 0 }, pr: 2 }}
         >
-          <img src="/images/cooling.jpg" className="borderedLight w-100" />
+          <img
+            src="/images/neutral_springwell.jpg"
+            className="borderedLight w-100"
+          />
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
@@ -105,7 +111,7 @@ const Insights = () => {
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
         <Grid size={{ xs: 12, sm: 5, md: 5 }}>
-          <img src="/images/hottest.jpg" className="borderedLight w-100" />
+          <img src="/images/fidelity.jpg" className="borderedLight w-100" />
         </Grid>
       </Grid>
       <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
@@ -113,7 +119,7 @@ const Insights = () => {
           size={{ xs: 12, sm: 5, md: 5 }}
           sx={{ mb: { xs: 4, md: 0 }, pr: 2 }}
         >
-          <img src="/images/coolest.jpg" className="borderedLight w-100" />
+          <img src="/images/engage.jpg" className="borderedLight w-100" />
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
