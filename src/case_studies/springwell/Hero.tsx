@@ -7,6 +7,8 @@ import Box from "@mui/material/Box";
 import RoofingIcon from "@mui/icons-material/Roofing";
 import ThermostatIcon from "@mui/icons-material/Thermostat";
 import SpeedIcon from "@mui/icons-material/Speed";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 import Button from "@mui/material/Button";
 
 const Hero = () => {
@@ -41,21 +43,25 @@ const Hero = () => {
           The <span style={{ color: "orange" }}>Project</span>
         </Typography>
         <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-          This is an interactive 3D visualisation of London's urban heat
-          patterns using satellite thermal imaging data and more than 27,000
-          building footprints. It reveals the spatial relationships that inform
-          climate adaptation and urban planning strategies.
+          Springwell is an interactive 3D visualisation of a real consented
+          solar farm in Lincolnshire. It shows how the development and it's
+          screening planting appear over a ten-year period.
         </Typography>
         <Typography variant="h6">
-          <RoofingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-          27,723 buildings visualised.
-        </Typography>
-        <Typography variant="h6">
-          <ThermostatIcon
+          <VisibilityIcon
             color="warning"
             sx={{ verticalAlign: "sub", mr: 2 }}
           />
-          Temperature range of 27.5°C to 44.6°C.
+          Reproduces the scheme's assessed viewpoints on accurate terrain, using
+          the real application data.
+        </Typography>
+        <Typography variant="h6">
+          <AccessTimeIcon
+            color="warning"
+            sx={{ verticalAlign: "sub", mr: 2 }}
+          />
+          Shows three stages of development - before construction, as built and
+          after maturity at ten years.
         </Typography>
         <Typography variant="h6" sx={{ mb: 3 }}>
           <SpeedIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
@@ -65,7 +71,7 @@ const Hero = () => {
         <Button
           variant="contained"
           color="warning"
-          href="https://www.drt-software.com/HeatIsland/"
+          href="https://www.drt-software.com/SolarViz/"
           target="_blank"
           rel="noreferrer noopener"
         >
