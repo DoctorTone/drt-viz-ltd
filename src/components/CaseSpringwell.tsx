@@ -3,6 +3,7 @@ import Challenge from "../case_studies/springwell/Challenge";
 import Insights from "../case_studies/springwell/Insights";
 import Applications from "../case_studies/springwell/Applications";
 import Benefits from "../case_studies/springwell/Benefits";
+import Technical from "../case_studies/springwell/Technical";
 
 const CaseSpringwell = () => {
   return (
@@ -12,6 +13,7 @@ const CaseSpringwell = () => {
       <Insights />
       <Applications />
       <Benefits />
+      <Technical />
     </>
   );
 };
