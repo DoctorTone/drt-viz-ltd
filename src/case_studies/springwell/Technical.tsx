@@ -70,25 +70,25 @@ const Technical = () => {
                     sx={{ mb: 5 }}
                     fontSize="large"
                   />
-                  <Typography variant="h5">Satellite Imagery</Typography>
+                  <Typography variant="h5">Terrain Data</Typography>
                   <List sx={{ color: "grey" }}>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Landsat 9 thermal infrared band at 100m resolution" />
+                      <ListItemText primary="Environment Agency LIDAR Composite DTM at 2m resolution, 2022" />
                     </ListItem>
                     <ListItem disablePadding sx={{ mb: 1 }}>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Capture date: 30th July 2024" />
+                      <ListItemText primary="Coverage: 4 adjacent 5km National Grid tiles" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Source: USGS EarthExplorer" />
+                      <ListItemText primary="Source: DEFRA Survey Data Download portal" />
                     </ListItem>
                   </List>
                 </CardContent>
@@ -102,25 +102,31 @@ const Technical = () => {
                     sx={{ mb: 5 }}
                     fontSize="large"
                   />
-                  <Typography variant="h5">Building Data</Typography>
+                  <Typography variant="h5">Development Data</Typography>
                   <List sx={{ color: "grey" }}>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="OpenStreetMap footprints generating 27,723 buildings" />
+                      <ListItemText primary="Solar panel specification from the scheme's submitted PV table drawings" />
                     </ListItem>
                     <ListItem disablePadding sx={{ mb: 1 }}>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Height attribute and building types" />
+                      <ListItemText primary="Panels filled to the consented parcel envelopes, exact positions not fixed at application stage" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Source: Overpass Turbo API" />
+                      <ListItemText primary="Viewpoint positions derived from the 40 assessed viewpoints in the Environmental Statement" />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Vegetation and screening heights derived from the scheme's landscape and planting plans" />
                     </ListItem>
                   </List>
                 </CardContent>
@@ -140,25 +146,25 @@ const Technical = () => {
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Python pre-processing using rasterio, geopandas, pyproj" />
+                      <ListItemText primary="Python pre-processing reading GeoTIFF data via rasterio library" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Coordinate transformation from WGS84 -> UTM 30N" />
+                      <ListItemText primary="Data downsampled to 10m to balance fidelity against browser performance" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Temperature sampling within building footprints" />
+                      <ListItemText primary="Tiles mosaiced into one continuous heightfield" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Generates optimised JSON output" />
+                      <ListItemText primary="Generates binary heightfield and JSON metadata file" />
                     </ListItem>
                   </List>
                 </CardContent>
