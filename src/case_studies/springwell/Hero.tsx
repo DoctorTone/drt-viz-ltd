@@ -4,8 +4,6 @@ import BoltIcon from "@mui/icons-material/Bolt";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import RoofingIcon from "@mui/icons-material/Roofing";
-import ThermostatIcon from "@mui/icons-material/Thermostat";
 import SpeedIcon from "@mui/icons-material/Speed";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import VisibilityIcon from "@mui/icons-material/Visibility";
