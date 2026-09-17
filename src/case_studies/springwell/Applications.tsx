@@ -62,7 +62,7 @@ const Applications = () => {
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
         <Grid size={{ xs: 12, sm: 5, md: 5 }}>
-          <img src="/images/prisms.jpg" className="borderedLight w-100" />
+          <img src="/images/solar.jpg" className="borderedLight w-100" />
         </Grid>
       </Grid>
     </Container>
