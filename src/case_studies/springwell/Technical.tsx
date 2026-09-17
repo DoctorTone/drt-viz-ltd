@@ -273,7 +273,7 @@ const Technical = () => {
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Asynchronous data loading with progress indicator" />
+                      <ListItemText primary="Asynchronous data loading with loading screen" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>

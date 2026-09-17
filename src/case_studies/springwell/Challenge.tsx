@@ -61,7 +61,7 @@ const Challenge = () => {
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            Screening is also seasonal; there may be a marked difference between
+            Screening is also seasonal; there may be marked differences between
             summer foliage and a bare winter hedge.
           </Typography>
         </Grid>
