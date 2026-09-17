@@ -5,6 +5,10 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import SunnyIcon from "@mui/icons-material/Sunny";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
+import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
+import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
+import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
+import SwipeIcon from "@mui/icons-material/Swipe";
 
 const Insights = () => {
   return (
@@ -32,17 +36,26 @@ const Insights = () => {
             Time is the missing dimension
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <AccessAlarmIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             The same viewpoint can have a significant impact at year one, but be
             negligible by year ten.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <AccessAlarmIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             An interactive model can show how the screening progresses over
             time, and the differences between the seasons.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <AccessAlarmIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             This can directly address how the site may look at year one versus
             year ten, which a single image cannot.
           </Typography>
@@ -71,16 +84,25 @@ const Insights = () => {
             Neutrality is the key value
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <RemoveCircleIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             Showing all the honest scenarios, including the worst cases, makes
             the tool creditable to objectors.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <RemoveCircleIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             Showing the mature screened outcome makes it useful to applicants.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <RemoveCircleIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             The same truthful model serves consultation, scrutiny and design.
           </Typography>
         </Grid>
@@ -94,17 +116,26 @@ const Insights = () => {
             Fidelity to the source data
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <ThumbUpAltIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             The model reporoduces the assessment's own parameters, not an
             interpretation.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <ThumbUpAltIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             Viewpoints, camera positions and soalr panel specifications are
             taken from the application documents.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <ThumbUpAltIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             Existing vegetation is distinguished from proposed planting, each
             behaving accordingly over time.
           </Typography>
@@ -127,22 +158,22 @@ const Insights = () => {
             Accessibility and engagement
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <SwipeIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             All interested parties are able to engage and interact with the
             assessment as it runs in a browser.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <SwipeIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             Residents can explore what the scheme will look like from viewpoints
             that they are familier with.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <SwipeIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             It provides a clearer understanding of all the technical documents
             involved in the scheme.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-            <AcUnitIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <SwipeIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
             No specialist software or hardware is required, it runs on a mobile,
             tablet or desktop machine.
           </Typography>

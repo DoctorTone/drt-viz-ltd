@@ -97,9 +97,9 @@ const Challenge = () => {
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            The current season can be toggled between summer and winter to
-            determine the leaf-off worst case scenario that the assessment must
-            account for.
+            The current season can be toggled between summer and winter,
+            demonstrating the worst-case visual impact where the solar panels
+            are most visible.
           </Typography>
         </Grid>
         <Grid size={{ xs: 12 }} sx={{ mb: { xs: 4, md: 0 }, pr: 2 }}>
