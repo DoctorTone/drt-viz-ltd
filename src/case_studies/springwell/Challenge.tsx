@@ -3,8 +3,8 @@ import Chip from "@mui/material/Chip";
 import BoltIcon from "@mui/icons-material/Bolt";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import HikingIcon from "@mui/icons-material/Hiking";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
+import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 
 const Challenge = () => {
   return (
@@ -33,22 +33,34 @@ const Challenge = () => {
             <span style={{ color: "orange" }}>images</span>
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <HikingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <PhotoCameraIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             Landscape and visual assessments depend heavily on single images
             taken from fixed viewpoints.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <HikingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />A
-            static image can only show one viewpoint at a specific time, which
+            <PhotoCameraIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
+            A static image can only show one viewpoint at a specific time, which
             is a fundamental limitation.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
-            <HikingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <PhotoCameraIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             Reviewers want to see the site at various times throughout the
             development.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-            <HikingIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
+            <PhotoCameraIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
             Screening is also seasonal; there may be a marked difference between
             summer foliage and a bare winter hedge.
           </Typography>
