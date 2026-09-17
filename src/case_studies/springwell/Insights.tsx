@@ -128,7 +128,7 @@ const Insights = () => {
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            Viewpoints, camera positions and soalr panel specifications are
+            Viewpoints, camera positions and solar panel specifications are
             taken from the application documents.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
