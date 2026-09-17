@@ -209,19 +209,13 @@ const Technical = () => {
                       <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Material UI for interface" />
-                    </ListItem>
-                    <ListItem disablePadding>
-                      <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
-                        <CheckCircleIcon color="warning" fontSize="large" />
-                      </ListItemIcon>
                       <ListItemText primary="Python for data pre-processing" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="GSAP library for camera animations" />
+                      <ListItemText primary="Zustand library for state management and syncronisation of scene and controls" />
                     </ListItem>
                   </List>
                 </CardContent>
@@ -241,25 +235,19 @@ const Technical = () => {
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Instanced geometry rendering 27K buildings with single draw call" />
+                      <ListItemText primary="Instanced geometry rendering for solar panels, foliage and trees" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Four zone temperature-to-colour mapping" />
+                      <ListItemText primary="Viewpoint cameras reproduce the surveyed position from the assessment's photomontage" />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Orbit controls with smooth damping" />
-                    </ListItem>
-                    <ListItem disablePadding>
-                      <ListItemIcon sx={{ minWidth: 48 }}>
-                        <CheckCircleIcon color="warning" fontSize="large" />
-                      </ListItemIcon>
-                      <ListItemText primary="Smooth story mode camera transitions" />
+                      <ListItemText primary="Multiple viewpoint directions at each position enabling users to look in each real-world direction" />
                     </ListItem>
                   </List>
                 </CardContent>
@@ -291,7 +279,7 @@ const Technical = () => {
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Responsive layouts for mobile" />
+                      <ListItemText primary="Responsive layouts for mobile devices" />
                     </ListItem>
                   </List>
                 </CardContent>
@@ -308,12 +296,11 @@ const Technical = () => {
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
             <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
             <span style={{ color: "orange" }}>Result:</span> Successfully
-            integrated Landsat 9 thermal satellite data with OpenStreetMap
-            building footprints (27,723 buildings) to create a smooth 60fps
-            interactive visualisation. The React Three Fiber implementation
-            handles large-scale geospatial datasets efficiently through
-            instanced rendering, with responsive design optimized for desktop,
-            tablet, and mobile devices.
+            integrated LIDAR terrain data and an assessed solar development
+            specification to create a smooth 60fps interactive visualisation.
+            The React Three Fiber implementation handles multiple geometries
+            efficiently through instanced rendering, with responsive design
+            optimized for desktop, tablet, and mobile devices.
           </Typography>
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
