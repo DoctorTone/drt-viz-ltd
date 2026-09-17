@@ -93,7 +93,9 @@ const NavBarCaseStudy = () => {
           onClose={() => handleClose(-1)}
         >
           <MenuItem onClick={() => navigate(-1)}>Back</MenuItem>
-          <MenuItem onClick={() => handleClose(1)}>Case Study</MenuItem>
+          <MenuItem onClick={() => handleClose(1)} sx={{ whiteSpace: "nowrap" }}>
+            Case Study
+          </MenuItem>
           <MenuItem onClick={() => handleClose(7)}>Contact</MenuItem>
         </Menu>
       </Toolbar>
@@ -105,10 +107,11 @@ const NavBarCaseStudy = () => {
           component="div"
           sx={{
             display: "flex",
-            flex: 1,
-            gap: 3,
+            flex: "0 0 auto",
+            gap: { md: 2, lg: 3 },
             // flexGrow: 1,
             justifyContent: "center",
+            whiteSpace: "nowrap",
           }}
         >
           <Typography variant="h6" className="section links back-link">
@@ -126,7 +129,7 @@ const NavBarCaseStudy = () => {
                 scrollTo: { y: "#portfolio", offsetY: 100 },
               })
             }
-            sx={{ color: "#a8a8a8", cursor: "pointer" }}
+            sx={{ color: "#a8a8a8", cursor: "pointer", whiteSpace: "nowrap" }}
           >
             Case Study
           </Typography>
