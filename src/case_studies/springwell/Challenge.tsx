@@ -2,6 +2,7 @@ import Container from "@mui/material/Container";
 import Chip from "@mui/material/Chip";
 import BoltIcon from "@mui/icons-material/Bolt";
 import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
@@ -37,24 +38,23 @@ const Challenge = () => {
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            Landscape and visual assessments depend heavily on single images
-            taken from fixed viewpoints.
+            Landscape and visual assessment depends on static photomontages,
+            single images, from fixed viewpoints.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <PhotoCameraIcon
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            A static image can only show one viewpoint at a specific time, which
-            is a fundamental limitation.
+            One image shows one viewpoint, at one moment. A fundamental limit.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <PhotoCameraIcon
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            Reviewers want to see the site at various times throughout the
-            development.
+            Reviewers need to see the site across the whole development, not
+            frozen at a single point.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
             <PhotoCameraIcon
@@ -67,6 +67,11 @@ const Challenge = () => {
         </Grid>
         <Grid size={{ xs: 12 }}>
           <img src="/images/VP7_NW.jpg" className="borderedLight w-100" />
+          <Box sx={{ textAlign: "center", mt: 2 }}>
+            <Typography variant="caption" sx={{ color: "grey" }}>
+              Photo from assessed viewpoint
+            </Typography>
+          </Box>
         </Grid>
       </Grid>
       <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
@@ -80,30 +85,40 @@ const Challenge = () => {
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            I built an interactive 3D visualisation that shows the site from the
-            same surveyed viewpoints that the assessment uses.
+            An interactive 3D model of the same viewpoint, built on real LiDAR
+            terrain from the application data.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <TipsAndUpdatesIcon
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            Users can view the site at any time over a ten year period,
-            including prior to any development starting, to watch the screening
-            establish.
+            Move through any year, from before construction to year ten, and
+            watch the screening establish.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
+            <TipsAndUpdatesIcon
+              color="warning"
+              sx={{ verticalAlign: "sub", mr: 2 }}
+            />
+            Toggle summer and winter to show the worst case, when the panels are
+            most exposed.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
             <TipsAndUpdatesIcon
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            The current season can be toggled between summer and winter,
-            demonstrating the worst-case visual impact where the solar panels
-            are most visible.
+            Navigate and explore freely beyond the fixed viewpoints.
           </Typography>
         </Grid>
         <Grid size={{ xs: 12 }} sx={{ mb: { xs: 4, md: 0 }, pr: 2 }}>
           <img src="/images/VP7NW_Built.jpg" className="borderedLight w-100" />
+          <Box sx={{ textAlign: "center", mt: 2 }}>
+            <Typography variant="caption" sx={{ color: "grey" }}>
+              3D visualisation
+            </Typography>
+          </Box>
         </Grid>
       </Grid>
     </Container>

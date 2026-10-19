@@ -37,9 +37,10 @@ const Benefits = () => {
               <NoteAltIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">Applicants and consultants</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                A 3D visualisation serves as a powerful tool to validate
-                mitigation measures. It not only shows the finished scheme, but
-                gives an honest account of how it becomes established.
+                A credible way to show that mitigation works, not just the
+                finished scheme, but an honest account of how the screening
+                establishes. It strengthens the case precisely because it
+                doesn't overstate it.
               </Typography>
             </CardContent>
           </DataCard>
@@ -65,10 +66,9 @@ const Benefits = () => {
               <NoteAltIcon color="warning" sx={{ mb: 5 }} fontSize="large" />
               <Typography variant="h5">The Public</Typography>
               <Typography variant="h6" sx={{ color: "grey" }}>
-                The public can gain access to the assessment from familiar
-                viewpoints. They can see what the scheme will look like now and
-                in ten years. It helps turn an impenetrable technical process
-                into something they can explore.
+                Access to the assessment from viewpoints they already know, as
+                it looks today and in ten years. It turns an impenetrable
+                technical process into something anyone can see and explore.
               </Typography>
             </CardContent>
           </DataCard>
