@@ -280,28 +280,18 @@ const Technical = () => {
         container
         sx={{ display: "flex", alignItems: "center", mb: 8, pr: 2 }}
       >
-        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
+        <Grid size={{ xs: 0, sm: 2 }}></Grid>
+        <Grid size={{ xs: 12, sm: 6, md: 8 }}>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
             <SunnyIcon color="warning" sx={{ verticalAlign: "sub", mr: 1 }} />
-            <span style={{ color: "orange" }}>Result:</span> Successfully
-            integrated LIDAR terrain data and an assessed solar development
-            specification to create a smooth 60fps interactive visualisation.
-            The React Three Fiber implementation handles multiple geometries
-            efficiently through instanced rendering, with responsive design
-            optimized for desktop, tablet, and mobile devices.
+            <span style={{ color: "orange" }}>Outcome:</span> The result is a
+            single interactive model that does what a folder of static
+            photomontages can't; showing Springwell from its assessed viewpoints
+            at any point across ten years, in either season, on any device. The
+            assessment itself, made explorable: honest about the worst case,
+            clear about the screened outcome, and open to anyone who needs to
+            understand it.
           </Typography>
-        </Grid>
-        <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
-        <Grid size={{ xs: 12, sm: 5, md: 5 }}>
-          <video
-            muted
-            loop
-            preload="auto"
-            autoPlay
-            className="borderedLight w-100"
-          >
-            <source src="/videos/Springwell.mp4" type="video/mp4" />
-          </video>
         </Grid>
       </Grid>
     </Container>
