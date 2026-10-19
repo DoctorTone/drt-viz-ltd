@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import SpeedIcon from "@mui/icons-material/Speed";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import VisibilityIcon from "@mui/icons-material/Visibility";
+import CloudySnowingIcon from "@mui/icons-material/CloudySnowing";
 import Button from "@mui/material/Button";
 
 const Hero = () => {
@@ -22,8 +23,16 @@ const Hero = () => {
       <Grid container sx={{ mb: 4 }}>
         <Grid size={{ md: 2 }}></Grid>
         <Grid size={{ xs: 12, md: 8 }}>
-          <Typography variant="h3" sx={{ mb: 3, textAlign: "center" }}>
+          <Typography
+            variant="h3"
+            sx={{ mb: 3, textAlign: "center", color: "orange" }}
+          >
             Solar Farm Visualisation
+          </Typography>
+          <Typography variant="h6" sx={{ mb: 3 }}>
+            An interactive 3D model that shows a real solar farm from its
+            assessed viewpoints at any point across ten years of screening
+            growth, in summer or winter, explorable in any browser.
           </Typography>
           <video
             muted
@@ -41,30 +50,40 @@ const Hero = () => {
           The <span style={{ color: "orange" }}>Project</span>
         </Typography>
         <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
-          Springwell is an interactive 3D visualisation of a real consented
-          solar farm in Lincolnshire. It shows how the development and it's
-          screening planting appear over a ten-year period.
+          Springwell is an interactive 3D visualisation of Springwell Solar
+          Farm, a real solar development in Lincolnshire (DCO ref EN010149). It
+          reconstructs the scheme on accurate terrain from the application’s own
+          data, and lets anyone see how the development and its screening
+          planting change over the first ten years.
         </Typography>
         <Typography variant="h6">
           <VisibilityIcon
             color="warning"
             sx={{ verticalAlign: "sub", mr: 2 }}
           />
-          Reproduces the scheme's assessed viewpoints on accurate terrain, using
-          the real application data.
+          Reproduces the assessment’s surveyed viewpoints on real LiDAR terrain,
+          to scale.
         </Typography>
         <Typography variant="h6">
           <AccessTimeIcon
             color="warning"
             sx={{ verticalAlign: "sub", mr: 2 }}
           />
-          Shows three stages of development - before construction, as built and
-          after maturity at ten years.
+          A continuous ten-year timeline, from before construction, through
+          as-built, to mature screening.
+        </Typography>
+        <Typography variant="h6">
+          <CloudySnowingIcon
+            color="warning"
+            sx={{ verticalAlign: "sub", mr: 2 }}
+          />
+          Summer or winter at any point, so the worst case for screening is
+          always available.
         </Typography>
         <Typography variant="h6" sx={{ mb: 3 }}>
           <SpeedIcon color="warning" sx={{ verticalAlign: "sub", mr: 2 }} />
-          Optimal performance of 60 frames per second on desktop, tablet and
-          mobile.
+          Runs in any browser, on desktop, tablet or phone. No install or
+          specialist hardware.
         </Typography>
         <Button
           variant="contained"
