@@ -23,11 +23,8 @@ const Hero = () => {
       <Grid container sx={{ mb: 4 }}>
         <Grid size={{ md: 2 }}></Grid>
         <Grid size={{ xs: 12, md: 8 }}>
-          <Typography
-            variant="h3"
-            sx={{ mb: 3, textAlign: "center", color: "orange" }}
-          >
-            Solar Farm Visualisation
+          <Typography variant="h3" sx={{ mb: 3, textAlign: "center" }}>
+            Solar Farm <span style={{ color: "orange" }}>Visualisation</span>
           </Typography>
           <Typography variant="h6" sx={{ mb: 3 }}>
             An interactive 3D model that shows a real solar farm from its
