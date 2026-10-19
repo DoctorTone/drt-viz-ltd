@@ -117,15 +117,7 @@ const Portfolio = () => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            <video
-              muted
-              loop
-              preload="auto"
-              autoPlay
-              className="borderedLight w-100"
-            >
-              <source src="./videos/Springwell.mp4" type="video/mp4" />
-            </video>
+            <img className="borderedLight w-100" src="images/solarFarm.jpg" />
           </a>
           <Box sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ mt: 1, mb: 1 }}>
@@ -148,14 +140,14 @@ const Portfolio = () => {
               >
                 View Demo
               </Button>
-              <Button
+              {/* <Button
                 variant="outlined"
                 color="warning"
                 href="/case-studies/springwell"
                 sx={{ width: "50%" }}
               >
                 Case Study
-              </Button>
+              </Button> */}
             </Stack>
           </Box>
         </Grid>

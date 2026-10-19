@@ -8,15 +8,16 @@ import CardContent from "@mui/material/CardContent";
 import NoteAltIcon from "@mui/icons-material/NoteAlt";
 import { styled } from "@mui/material/styles";
 
-const Benefits = () => {
-  const DataCard = styled(Card)({
-    background: "black",
-    color: "white",
-    border: "1px solid rgba(255, 255, 255, 0.25)",
-    borderRadius: "10px",
-    height: "100%",
-  });
+const DataCard = styled(Card)({
+  background: "black",
+  color: "white",
+  border: "1px solid rgba(255, 255, 255, 0.25)",
+  borderRadius: "10px",
+  height: "100%",
+});
 
+
+const Benefits = () => {
   return (
     <Container>
       <Chip

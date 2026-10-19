@@ -6,6 +6,7 @@ import CaseStudyLightning from "../pages/CaseStudyLightning";
 import CaseStudySpringwell from "../pages/CaseStudySpringwell";
 import { AnimatePresence } from "framer-motion";
 import DataVizGeo from "../pages/DataVizGeo";
+import CookiePolicy from "../pages/CookiePolicy";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -28,6 +29,7 @@ const AnimatedRoutes = () => {
           path="/case-studies/springwell"
           element={<CaseStudySpringwell />}
         />
+        <Route path="/cookies" element={<CookiePolicy />} />
       </Routes>
     </AnimatePresence>
   );

@@ -13,15 +13,16 @@ import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import ExtensionIcon from "@mui/icons-material/Extension";
 import { styled } from "@mui/material/styles";
 
-const Solutions = () => {
-  const DataCard = styled(Card)({
-    background: "black",
-    color: "white",
-    border: "1px solid rgba(255, 255, 255, 0.25)",
-    borderRadius: "10px",
-    height: "100%",
-  });
+const DataCard = styled(Card)({
+  background: "black",
+  color: "white",
+  border: "1px solid rgba(255, 255, 255, 0.25)",
+  borderRadius: "10px",
+  height: "100%",
+});
 
+
+const Solutions = () => {
   return (
     <Container id="section2" sx={{ mt: 10, mb: 10 }}>
       <Chip

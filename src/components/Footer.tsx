@@ -7,6 +7,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import EmailIcon from "@mui/icons-material/Email";
 import Link from "@mui/material/Link";
+import { Link as RouterLink } from "react-router-dom";
+import { openCookieSettings } from "../analytics/consent";
 
 const Footer = () => {
   return (
@@ -82,7 +84,29 @@ const Footer = () => {
         }}
       >
         <Typography variant="h6" sx={{ color: "grey" }}>
-          Copyright &copy; 2025 DRT Software. All rights reserved.
+          Copyright &copy; 2026 DRT Software. All rights reserved.
+        </Typography>
+      </Box>
+      <Box
+        sx={{ display: "flex", justifyContent: "center", gap: 3, mt: 2 }}
+        className="links"
+      >
+        <Typography variant="body2">
+          <RouterLink to="/cookies">Cookie policy</RouterLink>
+        </Typography>
+        <Typography
+          variant="body2"
+          component="button"
+          onClick={openCookieSettings}
+          sx={{
+            color: "#a8a8a8",
+            background: "none",
+            border: "none",
+            p: 0,
+            cursor: "pointer",
+          }}
+        >
+          Cookie settings
         </Typography>
       </Box>
     </Container>

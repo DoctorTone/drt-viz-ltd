@@ -11,26 +11,27 @@ import FormControl from "@mui/material/FormControl";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 
-const Contact = () => {
-  const ContactTextField = styled(TextField)({
-    "& .MuiInputLabel-root": { color: "white" },
-    "& .MuiInputBase-input": {
-      color: "white",
-      background: "#0a0401",
+const ContactTextField = styled(TextField)({
+  "& .MuiInputLabel-root": { color: "white" },
+  "& .MuiInputBase-input": {
+    color: "white",
+    background: "#0a0401",
+  },
+  "& .MuiOutlinedInput-root": {
+    "& fieldset": {
+      borderColor: "grey", // border color
     },
-    "& .MuiOutlinedInput-root": {
-      "& fieldset": {
-        borderColor: "grey", // border color
-      },
-      "&:hover fieldset": {
-        borderColor: "grey",
-      },
-      "&.Mui-focused fieldset": {
-        borderColor: "grey",
-      },
+    "&:hover fieldset": {
+      borderColor: "grey",
     },
-  });
+    "&.Mui-focused fieldset": {
+      borderColor: "grey",
+    },
+  },
+});
 
+
+const Contact = () => {
   return (
     <Container id="section7" sx={{ mb: 10 }}>
       <Chip
