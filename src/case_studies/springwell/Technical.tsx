@@ -70,25 +70,25 @@ const Technical = () => {
                     sx={{ mb: 5 }}
                     fontSize="large"
                   />
-                  <Typography variant="h5">Terrain Data</Typography>
+                  <Typography variant="h5">The Terrain</Typography>
                   <List sx={{ color: "grey" }}>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Environment Agency LIDAR Composite DTM at 2m resolution, 2022" />
+                      <ListItemText primary="Environment Agency LIDAR Composite DTM at 2m resolution, from 2022." />
                     </ListItem>
                     <ListItem disablePadding sx={{ mb: 1 }}>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Coverage: 4 adjacent 5km National Grid tiles" />
+                      <ListItemText primary="Converted to a compact heightfield, a binary grid sampled at runtime, at 10m resolution across the full 10km site." />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Source: DEFRA Survey Data Download portal" />
+                      <ListItemText primary="Georeferenced to the British National Grid, so ground height is correct at every point." />
                     </ListItem>
                   </List>
                 </CardContent>
@@ -102,31 +102,25 @@ const Technical = () => {
                     sx={{ mb: 5 }}
                     fontSize="large"
                   />
-                  <Typography variant="h5">Development Data</Typography>
+                  <Typography variant="h5">The Scheme</Typography>
                   <List sx={{ color: "grey" }}>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Solar panel specification from the scheme's submitted PV table drawings" />
+                      <ListItemText primary="Viewpoints placed at their surveyed coordinates; panel specifications taken from the application documents." />
                     </ListItem>
                     <ListItem disablePadding sx={{ mb: 1 }}>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Panels filled to the consented parcel envelopes, exact positions not fixed at application stage" />
+                      <ListItemText primary="Panels filled to the consented parcel envelopes, exact positions not fixed at application stage." />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Viewpoint positions derived from the 40 assessed viewpoints in the Environmental Statement" />
-                    </ListItem>
-                    <ListItem disablePadding>
-                      <ListItemIcon sx={{ minWidth: 48 }}>
-                        <CheckCircleIcon color="warning" fontSize="large" />
-                      </ListItemIcon>
-                      <ListItemText primary="Vegetation and screening heights derived from the scheme's landscape and planting plans" />
+                      <ListItemText primary="Existing vegetation and proposed planting captured separately, each with its own growth curve." />
                     </ListItem>
                   </List>
                 </CardContent>
@@ -140,31 +134,25 @@ const Technical = () => {
                     sx={{ mb: 5 }}
                     fontSize="large"
                   />
-                  <Typography variant="h5">Pipeline</Typography>
+                  <Typography variant="h5">The Imagery</Typography>
                   <List sx={{ color: "grey" }}>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Python pre-processing reading GeoTIFF data via rasterio library" />
+                      <ListItemText primary="Licensed MapTiler satellite imagery, a full-site base with a high-resolution inset over the viewpoints." />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Data downsampled to 10m to balance fidelity against browser performance" />
+                      <ListItemText primary="Reprojected from Web Mercator to the National Grid and clipped to the exact terrain extent, with no drift over 10km." />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Tiles mosaiced into one continuous heightfield" />
-                    </ListItem>
-                    <ListItem disablePadding>
-                      <ListItemIcon sx={{ minWidth: 48 }}>
-                        <CheckCircleIcon color="warning" fontSize="large" />
-                      </ListItemIcon>
-                      <ListItemText primary="Generates binary heightfield and JSON metadata file" />
+                      <ListItemText primary="Draped onto the terrain as a texture that registers precisely with the LiDAR." />
                     </ListItem>
                   </List>
                 </CardContent>
@@ -197,57 +185,25 @@ const Technical = () => {
                     sx={{ mb: 5 }}
                     fontSize="large"
                   />
-                  <Typography variant="h5">Framework</Typography>
+                  <Typography variant="h5">Engine</Typography>
                   <List sx={{ color: "grey" }}>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="React Three Fiber and Three.js" />
+                      <ListItemText primary="Built in React Three Fiber and Three.js, in TypeScript." />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Python for data pre-processing" />
+                      <ListItemText primary="A single shared state drives year, season, viewpoint and what's visible." />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Zustand library for state management and syncronisation of scene and controls" />
-                    </ListItem>
-                  </List>
-                </CardContent>
-              </DataCard>
-            </Grid>
-            <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-              <DataCard variant="outlined">
-                <CardContent>
-                  <PermMediaIcon
-                    color="warning"
-                    sx={{ mb: 5 }}
-                    fontSize="large"
-                  />
-                  <Typography variant="h5">Rendering</Typography>
-                  <List sx={{ color: "grey" }}>
-                    <ListItem disablePadding>
-                      <ListItemIcon sx={{ minWidth: 48 }}>
-                        <CheckCircleIcon color="warning" fontSize="large" />
-                      </ListItemIcon>
-                      <ListItemText primary="Instanced geometry rendering for solar panels, foliage and trees" />
-                    </ListItem>
-                    <ListItem disablePadding>
-                      <ListItemIcon sx={{ minWidth: 48 }}>
-                        <CheckCircleIcon color="warning" fontSize="large" />
-                      </ListItemIcon>
-                      <ListItemText primary="Viewpoint cameras reproduce the surveyed position from the assessment's photomontage" />
-                    </ListItem>
-                    <ListItem disablePadding>
-                      <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
-                        <CheckCircleIcon color="warning" fontSize="large" />
-                      </ListItemIcon>
-                      <ListItemText primary="Multiple viewpoint directions at each position enabling users to look in each real-world direction" />
+                      <ListItemText primary="Runs entirely in the browser, no plugins, no installs and no specialist hardware." />
                     </ListItem>
                   </List>
                 </CardContent>
@@ -267,19 +223,51 @@ const Technical = () => {
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="60 frames per second on desktop/tablet/mobile" />
+                      <ListItemText primary="Instanced rendering: hedgerows, trees and panels share geometry, so a full terrain is a handful of draw calls rather than thousands." />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Asynchronous data loading with loading screen" />
+                      <ListItemText primary="Renders at 60fps on desktop, tablet and mobile." />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48, mb: 1 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Device-aware fallbacks and WebGL context-loss handling for lower-end hardware." />
+                    </ListItem>
+                  </List>
+                </CardContent>
+              </DataCard>
+            </Grid>
+            <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+              <DataCard variant="outlined">
+                <CardContent>
+                  <PermMediaIcon
+                    color="warning"
+                    sx={{ mb: 5 }}
+                    fontSize="large"
+                  />
+                  <Typography variant="h5">Rendering</Typography>
+                  <List sx={{ color: "grey" }}>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="A continuous ten-year timeline and a summer/winter toggle, both driven live from the shared state." />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemIcon sx={{ minWidth: 48 }}>
                         <CheckCircleIcon color="warning" fontSize="large" />
                       </ListItemIcon>
-                      <ListItemText primary="Responsive layouts for mobile devices" />
+                      <ListItemText primary="Existing and proposed planting established on separate curves across the decade." />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemIcon sx={{ minWidth: 48 }}>
+                        <CheckCircleIcon color="warning" fontSize="large" />
+                      </ListItemIcon>
+                      <ListItemText primary="Custom shader work blends the high-resolution aerial inset onto the terrain and keeps lighting consistent across the scene." />
                     </ListItem>
                   </List>
                 </CardContent>
