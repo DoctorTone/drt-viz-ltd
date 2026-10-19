@@ -38,7 +38,7 @@ const Hero = () => {
             autoPlay
             className="borderedLight w-100"
           >
-            <source src="/videos/Springwell.mp4" type="video/mp4" />
+            <source src="/videos/SolarViz720.mp4" type="video/mp4" />
           </video>
         </Grid>
       </Grid>

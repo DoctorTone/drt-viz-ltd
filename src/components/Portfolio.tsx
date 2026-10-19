@@ -117,7 +117,15 @@ const Portfolio = () => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            <img className="borderedLight w-100" src="images/solarFarm.jpg" />
+            <video
+              muted
+              loop
+              preload="auto"
+              autoPlay
+              className="borderedLight w-100"
+            >
+              <source src="./videos/SolarViz720.mp4" type="video/mp4" />
+            </video>
           </a>
           <Box sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ mt: 1, mb: 1 }}>

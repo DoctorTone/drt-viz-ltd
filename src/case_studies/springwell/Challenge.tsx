@@ -113,7 +113,7 @@ const Challenge = () => {
           </Typography>
         </Grid>
         <Grid size={{ xs: 12 }} sx={{ mb: { xs: 4, md: 0 }, pr: 2 }}>
-          <img src="/images/VP7NW_Built.jpg" className="borderedLight w-100" />
+          <img src="/images/VP7_NW_3D.jpg" className="borderedLight w-100" />
           <Box sx={{ textAlign: "center", mt: 2 }}>
             <Typography variant="caption" sx={{ color: "grey" }}>
               3D visualisation
