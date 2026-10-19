@@ -2,6 +2,7 @@ import Container from "@mui/material/Container";
 import Chip from "@mui/material/Chip";
 import BoltIcon from "@mui/icons-material/Bolt";
 import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
@@ -66,6 +67,11 @@ const Challenge = () => {
         </Grid>
         <Grid size={{ xs: 12 }}>
           <img src="/images/VP7_NW.jpg" className="borderedLight w-100" />
+          <Box sx={{ textAlign: "center", mt: 2 }}>
+            <Typography variant="caption" sx={{ color: "grey" }}>
+              Photo from assessed viewpoint
+            </Typography>
+          </Box>
         </Grid>
       </Grid>
       <Grid container sx={{ display: "flex", alignItems: "center", mb: 8 }}>
@@ -108,6 +114,11 @@ const Challenge = () => {
         </Grid>
         <Grid size={{ xs: 12 }} sx={{ mb: { xs: 4, md: 0 }, pr: 2 }}>
           <img src="/images/VP7NW_Built.jpg" className="borderedLight w-100" />
+          <Box sx={{ textAlign: "center", mt: 2 }}>
+            <Typography variant="caption" sx={{ color: "grey" }}>
+              3D visualisation
+            </Typography>
+          </Box>
         </Grid>
       </Grid>
     </Container>
