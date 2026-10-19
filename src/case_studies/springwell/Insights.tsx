@@ -54,8 +54,8 @@ const Insights = () => {
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            This can directly address how the site may look at year one versus
-            year ten, which a single image cannot.
+            This is far more flexible than the functionality offered by a single
+            image.
           </Typography>
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
@@ -86,15 +86,16 @@ const Insights = () => {
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            Showing all the honest scenarios, including the worst cases, makes
-            the tool creditable to objectors.
+            It shows every honest scenario, including the worst cases, so it's
+            credible to objectors.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <RemoveCircleIcon
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            Showing the mature screened outcome makes it useful to applicants.
+            It also shows the mature, screened outcome, so it's useful to
+            applicants.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 3 }}>
             <RemoveCircleIcon
@@ -118,24 +119,23 @@ const Insights = () => {
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            The model reporoduces the assessment's own parameters, not an
-            interpretation.
+            Viewpoints, camera positions and panel specifications come from the
+            application documents, not an interpretation.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <ThumbUpAltIcon
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            Viewpoints, camera positions and solar panel specifications are
-            taken from the application documents.
+            The terrain is real survey data, georeferenced to the National Grid.
           </Typography>
           <Typography variant="h6" sx={{ color: "grey", mb: 2 }}>
             <ThumbUpAltIcon
               color="warning"
               sx={{ verticalAlign: "sub", mr: 2 }}
             />
-            Existing vegetation is distinguished from proposed planting, each
-            behaving accordingly over time.
+            Existing vegetation and proposed planting are modelled separately,
+            each behaving accordingly over time.
           </Typography>
         </Grid>
         <Grid size={{ xs: 0, sm: 1, md: 1 }}></Grid>
