@@ -66,8 +66,8 @@ const Hero = () => {
             color="warning"
             sx={{ verticalAlign: "sub", mr: 2 }}
           />
-          A continuous ten-year timeline, from before construction, through
-          as-built, to mature screening.
+          A continuous ten-year timeline, from before construction, as-built, to
+          mature screening.
         </Typography>
         <Typography variant="h6">
           <CloudySnowingIcon
