@@ -120,7 +120,7 @@ const GEO_VIDEOS: VideoRecord[] = [
   },
   {
     id: "springwell",
-    source: "./videos/Springwell.mp4",
+    source: "./videos/SolarViz720.mp4",
     left: false,
     category: "Solar",
     title: "Solar Farm Visualisation",
