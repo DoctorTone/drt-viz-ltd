@@ -3,8 +3,11 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import CaseSpringwell from "../components/CaseSpringwell";
 import { PageTransition } from "../components/PageTransition";
+import { useGoatCounter } from "../analytics/goatcounter";
 
 const CaseStudySpringwell = () => {
+  useGoatCounter("/case-studies/springwell");
+
   return (
     <PageTransition>
       <NavBarCaseStudy />
